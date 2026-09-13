@@ -93,7 +93,7 @@ function fillMedia(){
   document.querySelectorAll('.spk').forEach(b=>{
     if(b.getAttribute('data-audio'))return;
     const nm=b.getAttribute('data-name');
-    const L=AUDIO_MAP[nm];if(!L)return;
+    const L=(AUDIO_MAP[nm]||{})[TOPIC]||{};if(!L)return;
     const tr=b.closest('tr'),first=tr?tr.querySelector('td.first'):null,th=first?first.querySelector('.thumb'):null;
     if(!th)return;
     const w=th.getAttribute('data-word'),i=th.getAttribute('data-i');
