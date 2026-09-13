@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="zh-Hant"><head><meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>科目｜多語言對照表</title><style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Noto Sans TC','Microsoft JhengHei','PingFang TC',sans-serif;background:#eef3fa;color:#243;padding:16px}
+a{text-decoration:none;color:inherit}
+.wrap{max-width:1200px;margin:0 auto}
+h1{font-size:26px;text-align:center;margin:10px 0 4px}
+.sub{text-align:center;color:#788;font-size:13px;margin-bottom:18px}
+h2{font-size:16px;color:#4a6fa5;margin:22px 0 10px;padding-left:10px;border-left:5px solid #4a6fa5}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.card{background:#fff;border-radius:12px;padding:14px 12px;box-shadow:0 2px 6px rgba(40,70,120,.08);
+      transition:transform .12s,box-shadow .12s;display:block}
+.card:hover{transform:translateY(-3px);box-shadow:0 6px 16px rgba(40,70,120,.16)}
+.card .n{font-size:16px;font-weight:600}
+.card .c{font-size:11px;color:#9aa;margin-top:4px}
+.back{display:inline-block;margin-bottom:12px;color:#4a6fa5;font-size:14px}
+.tablewrap{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(40,70,120,.1);overflow:auto}
+table{border-collapse:collapse;width:100%;font-size:14px}
+th{background:#4a6fa5;color:#fff;padding:8px 6px;font-size:13px;position:sticky;top:0}
+th.sub{background:#6a8fc0;font-size:11px;font-weight:400;top:34px}
+td{padding:6px;border-bottom:1px solid #eaeff7;text-align:center;vertical-align:middle}
+tr:nth-child(even) td{background:#f8fafd}
+td.group{border-right:1px solid #eef3fa}
+td.first{font-weight:600;background:#eef3fb!important}
+.phon{color:#889;font-size:11px;display:block}
+.spk{border:none;background:#4a6fa5;color:#fff;width:24px;height:24px;border-radius:50%;
+     cursor:pointer;font-size:11px;margin-left:4px;vertical-align:middle}
+.spk:hover{background:#35598c}
+.spk.playing{background:#e67e22}
+.spk.no{-webkit-filter:grayscale(1);opacity:.45}
+.status{text-align:center;padding:30px;color:#99a}
+.err{color:#c0392b}
+.note{font-size:12px;color:#889;margin:10px 4px}
+.pill{display:inline-block;background:#e8eef8;color:#4a6fa5;border-radius:20px;padding:2px 10px;font-size:11px;margin-left:6px}
+</style></head>
+<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🔤 科目</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒有語音會用拼音朗讀</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+const VOICE_MAP={
+ '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
+ '台語':{lang:'nan-TW',fallback:'zh-TW',usePhon:1},
+ '客語':{lang:'hak-TW',fallback:'zh-TW',usePhon:1},
+ '美式英文':{lang:'en-US'},'英式英文':{lang:'en-GB'},
+ '日文':{lang:'ja-JP'},'韓文':{lang:'ko-KR'}
+};
+let voices=[];function lv(){voices=speechSynthesis.getVoices();}
+speechSynthesis.onvoiceschanged=lv;lv();
+function hasVoice(l){return voices.some(v=>v.lang.toLowerCase().startsWith(l.split('-')[0].toLowerCase()));}
+function spk(btn){
+  const nm=btn.getAttribute('data-name'),txt=btn.getAttribute('data-text'),ph=btn.getAttribute('data-phon');
+  const cfg=VOICE_MAP[nm];if(!cfg||!txt)return;
+  let lang=cfg.lang,t=txt;
+  if(!hasVoice(cfg.lang)&&cfg.fallback){lang=cfg.fallback;if(cfg.usePhon&&ph)t=ph;}
+  const u=new SpeechSynthesisUtterance(t);u.lang=lang;u.rate=.85;
+  speechSynthesis.cancel();speechSynthesis.speak(u);
+  document.querySelectorAll('.spk.playing').forEach(b=>b.classList.remove('playing'));
+  btn.classList.add('playing');setTimeout(()=>btn.classList.remove('playing'),1500);
+}
+
+const SHEET='1ud_WbGVW8klA8ZJep27RMuyhYexB81emBlVDANQVuwk';
+const box=document.getElementById('box');
+function clean(v){return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();}
+function cleanFull(v){return v==null?'':String(v).replace(/\r/g,'');}
+fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
+ .then(r=>r.text()).then(t=>{
+   const j=JSON.parse(t.substring(t.indexOf('{'),t.lastIndexOf('}')+1));
+   const tb=j.table;
+   const raw=tb.rows.map(r=>r.c.map(c=>c?(c.f!=null?String(c.f):(c.v==null?'':String(c.v))):''));
+   const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
+   // 依 row0 非空切出語言群組
+   const groups=[];let cur=null;
+   hdr.forEach((v,i)=>{if(clean(v)){cur={name:clean(v),start:i,cols:[]};groups.push(cur);} if(cur)cur.cols.push(i);});
+   // 只留真正的語言群組：把「圖示」拿掉、每組最多 3 欄、全空的組丢掉
+   const LANG=groups.filter(g=>g.name!=='圖示');
+   LANG.forEach((g,k)=>{
+     const next=LANG[k+1];
+     const end=Math.min(next?next.start:hdr.length, g.start+3);
+     g.cols=[];for(let i=g.start;i<end;i++)g.cols.push(i);
+   });
+   const use=LANG.filter(g=>g.cols.some(c=>clean(sub[c])||data.some(r=>clean(r[c]))));
+   const label=use.shift()||{name:'詞',cols:[]};   // 第一大組（繁體中文）當「詞」欄
+   let h='<thead><tr><th rowspan="2">'+label.name+'</th>';
+   use.forEach(g=>{h+='<th colspan="'+g.cols.length+'">'+g.name+'</th>';});
+   h+='</tr><tr>';
+   use.forEach(g=>g.cols.forEach(ci=>{h+='<th class="sub">'+(clean(sub[ci])||'')+'</th>';}));
+   h+='</tr></thead><tbody>';
+   data.forEach(r=>{
+     if(!r.some(c=>clean(c)))return;
+     const word=clean(r[label.cols[0]]);
+     if(!word)return;
+     h+='<tr><td class="first"><span class="word">'+word.replace(/</g,'&lt;')+'</span>';
+     label.cols.slice(1).forEach(ci=>{const p=clean(r[ci]);if(p)h+='<span class="phon">'+p.replace(/</g,'&lt;')+'</span>';});
+     h+='<button class="spk" data-name="'+label.name+'" data-text="'+word.replace(/"/g,'&quot;')+'" data-phon="" onclick="spk(this)">\u{1F50A}</button></td>';
+     use.forEach(g=>{
+       const readCol=g.cols.find(c=>/羅馬|漢字|外來語/.test(clean(sub[c]))) ?? g.cols[0];
+       const speak=clean(r[readCol])||clean(r[g.cols[0]]);
+       const phon=g.cols.map(c=>clean(r[c])).filter(Boolean).slice(1).join(' · ');
+       g.cols.forEach((ci,k)=>{
+         const txt=clean(r[ci]);
+         let cell = k===0
+           ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
+           : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
+         if(k===g.cols.length-1&&/^(繁體中文|簡體中文|台語|客語|美式英文|英式英文|日文|韓文)$/.test(g.name))
+           cell+='<button class="spk" data-name="'+g.name+'" data-text="'+speak.replace(/"/g,'&quot;')+'" data-phon="'+(phon||'').replace(/"/g,'&quot;')+'" onclick="spk(this)">\u{1F50A}</button>';
+         h+='<td class="group">'+cell+'</td>';
+       });
+     });
+     h+='</tr>';
+   });
+   h+='</tbody>';
+   box.innerHTML='<div class="tablewrap"><table>'+h+'</table></div>';
+   setTimeout(()=>{document.querySelectorAll('.spk').forEach(b=>{const m=VOICE_MAP[b.getAttribute('data-name')];if(m&&!hasVoice(m.lang)&&!m.fallback)b.classList.add('no');});},400);
+ }).catch(e=>{box.innerHTML='<div class="status err">讀取失敗：'+e.message+'（此表可能未公開分享）</div>';});
+</script></body></html>
