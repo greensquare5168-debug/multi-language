@@ -61,27 +61,52 @@ let voices=[];function lv(){voices=speechSynthesis.getVoices();}
 speechSynthesis.onvoiceschanged=lv;lv();
 function hasVoice(l){return voices.some(v=>v.lang.toLowerCase().startsWith(l.split('-')[0].toLowerCase()));}
 function spk(btn){
+  const au=btn.getAttribute('data-audio');
+  document.querySelectorAll('.spk.playing').forEach(b=>b.classList.remove('playing'));
+  btn.classList.add('playing');setTimeout(()=>btn.classList.remove('playing'),1500);
+  speechSynthesis.cancel();
+  if(au){try{new Audio(au).play();}catch(e){}return;}   // 有現成音檔優先
   const nm=btn.getAttribute('data-name'),txt=btn.getAttribute('data-text'),ph=btn.getAttribute('data-phon');
   const cfg=VOICE_MAP[nm];if(!cfg||!txt)return;
   let lang=cfg.lang,t=txt;
-  if(!hasVoice(cfg.lang)&&cfg.fallback){lang=cfg.fallback;if(cfg.usePhon&&ph)t=ph;}
+  if(!hasVoice(cfg.lang)){
+    if(cfg.usePhon&&ph){t=ph;lang=cfg.fallback||cfg.lang;}
+    else if(cfg.fallback){lang=cfg.fallback;}
+  }
   const u=new SpeechSynthesisUtterance(t);u.lang=lang;u.rate=.85;
-  speechSynthesis.cancel();speechSynthesis.speak(u);
-  document.querySelectorAll('.spk.playing').forEach(b=>b.classList.remove('playing'));
-  btn.classList.add('playing');setTimeout(()=>btn.classList.remove('playing'),1500);
+  speechSynthesis.speak(u);
 }
 
 const SHEET='1WzVVm7CzGFtrnbZCIacPuvBeE9fVyVJJ-ZThzie_9wA',TOPIC='月份';
-const IMGBASE='../img/';
+const IMGBASE='../img/',AUDIOBASE='../audio/';
 const box=document.getElementById('box');
-// 把已生成的去背圖片填進「圖片」欄（沒有圖就先留空框）
-fetch(IMGBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})).then(man=>{
-  const m=(man&&man[TOPIC])||{};
+let AUDIO_MAP={},IMG_MAP={};
+function fillMedia(){
+  // 圖片欄
   document.querySelectorAll('.thumb').forEach(el=>{
+    if(el.classList.contains('has'))return;
     const w=el.getAttribute('data-word'),i=el.getAttribute('data-i');
-    const src=m[w]||m['#'+i];
+    const src=IMG_MAP[w]||IMG_MAP['#'+i];
     if(src){el.classList.add('has');el.innerHTML='<img loading="lazy" src="'+IMGBASE+src+'" alt="'+w+'">';}
   });
+  // 日文音檔：有檔就用檔播（任何裝置都一定聽得到）
+  document.querySelectorAll('.spk').forEach(b=>{
+    if(b.getAttribute('data-name')!=='日文'||b.getAttribute('data-audio'))return;
+    const tr=b.closest('tr'),first=tr?tr.querySelector('td.first'):null,th=first?first.querySelector('.thumb'):null;
+    if(!th)return;
+    const w=th.getAttribute('data-word'),i=th.getAttribute('data-i');
+    const src=AUDIO_MAP[w]||AUDIO_MAP['#'+i];
+    if(src){b.setAttribute('data-audio','../'+src);b.title='聽日文發音';}
+  });
+}
+// 先抓音檔清單＋圖片清單
+Promise.all([
+  fetch(AUDIOBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})),
+  fetch(IMGBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([aud,img])=>{
+  AUDIO_MAP=(aud&&aud[TOPIC])||{};
+  IMG_MAP=(img&&img[TOPIC])||{};
+  fillMedia();
 });
 function clean(v){return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();}
 function cleanFull(v){return v==null?'':String(v).replace(/\r/g,'');}
@@ -140,6 +165,7 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    });
    h+='</tbody>';
    box.innerHTML='<div class="tablewrap"><table>'+h+'</table></div>';
+   fillMedia();
    setTimeout(()=>{document.querySelectorAll('.spk').forEach(b=>{const m=VOICE_MAP[b.getAttribute('data-name')];if(m&&!hasVoice(m.lang)&&!m.fallback)b.classList.add('no');});},400);
  }).catch(e=>{box.innerHTML='<div class="status err">讀取失敗：'+e.message+'（此表可能未公開分享）</div>';});
 </script></body></html>
