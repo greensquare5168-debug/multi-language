@@ -28,6 +28,12 @@ td.group{border-right:1px solid #edf7ef}
 td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:1}
 thead th:first-child{z-index:4;background:#2e7d32;color:#fff;text-align:center}
+/* 圖片欄（凍結） */
+.imgcol{width:100px;min-width:100px;padding:4px!important}
+.thumb{display:inline-flex;align-items:center;justify-content:center;width:86px;height:86px;
+       background:#f4faf5;border-radius:10px;border:1px dashed #cde3d3;overflow:hidden}
+.thumb.has{border:none;background:transparent}
+.thumb img{width:86px;height:86px;object-fit:contain;display:block;background:transparent}
 .phon{color:#7f9c8b;font-size:11px;display:block}
 .spk{border:none;background:#43a047;color:#fff;width:24px;height:24px;border-radius:50%;
      cursor:pointer;font-size:11px;margin-left:4px;vertical-align:middle}
@@ -60,8 +66,18 @@ function spk(btn){
   btn.classList.add('playing');setTimeout(()=>btn.classList.remove('playing'),1500);
 }
 
-const SHEET='10r96TgnArLcJS_Q_TbjOkstOu38mjUUT28lt8Wm43Bg';
+const SHEET='10r96TgnArLcJS_Q_TbjOkstOu38mjUUT28lt8Wm43Bg',TOPIC='動物';
+const IMGBASE='../img/';
 const box=document.getElementById('box');
+// 把已生成的去背圖片填進「圖片」欄（沒有圖就先留空框）
+fetch(IMGBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})).then(man=>{
+  const m=(man&&man[TOPIC])||{};
+  document.querySelectorAll('.thumb').forEach(el=>{
+    const w=el.getAttribute('data-word'),i=el.getAttribute('data-i');
+    const src=m[w]||m['#'+i];
+    if(src){el.classList.add('has');el.innerHTML='<img loading="lazy" src="'+IMGBASE+src+'" alt="'+w+'">';}
+  });
+});
 function clean(v){return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();}
 function cleanFull(v){return v==null?'':String(v).replace(/\r/g,'');}
 fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
@@ -81,19 +97,18 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      g.cols=[];for(let i=g.start;i<end;i++)g.cols.push(i);
    });
    const use=LANG.filter(g=>g.cols.some(c=>clean(sub[c])||data.some(r=>clean(r[c]))));
-   const label=use.shift()||{name:'詞',cols:[]};   // 第一大組（繁體中文）當「詞」欄
-   let h='<thead><tr><th rowspan="2">'+label.name+'</th>';
+   const first=groups.length?groups[0]:null;   // 第一欄 = 圖示欄
+   const iconCol=(first&&clean(hdr[first.start])==='圖示')?first.start:0;
+   let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
    use.forEach(g=>{h+='<th colspan="'+g.cols.length+'">'+g.name+'</th>';});
    h+='</tr><tr>';
    use.forEach(g=>g.cols.forEach(ci=>{h+='<th class="sub">'+(clean(sub[ci])||'')+'</th>';}));
    h+='</tr></thead><tbody>';
-   data.forEach(r=>{
+   data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
-     const word=clean(r[label.cols[0]]);
-     if(!word)return;
-     h+='<tr><td class="first"><span class="word">'+word.replace(/</g,'&lt;')+'</span>';
-     label.cols.slice(1).forEach(ci=>{const p=clean(r[ci]);if(p)h+='<span class="phon">'+p.replace(/</g,'&lt;')+'</span>';});
-     h+='<button class="spk" data-name="'+label.name+'" data-text="'+word.replace(/"/g,'&quot;')+'" data-phon="" onclick="spk(this)">\u{1F50A}</button></td>';
+     const zh=use.length?clean(r[use[0].cols[0]]):'';
+     if(!zh)return;
+     h+='<tr><td class="first imgcol"><span class="thumb" data-topic="'+TOPIC+'" data-word="'+zh.replace(/"/g,'&quot;')+'" data-i="'+ri+'"></span></td>';
      use.forEach(g=>{
        const readCol=g.cols.find(c=>/羅馬|漢字|外來語/.test(clean(sub[c]))) ?? g.cols[0];
        const speak=clean(r[readCol])||clean(r[g.cols[0]]);
