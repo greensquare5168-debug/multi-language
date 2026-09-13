@@ -101,9 +101,9 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    const first=groups.length?groups[0]:null;   // 第一欄 = 圖示欄
    const iconCol=(first&&clean(hdr[first.start])==='圖示')?first.start:0;
    let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
-   use.forEach(g=>{h+='<th colspan="'+g.cols.length+'">'+g.name+'</th>';});
+   use.forEach(g=>{h+='<th colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';});
    h+='</tr><tr>';
-   use.forEach(g=>g.cols.forEach(ci=>{h+='<th class="sub">'+(clean(sub[ci])||'')+'</th>';}));
+   use.forEach(g=>{g.cols.forEach(ci=>{h+='<th class="sub">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub">🔊</th>';});
    h+='</tr></thead><tbody>';
    data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
@@ -116,13 +116,16 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
        const phon=g.cols.map(c=>clean(r[c])).filter(Boolean).slice(1).join(' · ');
        g.cols.forEach((ci,k)=>{
          const txt=clean(r[ci]);
-         let cell = k===0
+         const cell = k===0
            ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
            : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
-         if(k===g.cols.length-1&&/^(繁體中文|簡體中文|台語|客語|美式英文|英式英文|日文|韓文)$/.test(g.name))
-           cell+='<button class="spk" data-name="'+g.name+'" data-text="'+speak.replace(/"/g,'&quot;')+'" data-phon="'+(phon||'').replace(/"/g,'&quot;')+'" onclick="spk(this)">\u{1F50A}</button>';
          h+='<td class="group">'+cell+'</td>';
        });
+       // 錄音單獨一格
+       h+='<td class="group">';
+       if(/^(繁體中文|簡體中文|台語|客語|美式英文|英式英文|日文|韓文)$/.test(g.name))
+         h+='<button class="spk" data-name="'+g.name+'" data-text="'+speak.replace(/"/g,'&quot;')+'" data-phon="'+(phon||'').replace(/"/g,'&quot;')+'" onclick="spk(this)">\u{1F50A}</button>';
+       h+='</td>';
      });
      h+='</tr>';
    });
