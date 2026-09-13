@@ -24,6 +24,10 @@ th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:38px;z-index:2}
 td{padding:8px 16px;border-bottom:1px solid #eaf4ec;text-align:center;vertical-align:middle;background:#fff;white-space:nowrap}
 tr:nth-child(even) td{background:#f7fcf8}
 td.group{border-right:1px solid #edf7ef}
+/* 語言之間的粗分隔線 */
+.gsep{border-left:3px solid #a5d6a7!important}
+th.gsep{border-left:3px solid #14532d!important}
+td.first{border-right:3px solid #a5d6a7}
 /* 凍結：左邊第一欄（圖片＋詞）不動 */
 td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:1}
@@ -101,9 +105,9 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    const first=groups.length?groups[0]:null;   // 第一欄 = 圖示欄
    const iconCol=(first&&clean(hdr[first.start])==='圖示')?first.start:0;
    let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
-   use.forEach(g=>{h+='<th colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';});
+   use.forEach(g=>{h+='<th class="gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';});
    h+='</tr><tr>';
-   use.forEach(g=>{g.cols.forEach(ci=>{h+='<th class="sub">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub">🔊</th>';});
+   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub'+(k===0?' gsep':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub">🔊</th>';});
    h+='</tr></thead><tbody>';
    data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
@@ -119,7 +123,7 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
          const cell = k===0
            ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
            : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
-         h+='<td class="group">'+cell+'</td>';
+         h+='<td class="group'+(k===0?' gsep':'')+'">'+cell+'</td>';
        });
        // 錄音單獨一格
        h+='<td class="group">';
