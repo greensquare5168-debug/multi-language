@@ -115,8 +115,13 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      if(!zh)return;
      h+='<tr><td class="first imgcol"><span class="thumb" data-topic="'+TOPIC+'" data-word="'+zh.replace(/"/g,'&quot;')+'" data-i="'+ri+'"></span></td>';
      use.forEach(g=>{
-       const readCol=g.cols.find(c=>/羅馬|漢字|外來語/.test(clean(sub[c]))) ?? g.cols[0];
-       const speak=clean(r[readCol])||clean(r[g.cols[0]]);
+       const isKana=s=>/[぀-ヿ]/.test(s);
+       let speak=clean(r[g.cols[0]]);
+       if(g.name==='日文'){
+         const kanaCol=g.cols.find(c=>isKana(clean(r[c])));
+         const romCol=g.cols.find(c=>/羅馬/.test(clean(sub[c])));
+         speak = kanaCol!=null ? clean(r[kanaCol]) : (romCol!=null ? clean(r[romCol]) : speak);
+       }
        const phon=g.cols.map(c=>clean(r[c])).filter(Boolean).slice(1).join(' · ');
        g.cols.forEach((ci,k)=>{
          const txt=clean(r[ci]);
