@@ -87,7 +87,7 @@ function fillMedia(){
     if(el.classList.contains('has'))return;
     const w=el.getAttribute('data-word'),i=el.getAttribute('data-i');
     const src=IMG_MAP[w]||IMG_MAP['#'+i];
-    if(src){el.classList.add('has');el.innerHTML='<img loading="lazy" src="'+IMGBASE+src+'" alt="'+w+'">';}
+    if(src){el.classList.add('has');el.innerHTML='<img loading="lazy" src="../'+src+'" alt="'+w+'">';}
   });
   // 日文音檔：有檔就用檔播（任何裝置都一定聽得到）
   document.querySelectorAll('.spk').forEach(b=>{
