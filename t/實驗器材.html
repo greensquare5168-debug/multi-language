@@ -89,14 +89,16 @@ function fillMedia(){
     const src=IMG_MAP[w]||IMG_MAP['#'+i];
     if(src){el.classList.add('has');el.innerHTML='<img loading="lazy" src="../'+src+'" alt="'+w+'">';}
   });
-  // 日文音檔：有檔就用檔播（任何裝置都一定聽得到）
+  // 各語音檔：有檔就用檔播（任何裝置都一定聽得到）
   document.querySelectorAll('.spk').forEach(b=>{
-    if(b.getAttribute('data-name')!=='日文'||b.getAttribute('data-audio'))return;
+    if(b.getAttribute('data-audio'))return;
+    const nm=b.getAttribute('data-name');
+    const L=AUDIO_MAP[nm];if(!L)return;
     const tr=b.closest('tr'),first=tr?tr.querySelector('td.first'):null,th=first?first.querySelector('.thumb'):null;
     if(!th)return;
     const w=th.getAttribute('data-word'),i=th.getAttribute('data-i');
-    const src=AUDIO_MAP[w]||AUDIO_MAP['#'+i];
-    if(src){b.setAttribute('data-audio','../'+src);b.title='聽日文發音';}
+    const src=L[w]||L['#'+i];
+    if(src){b.setAttribute('data-audio','../'+src);}
   });
 }
 // 先抓音檔清單＋圖片清單
@@ -104,7 +106,7 @@ Promise.all([
   fetch(AUDIOBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})),
   fetch(IMGBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
 ]).then(([aud,img])=>{
-  AUDIO_MAP=(aud&&aud[TOPIC])||{};
+  AUDIO_MAP=aud||{};
   IMG_MAP=(img&&img[TOPIC])||{};
   fillMedia();
 });
