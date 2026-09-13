@@ -17,14 +17,17 @@ h2{font-size:16px;color:#2e7d32;margin:22px 0 10px;padding-left:10px;border-left
 .card .n{font-size:16px;font-weight:600;color:#20503a}
 .card .c{font-size:11px;color:#8aa79a;margin-top:5px}
 .back{display:inline-block;margin-bottom:12px;color:#2e7d32;font-size:14px}
-.tablewrap{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(30,90,50,.12);overflow:auto}
-table{border-collapse:collapse;width:100%;font-size:14px}
-th{background:#2e7d32;color:#fff;padding:8px 6px;font-size:13px;position:sticky;top:0}
-th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:34px}
-td{padding:6px;border-bottom:1px solid #eaf4ec;text-align:center;vertical-align:middle}
+.tablewrap{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(30,90,50,.12);overflow:auto;max-height:80vh}
+table{border-collapse:separate;border-spacing:0;width:100%;font-size:14px}
+th{background:#2e7d32;color:#fff;padding:8px 6px;font-size:13px;position:sticky;top:0;z-index:2}
+th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:34px;z-index:2}
+td{padding:6px;border-bottom:1px solid #eaf4ec;text-align:center;vertical-align:middle;background:#fff}
 tr:nth-child(even) td{background:#f7fcf8}
 td.group{border-right:1px solid #edf7ef}
-td.first{font-weight:600;background:#e8f5e9!important}
+/* 凍結：左邊第一欄（圖片＋詞）不動 */
+td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
+td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:1}
+thead th:first-child{z-index:4;background:#2e7d32;color:#fff;text-align:center}
 .phon{color:#7f9c8b;font-size:11px;display:block}
 .spk{border:none;background:#43a047;color:#fff;width:24px;height:24px;border-radius:50%;
      cursor:pointer;font-size:11px;margin-left:4px;vertical-align:middle}
@@ -35,7 +38,7 @@ td.first{font-weight:600;background:#e8f5e9!important}
 .err{color:#c62828}
 .note{font-size:12px;color:#8aa79a;margin:10px 4px}
 </style></head>
-<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🔧 工具</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒有語音會用拼音朗讀</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🔧 工具</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒有語音會用拼音朗讀 · 表格可上下左右翻，語言列跟左邊圖片會固定</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
 const VOICE_MAP={
  '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
  '台語':{lang:'nan-TW',fallback:'zh-TW',usePhon:1},
