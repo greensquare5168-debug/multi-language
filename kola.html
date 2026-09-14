@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>卡通冒險任務隊（開啟中…）</title>
+<style>
+ body{font-family:'Microsoft JhengHei','PingFang TC',sans-serif;background:linear-gradient(160deg,#667eea,#764ba2);
+      color:#fff;height:100vh;margin:0;display:flex;align-items:center;justify-content:center;text-align:center}
+ .box{padding:24px}
+ a{color:#ffe680;font-size:18px;word-break:break-all}
+ .s{opacity:.8;font-size:14px;margin-top:10px}
+</style>
+</head>
+<body>
+<div class="box">
+  <h2>🎮 卡通冒險任務隊</h2>
+  <div id="st" class="s">正在連線…</div>
+  <div id="lk" style="margin-top:14px"></div>
+</div>
+<script>
+// 固定網址：永遠指向目前可用的隧道（會自動更新）
+const URLFILE = 'kola_url.txt';
+(async () => {
+  const st = document.getElementById('st'), lk = document.getElementById('lk');
+  try {
+    const r = await fetch(URLFILE + '?t=' + Date.now());
+    const u = (await r.text()).trim();
+    if (!/^https?:\/\//.test(u)) throw new Error('no url');
+    st.textContent = '連線中：' + u;
+    lk.innerHTML = '<a href="' + u + '">點這裡如果沒有自動跳轉</a>';
+    setTimeout(() => { location.replace(u); }, 600);
+  } catch (e) {
+    st.textContent = '目前沒有可用的連線（機器人會自動重開，請稍後再試）';
+  }
+})();
+</script>
+</body>
+</html>
