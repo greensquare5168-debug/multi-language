@@ -104,8 +104,8 @@ function fillMedia(){
 }
 // 先抓音檔清單＋圖片清單
 Promise.all([
-  fetch(AUDIOBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({})),
-  fetch(IMGBASE+'manifest.json').then(r=>r.ok?r.json():{}).catch(()=>({}))
+  fetch(AUDIOBASE+'manifest.json?t='+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({})),
+  fetch(IMGBASE+'manifest.json?t='+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({}))
 ]).then(([aud,img])=>{
   AUDIO_MAP=aud||{};
   IMG_MAP=(img&&img[TOPIC])||{};
