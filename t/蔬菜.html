@@ -111,9 +111,14 @@ function setFrozenOffsets(){
   var x=Math.round(img.getBoundingClientRect().width);
   var s=document.documentElement.style;
   s.setProperty('--l1', x+'px');
-  if(w1){x+=Math.round(w1.getBoundingClientRect().width); s.setProperty('--l2', x+'px');}
-  if(w2){x+=Math.round(w2.getBoundingClientRect().width); s.setProperty('--l3', x+'px');}
+  // 減 1px 讓凍結欄彼此微重疊，避免出現髮絲般的縫隙
+  if(w1){x+=Math.round(w1.getBoundingClientRect().width)-1; s.setProperty('--l2', x+'px');}
+  if(w2){x+=Math.round(w2.getBoundingClientRect().width)-1; s.setProperty('--l3', x+'px');}
 }
+// 字型／圖片載入後寬度可能變動 → 重新量測（避免偏移造成縫隙）
+if(document.fonts&&document.fonts.ready){document.fonts.ready.then(setFrozenOffsets);}
+window.addEventListener('load',setFrozenOffsets);
+setTimeout(setFrozenOffsets,600);setTimeout(setFrozenOffsets,1500);
 const VOICE_MAP={
  '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
  '台語':{lang:'nan-TW',fallback:'zh-TW',usePhon:1},
