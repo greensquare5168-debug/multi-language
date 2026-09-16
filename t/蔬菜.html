@@ -21,8 +21,8 @@ h2{font-size:16px;color:#2e7d32;margin:22px 0 10px;padding-left:10px;border-left
 table{border-collapse:separate;border-spacing:0;width:100%;font-size:14px}
 th{background:#2e7d32;color:#fff;padding:10px 16px;font-size:13px;position:sticky;top:0;z-index:5;white-space:nowrap}
 th.cat{font-size:13px;font-weight:700;letter-spacing:2px;top:0;z-index:6}
-th.lang{background:#43a047;font-size:13px;top:36px;z-index:5}
-th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:72px;z-index:5}
+th.lang{background:#43a047;font-size:13px;top:0;z-index:5}
+th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:36px;z-index:5}
 td{padding:8px 16px;border-bottom:1px solid #eaf4ec;text-align:center;vertical-align:middle;background:#fff;white-space:nowrap}
 tr:nth-child(even) td{background:#f7fcf8}
 td.group{border-right:1px solid #edf7ef;position:relative;z-index:0}
@@ -67,7 +67,7 @@ body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
 body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
 @media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
 </style></head>
-<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🥦 蔬菜</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分三類：<b>繁體中文</b>｜<b>中華語言</b>（簡體中文·台語·客語）｜<b>常見語言</b>（美式英文·英式英文·日文·韓文）· <b>右上角可切換</b></div><div id="catbar"></div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🥦 蔬菜</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分兩大類，<b>右上角可切換</b>：中華語言（簡體中文·台語·客語）／常見語言（美式英文·英式英文·日文·韓文）</div><div id="catbar"></div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
 function setMode(m){
   document.body.setAttribute('data-mode',m);
   document.querySelectorAll('#catbar button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-m')===m);});
@@ -167,14 +167,9 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    const other=use.filter(g=>!taken[g.name]);
    if(other.length)CAT.push({name:'其他語言',langs:other});
    use=[];CAT.forEach(c=>{c.langs.forEach(g=>{use.push(g);});});
-   const CAT_BG={'繁體中文':'#1b5e20','中華語言':'#2e7d32','常見語言':'#388e3c','其他語言':'#546e7a'};
-   let h='<thead><tr><th class="imgcol" rowspan="3">圖片</th>';
-   CAT.forEach((c,ci)=>{
-     let span=0;c.langs.forEach(g=>{span+=g.cols.length+1;g._cat=ci;});
-     h+='<th class="cat cc cat'+ci+' gsep" colspan="'+span+'" style="background:'+(CAT_BG[c.name]||'#2e7d32')+'">'+c.name+'</th>';
-   });
-   h+='</tr><tr>';
-   CAT.forEach(c=>{c.langs.forEach(g=>{
+   // 語言分類：只在右上角切換（表格頂端不再放分類列）
+   let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
+   CAT.forEach((c,ci)=>{c.langs.forEach(g=>{g._cat=ci;
      h+='<th class="lang cc cat'+g._cat+' gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
    });});
    h+='</tr><tr>';
