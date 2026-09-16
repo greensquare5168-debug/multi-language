@@ -40,6 +40,8 @@ table th.zcol{background:#66bb6a!important;font-weight:400;z-index:7;padding-lef
 table th.zcolh{position:sticky;left:104px!important;z-index:7;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 /* 常見語言模式：繁體中文只留「寫法」（注音、語音那兩欄隱藏）— 孝瓏 2026-09-16 */
 body[data-mode="cat2"] .tchide,body[data-mode="cat3"] .tchide,body[data-mode="cat4"] .tchide{display:none}
+/* 常見語言模式：「中文」那欄連「寫法」子表頭也不顯示（中文直接跨兩列表頭） */
+body[data-mode="cat2"] .tchide0,body[data-mode="cat3"] .tchide0,body[data-mode="cat4"] .tchide0{display:none}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
