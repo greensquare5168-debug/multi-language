@@ -31,17 +31,18 @@ td.group{border-right:1px solid #edf7ef;position:relative;z-index:0}
 th.gsep{border-left:3px solid #14532d!important}
 td.first{border-right:3px solid #a5d6a7}
 /* 凍結：繁體中文「寫法」欄緊跟圖片欄固定不動（表頭也一起固定，不然左右滑會跑掉） */
-td.zcol,th.zcol{position:sticky;left:var(--imgw,104px);background:#e8f5e9!important;font-weight:600;box-shadow:2px 0 5px rgba(30,90,50,.08);z-index:6}
+td.zcol,th.zcol{position:sticky;left:104px;background:#e8f5e9!important;font-weight:600;box-shadow:2px 0 5px rgba(30,90,50,.08);z-index:6}
 th.zcol{background:#66bb6a!important;font-weight:400;z-index:7}
 /* 第一列語言名稱（繁體中文）也要一起固定，不然上下滑動時上方會空一格（破洞） */
-th.zcolh{position:sticky;left:var(--imgw,104px);z-index:7;box-shadow:2px 0 5px rgba(30,90,50,.08)}
+th.zcolh{position:sticky;left:104px;z-index:7;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 /* 凍結：左邊第一欄（圖片＋詞）不動 */
 td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
 /* 圖片欄（凍結） */
-.imgcol{width:104px;min-width:104px;padding:4px!important}
+/* 圖片欄固定 104px（寫死，不依賴 JS 量測；繁體中文欄靠它定位） */
+.imgcol{width:104px!important;min-width:104px!important;max-width:104px!important;padding:4px!important}
 .thumb{display:inline-flex;align-items:center;justify-content:center;width:86px;height:86px;
        background:#f4faf5;border-radius:10px;border:1px dashed #cde3d3;overflow:hidden}
 .thumb.has{border:none;background:transparent}
