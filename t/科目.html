@@ -84,6 +84,18 @@ body[data-mode="cat1"] .cc.cat2,body[data-mode="cat1"] .cc.cat3{display:none}
 body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
 body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
 @media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
+/* ==== 凍結欄右緣處理（2026-09-16 孝瓏：「粗線要在細線上」「不要縫隙」）====
+   1px 實心 shadow：遮住左右捲動可能出現的髮絲縫
+   3px 實心 shadow：凍結區右緣的粗分隔線（位置＝欄位邊界，與其他語言群的 gsep 完全一致；捲動時不會被蓋掉） */
+th.imgcol{box-shadow:1px 0 0 #2e7d32!important}
+th.sub.zcol,th.sub.zcol2{box-shadow:1px 0 0 #66bb6a!important}
+td.first,td.zcol{box-shadow:1px 0 0 #e8f5e9!important}
+td.zcol2{box-shadow:1px 0 0 #fff!important}
+tr:nth-child(even) td.zcol2{box-shadow:1px 0 0 #f7fcf8!important}
+th.zcolh{box-shadow:3px 0 0 #14532d!important}
+th.sub.zcol3{box-shadow:3px 0 0 #14532d!important}
+td.zcol3{box-shadow:3px 0 0 #a5d6a7!important}
+@media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
 /* ==== 凍結欄右緣遮蔽（最後覆蓋；避免左右捲動時出現髮絲縫隙）====
    注意：遮蔽只做 1px，避免蓋掉下一個語言群組的粗分隔線（孝瓏 2026-09-16：「繁中簡中中間沒有粗線」） */
 th.zcolh{box-shadow:1px 0 0 #43a047!important}
