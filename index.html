@@ -53,6 +53,19 @@ thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .status{text-align:center;padding:30px;color:#8aa79a}
 .err{color:#c62828}
 .note{font-size:12px;color:#8aa79a;margin:10px 4px}
+/* 右上角語言切換（中華語言／常見語言） */
+#catbar{position:fixed;top:10px;right:10px;z-index:60;display:flex;gap:6px;align-items:center;
+        background:#fff;border:1px solid #cde3d3;border-radius:999px;padding:5px 9px;
+        box-shadow:0 3px 12px rgba(30,90,50,.18)}
+#catbar:empty{display:none}
+#catbar span{font-size:11px;color:#8aa79b}
+#catbar button{border:none;background:#e8f5e9;color:#20503a;font-size:12px;padding:6px 11px;
+        border-radius:999px;cursor:pointer;white-space:nowrap}
+#catbar button.on{background:#2e7d32;color:#fff}
+body[data-mode="cat1"] .cc.cat2,body[data-mode="cat1"] .cc.cat3{display:none}
+body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
+body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
+@media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
 </style></head>
 <body><div class="wrap">
 <h1>🔤 多語言對照表</h1>

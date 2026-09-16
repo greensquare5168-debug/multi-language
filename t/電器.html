@@ -53,8 +53,26 @@ thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .status{text-align:center;padding:30px;color:#8aa79a}
 .err{color:#c62828}
 .note{font-size:12px;color:#8aa79a;margin:10px 4px}
+/* 右上角語言切換（中華語言／常見語言） */
+#catbar{position:fixed;top:10px;right:10px;z-index:60;display:flex;gap:6px;align-items:center;
+        background:#fff;border:1px solid #cde3d3;border-radius:999px;padding:5px 9px;
+        box-shadow:0 3px 12px rgba(30,90,50,.18)}
+#catbar:empty{display:none}
+#catbar span{font-size:11px;color:#8aa79b}
+#catbar button{border:none;background:#e8f5e9;color:#20503a;font-size:12px;padding:6px 11px;
+        border-radius:999px;cursor:pointer;white-space:nowrap}
+#catbar button.on{background:#2e7d32;color:#fff}
+body[data-mode="cat1"] .cc.cat2,body[data-mode="cat1"] .cc.cat3{display:none}
+body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
+body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
+@media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
 </style></head>
-<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🔌 電器</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分三類：<b>繁體中文</b>｜<b>中華語言</b>（簡體中文·台語·客語）｜<b>常見語言</b>（美式英文·英式英文·日文·韓文）</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🔌 電器</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分三類：<b>繁體中文</b>｜<b>中華語言</b>（簡體中文·台語·客語）｜<b>常見語言</b>（美式英文·英式英文·日文·韓文）· <b>右上角可切換</b></div><div id="catbar"></div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+function setMode(m){
+  document.body.setAttribute('data-mode',m);
+  document.querySelectorAll('#catbar button').forEach(function(b){b.classList.toggle('on',b.getAttribute('data-m')===m);});
+  try{localStorage.setItem('langmode',m);}catch(e){}
+}
 const VOICE_MAP={
  '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
  '台語':{lang:'nan-TW',fallback:'zh-TW',usePhon:1},
@@ -151,16 +169,16 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    use=[];CAT.forEach(c=>{c.langs.forEach(g=>{use.push(g);});});
    const CAT_BG={'繁體中文':'#1b5e20','中華語言':'#2e7d32','常見語言':'#388e3c','其他語言':'#546e7a'};
    let h='<thead><tr><th class="imgcol" rowspan="3">圖片</th>';
-   CAT.forEach(c=>{
-     let span=0;c.langs.forEach(g=>{span+=g.cols.length+1;});
-     h+='<th class="cat gsep" colspan="'+span+'" style="background:'+(CAT_BG[c.name]||'#2e7d32')+'">'+c.name+'</th>';
+   CAT.forEach((c,ci)=>{
+     let span=0;c.langs.forEach(g=>{span+=g.cols.length+1;g._cat=ci;});
+     h+='<th class="cat cc cat'+ci+' gsep" colspan="'+span+'" style="background:'+(CAT_BG[c.name]||'#2e7d32')+'">'+c.name+'</th>';
    });
    h+='</tr><tr>';
    CAT.forEach(c=>{c.langs.forEach(g=>{
-     h+='<th class="lang gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
+     h+='<th class="lang cc cat'+g._cat+' gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
    });});
    h+='</tr><tr>';
-   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub'+(k===0?' gsep':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub">🔊</th>';});
+   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub cc cat'+g._cat+(k===0?' gsep':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub cc cat'+g._cat+'">🔊</th>';});
    h+='</tr></thead><tbody>';
    data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
@@ -182,10 +200,10 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
          const cell = k===0
            ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
            : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
-         h+='<td class="group'+(k===0?' gsep':'')+(isTC&&k===0?' zcol':'')+'">'+cell+'</td>';
+         h+='<td class="group cc cat'+g._cat+(k===0?' gsep':'')+(isTC&&k===0?' zcol':'')+'">'+cell+'</td>';
        });
        // 錄音單獨一格
-       h+='<td class="group">';
+       h+='<td class="group cc cat'+g._cat+'">';
        if(/^(繁體中文|簡體中文|台語|客語|美式英文|英式英文|日文|韓文)$/.test(g.name))
          h+='<button class="spk" data-name="'+g.name+'" data-text="'+speak.replace(/"/g,'&quot;')+'" data-phon="'+(phon||'').replace(/"/g,'&quot;')+'" onclick="spk(this)">\u{1F50A}</button>';
        h+='</td>';
@@ -194,6 +212,20 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    });
    h+='</tbody>';
    box.innerHTML='<div class="tablewrap"><table>'+h+'</table></div>';
+   // 右上角：語言切換（繁體中文固定不動；其他分兩類切換）
+   const bar=document.getElementById('catbar');
+   if(bar){
+     let b='<span>顯示</span>';
+     CAT.forEach((c,ci)=>{if(ci===0)return;
+       b+='<button data-m="cat'+ci+'">'+c.name+'</button>';});
+     b+='<button data-m="all">全部</button>';
+     bar.innerHTML=b;
+     bar.querySelectorAll('button').forEach(bt=>{bt.onclick=function(){setMode(bt.getAttribute('data-m'));};});
+     let m='cat1';
+     try{m=localStorage.getItem('langmode')||'cat1';}catch(e){}
+     if(m!=='all'&&!CAT[parseInt(String(m).slice(3),10)])m='cat1';
+     setMode(m);
+   }
    fillMedia();
    setTimeout(()=>{document.querySelectorAll('.spk').forEach(b=>{const m=VOICE_MAP[b.getAttribute('data-name')];if(m&&!hasVoice(m.lang)&&!m.fallback)b.classList.add('no');});},400);
  }).catch(e=>{box.innerHTML='<div class="status err">讀取失敗：'+e.message+'（此表可能未公開分享）</div>';});
