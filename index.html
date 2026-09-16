@@ -38,6 +38,8 @@ table td.zcol,table th.zcol{position:sticky;left:104px!important;background:#e8f
 table th.zcol{background:#66bb6a!important;font-weight:400;z-index:7;padding-left:10px;padding-right:10px}
 /* 第一列語言名稱（繁體中文）也要一起固定，不然上下滑動時上方會空一格（破洞） */
 table th.zcolh{position:sticky;left:104px!important;z-index:7;box-shadow:2px 0 5px rgba(30,90,50,.08)}
+/* 常見語言模式：繁體中文只留「寫法」（注音、語音那兩欄隱藏）— 孝瓏 2026-09-16 */
+body[data-mode="cat2"] .tchide,body[data-mode="cat3"] .tchide,body[data-mode="cat4"] .tchide{display:none}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
