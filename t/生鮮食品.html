@@ -42,6 +42,12 @@ table th.zcolh{position:sticky;left:104px!important;z-index:7;box-shadow:2px 0 5
 body[data-mode="cat2"] .tchide,body[data-mode="cat3"] .tchide,body[data-mode="cat4"] .tchide{display:none}
 /* 常見語言模式：「中文」那欄連「寫法」子表頭也不顯示（中文直接跨兩列表頭） */
 body[data-mode="cat2"] .tchide0,body[data-mode="cat3"] .tchide0,body[data-mode="cat4"] .tchide0{display:none}
+/* 中華語言模式：繁體中文「注音」「語音」也一起鎖定（孝瓏 2026-09-16「沒完全鎖定」）
+   位置用 JS 量測後設 --l2 / --l3，避免像之前寫死造成偏移 */
+body[data-mode="cat1"] table td.zcol2,body[data-mode="cat1"] table th.zcol2{position:sticky;left:var(--l2,182px)!important;background:#e8f5e9!important;z-index:6}
+body[data-mode="cat1"] table th.zcol2{background:#66bb6a!important;font-weight:400;z-index:7}
+body[data-mode="cat1"] table td.zcol3,body[data-mode="cat1"] table th.zcol3{position:sticky;left:var(--l3,342px)!important;background:#e8f5e9!important;z-index:6;box-shadow:2px 0 5px rgba(30,90,50,.08)}
+body[data-mode="cat1"] table th.zcol3{background:#66bb6a!important;font-weight:400;z-index:7}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
@@ -90,7 +96,18 @@ function setMode(m){
     tc.setAttribute('rowspan', (m==='cat2') ? 2 : 1);
     tc.textContent = (m==='cat2') ? '中文' : '繁體中文';
   }
+  setFrozenOffsets();
   try{localStorage.setItem('langmode',m);}catch(e){}
+}
+function setFrozenOffsets(){
+  var img=document.querySelector('th.imgcol');
+  var w1=document.querySelector('th.zcol'), w2=document.querySelector('th.zcol2');
+  if(!img) return;
+  var x=Math.round(img.getBoundingClientRect().width);
+  var s=document.documentElement.style;
+  s.setProperty('--l1', x+'px');
+  if(w1){x+=Math.round(w1.getBoundingClientRect().width); s.setProperty('--l2', x+'px');}
+  if(w2){x+=Math.round(w2.getBoundingClientRect().width); s.setProperty('--l3', x+'px');}
 }
 const VOICE_MAP={
  '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
@@ -194,7 +211,7 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      h+='<th class="lang cc cat'+g._cat+' gsep'+(fz?' zcolh':'')+'" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
    });});
    h+='</tr><tr>';
-   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub cc cat'+g._cat+(k===0?' gsep':'')+(g===use[0]&&k===0?' zcol tchide0':'')+(g===use[0]&&k===1?' tchide':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub cc cat'+g._cat+(g===use[0]?' tchide':'')+'">語音</th>';});
+   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub cc cat'+g._cat+(k===0?' gsep':'')+(g===use[0]&&k===0?' zcol tchide0':'')+(g===use[0]&&k===1?' zcol2 tchide':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub cc cat'+g._cat+(g===use[0]?' zcol3 tchide':'')+'">語音</th>';});
    h+='</tr></thead><tbody>';
    data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
@@ -216,10 +233,10 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
          const cell = k===0
            ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
            : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
-         h+='<td class="group cc cat'+g._cat+(k===0?' gsep':'')+(isTC&&k===0?' zcol':'')+(isTC&&k===1?' tchide':'')+'">'+cell+'</td>';
+         h+='<td class="group cc cat'+g._cat+(k===0?' gsep':'')+(isTC&&k===0?' zcol':'')+(isTC&&k===1?' zcol2 tchide':'')+'">'+cell+'</td>';
        });
        // 錄音單獨一格
-       h+='<td class="group cc cat'+g._cat+(isTC?' tchide':'')+'">';
+       h+='<td class="group cc cat'+g._cat+(isTC?' zcol3 tchide':'')+'">';
        if(/^(繁體中文|簡體中文|台語|客語|美式英文|英式英文|日文|韓文)$/.test(g.name))
          h+='<button class="spk" data-name="'+g.name+'" data-text="'+speak.replace(/"/g,'&quot;')+'" data-phon="'+(phon||'').replace(/"/g,'&quot;')+'" onclick="spk(this)">\u{1F50A}</button>';
        h+='</td>';
@@ -243,6 +260,8 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      try{m=localStorage.getItem('langmode')||'cat1';}catch(e){}
      if(m!=='all'&&!CAT[parseInt(String(m).slice(3),10)])m='cat1';
      setMode(m);
+   setFrozenOffsets();
+   window.addEventListener('resize',setFrozenOffsets);
    }
    fillMedia();
    setTimeout(()=>{document.querySelectorAll('.spk').forEach(b=>{const m=VOICE_MAP[b.getAttribute('data-name')];if(m&&!hasVoice(m.lang)&&!m.fallback)b.classList.add('no');});},400);

@@ -42,6 +42,12 @@ table th.zcolh{position:sticky;left:104px!important;z-index:7;box-shadow:2px 0 5
 body[data-mode="cat2"] .tchide,body[data-mode="cat3"] .tchide,body[data-mode="cat4"] .tchide{display:none}
 /* 常見語言模式：「中文」那欄連「寫法」子表頭也不顯示（中文直接跨兩列表頭） */
 body[data-mode="cat2"] .tchide0,body[data-mode="cat3"] .tchide0,body[data-mode="cat4"] .tchide0{display:none}
+/* 中華語言模式：繁體中文「注音」「語音」也一起鎖定（孝瓏 2026-09-16「沒完全鎖定」）
+   位置用 JS 量測後設 --l2 / --l3，避免像之前寫死造成偏移 */
+body[data-mode="cat1"] table td.zcol2,body[data-mode="cat1"] table th.zcol2{position:sticky;left:var(--l2,182px)!important;background:#e8f5e9!important;z-index:6}
+body[data-mode="cat1"] table th.zcol2{background:#66bb6a!important;font-weight:400;z-index:7}
+body[data-mode="cat1"] table td.zcol3,body[data-mode="cat1"] table th.zcol3{position:sticky;left:var(--l3,342px)!important;background:#e8f5e9!important;z-index:6;box-shadow:2px 0 5px rgba(30,90,50,.08)}
+body[data-mode="cat1"] table th.zcol3{background:#66bb6a!important;font-weight:400;z-index:7}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
