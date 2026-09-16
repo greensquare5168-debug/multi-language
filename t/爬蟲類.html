@@ -255,10 +255,9 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    // 右上角：語言切換（繁體中文固定不動；其他分兩類切換）
    const bar=document.getElementById('catbar');
    if(bar){
-     let b='<span>顯示</span>';
+     let b='<span>顯示</span><button data-m="all">全部</button>';
      CAT.forEach((c,ci)=>{if(ci===0)return;
        b+='<button data-m="cat'+ci+'">'+c.name+'</button>';});
-     b+='<button data-m="all">全部</button>';
      bar.innerHTML=b;
      bar.querySelectorAll('button').forEach(bt=>{bt.onclick=function(){setMode(bt.getAttribute('data-m'));};});
      let m='cat1';
