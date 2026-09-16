@@ -19,8 +19,10 @@ h2{font-size:16px;color:#2e7d32;margin:22px 0 10px;padding-left:10px;border-left
 .back{display:inline-block;margin-bottom:12px;color:#2e7d32;font-size:14px}
 .tablewrap{background:#fff;border-radius:12px;box-shadow:0 2px 8px rgba(30,90,50,.12);overflow:auto;max-height:80vh}
 table{border-collapse:separate;border-spacing:0;width:100%;font-size:14px}
-th{background:#2e7d32;color:#fff;padding:10px 16px;font-size:13px;position:sticky;top:0;z-index:2;white-space:nowrap}
-th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:38px;z-index:2}
+th{background:#2e7d32;color:#fff;padding:10px 16px;font-size:13px;position:sticky;top:0;z-index:5;white-space:nowrap}
+th.cat{font-size:13px;font-weight:700;letter-spacing:2px;top:0;z-index:6}
+th.lang{background:#43a047;font-size:13px;top:36px;z-index:5}
+th.sub{background:#66bb6a;font-size:11px;font-weight:400;top:72px;z-index:5}
 td{padding:8px 16px;border-bottom:1px solid #eaf4ec;text-align:center;vertical-align:middle;background:#fff;white-space:nowrap}
 tr:nth-child(even) td{background:#f7fcf8}
 td.group{border-right:1px solid #edf7ef;position:relative;z-index:0}
@@ -28,13 +30,15 @@ td.group{border-right:1px solid #edf7ef;position:relative;z-index:0}
 .gsep{border-left:3px solid #a5d6a7!important}
 th.gsep{border-left:3px solid #14532d!important}
 td.first{border-right:3px solid #a5d6a7}
+/* 凍結：繁體中文「寫法」欄緊跟圖片欄固定不動 */
+td.zcol{position:sticky;left:104px;background:#e8f5e9!important;font-weight:600;box-shadow:2px 0 5px rgba(30,90,50,.08);z-index:4}
 /* 凍結：左邊第一欄（圖片＋詞）不動 */
 td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
 thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .tablewrap{isolation:isolate}
 /* 圖片欄（凍結） */
-.imgcol{width:100px;min-width:100px;padding:4px!important}
+.imgcol{width:104px;min-width:104px;padding:4px!important}
 .thumb{display:inline-flex;align-items:center;justify-content:center;width:86px;height:86px;
        background:#f4faf5;border-radius:10px;border:1px dashed #cde3d3;overflow:hidden}
 .thumb.has{border:none;background:transparent}
@@ -50,7 +54,7 @@ thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .err{color:#c62828}
 .note{font-size:12px;color:#8aa79a;margin:10px 4px}
 </style></head>
-<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🕐 時段</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒有語音會用拼音朗讀 · 表格可上下左右翻，語言列跟左邊圖片會固定</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
+<body><div class="wrap"><a class="back" href="../index.html">← 回多語言對照表</a><h1>🕐 時段</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分三類：<b>繁體中文</b>｜<b>中華語言</b>（簡體中文·台語·客語）｜<b>常見語言</b>（美式英文·英式英文·日文·韓文）</div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
 const VOICE_MAP={
  '繁體中文':{lang:'zh-TW'},'簡體中文':{lang:'zh-CN'},
  '台語':{lang:'nan-TW',fallback:'zh-TW',usePhon:1},
@@ -129,11 +133,32 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      const end=Math.min(next?next.start:hdr.length, g.start+3);
      g.cols=[];for(let i=g.start;i<end;i++)g.cols.push(i);
    });
-   const use=LANG.filter(g=>g.cols.some(c=>clean(sub[c])||data.some(r=>clean(r[c]))));
+   let use=LANG.filter(g=>g.cols.some(c=>clean(sub[c])||data.some(r=>clean(r[c]))));
    const first=groups.length?groups[0]:null;   // 第一欄 = 圖示欄
    const iconCol=(first&&clean(hdr[first.start])==='圖示')?first.start:0;
-   let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
-   use.forEach(g=>{h+='<th class="gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';});
+   // ── 語言分類：繁體中文固定（置頂）；中華語言＝簡體·台語·客語；常見語言＝英·日·韓 ──
+   const CATS=[['繁體中文',['繁體中文']],
+               ['中華語言',['簡體中文','台語','客語']],
+               ['常見語言',['美式英文','英式英文','日文','韓文']]];
+   const byName={};use.forEach(g=>{byName[g.name]=g;});
+   const CAT=[],taken={};
+   CATS.forEach(c=>{
+     const langs=c[1].map(n=>byName[n]).filter(Boolean);
+     if(langs.length){langs.forEach(g=>{taken[g.name]=1;});CAT.push({name:c[0],langs:langs});}
+   });
+   const other=use.filter(g=>!taken[g.name]);
+   if(other.length)CAT.push({name:'其他語言',langs:other});
+   use=[];CAT.forEach(c=>{c.langs.forEach(g=>{use.push(g);});});
+   const CAT_BG={'繁體中文':'#1b5e20','中華語言':'#2e7d32','常見語言':'#388e3c','其他語言':'#546e7a'};
+   let h='<thead><tr><th class="imgcol" rowspan="3">圖片</th>';
+   CAT.forEach(c=>{
+     let span=0;c.langs.forEach(g=>{span+=g.cols.length+1;});
+     h+='<th class="cat gsep" colspan="'+span+'" style="background:'+(CAT_BG[c.name]||'#2e7d32')+'">'+c.name+'</th>';
+   });
+   h+='</tr><tr>';
+   CAT.forEach(c=>{c.langs.forEach(g=>{
+     h+='<th class="lang gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
+   });});
    h+='</tr><tr>';
    use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub'+(k===0?' gsep':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub">🔊</th>';});
    h+='</tr></thead><tbody>';
@@ -151,12 +176,13 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
          speak = kanaCol!=null ? clean(r[kanaCol]) : (romCol!=null ? clean(r[romCol]) : speak);
        }
        const phon=g.cols.map(c=>clean(r[c])).filter(Boolean).slice(1).join(' · ');
+       const isTC=(g===use[0]);
        g.cols.forEach((ci,k)=>{
          const txt=clean(r[ci]);
          const cell = k===0
            ? '<span class="word">'+txt.replace(/</g,'&lt;')+'</span>'
            : '<span class="phon">'+txt.replace(/</g,'&lt;')+'</span>';
-         h+='<td class="group'+(k===0?' gsep':'')+'">'+cell+'</td>';
+         h+='<td class="group'+(k===0?' gsep':'')+(isTC&&k===0?' zcol':'')+'">'+cell+'</td>';
        });
        // 錄音單獨一格
        h+='<td class="group">';
