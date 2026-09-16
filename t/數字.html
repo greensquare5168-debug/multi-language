@@ -33,6 +33,8 @@ td.first{border-right:3px solid #a5d6a7}
 /* 凍結：繁體中文「寫法」欄緊跟圖片欄固定不動（表頭也一起固定，不然左右滑會跑掉） */
 td.zcol,th.zcol{position:sticky;left:var(--imgw,104px);background:#e8f5e9!important;font-weight:600;box-shadow:2px 0 5px rgba(30,90,50,.08);z-index:6}
 th.zcol{background:#66bb6a!important;font-weight:400;z-index:7}
+/* 第一列語言名稱（繁體中文）也要一起固定，不然上下滑動時上方會空一格（破洞） */
+th.zcolh{position:sticky;left:var(--imgw,104px);z-index:7;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 /* 凍結：左邊第一欄（圖片＋詞）不動 */
 td.first,th:first-child{position:sticky;left:0;padding-left:10px;padding-right:10px;box-shadow:2px 0 5px rgba(30,90,50,.08)}
 td.first{background:#e8f5e9!important;font-weight:600;min-width:104px;z-index:5}
@@ -170,11 +172,13 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
    use=[];CAT.forEach(c=>{c.langs.forEach(g=>{use.push(g);});});
    // 語言分類：只在右上角切換（表格頂端不再放分類列）
    let h='<thead><tr><th class="imgcol" rowspan="2">圖片</th>';
-   CAT.forEach((c,ci)=>{c.langs.forEach(g=>{g._cat=ci;
-     h+='<th class="lang cc cat'+g._cat+' gsep" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
+   CAT.forEach((c,ci)=>{c.langs.forEach(g=>{
+     g._cat=ci;
+     const fz=(g===use[0]);
+     h+='<th class="lang cc cat'+g._cat+' gsep'+(fz?' zcolh':'')+'" colspan="'+(g.cols.length+1)+'">'+g.name+'</th>';
    });});
    h+='</tr><tr>';
-   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub cc cat'+g._cat+(k===0?' gsep':'')+(g===use[0]&&k===0?' zcol':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub cc cat'+g._cat+'">🔊</th>';});
+   use.forEach(g=>{g.cols.forEach((ci,k)=>{h+='<th class="sub cc cat'+g._cat+(k===0?' gsep':'')+(g===use[0]&&k===0?' zcol':'')+'">'+(clean(sub[ci])||'')+'</th>';});h+='<th class="sub cc cat'+g._cat+'">語音</th>';});
    h+='</tr></thead><tbody>';
    data.forEach((r,ri)=>{
      if(!r.some(c=>clean(c)))return;
