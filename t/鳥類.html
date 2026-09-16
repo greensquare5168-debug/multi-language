@@ -84,6 +84,14 @@ body[data-mode="cat1"] .cc.cat2,body[data-mode="cat1"] .cc.cat3{display:none}
 body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
 body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
 @media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
+/* ==== 凍結欄右緣遮蔽（最後覆蓋；避免左右捲動時出現髮絲縫隙）==== */
+th.zcolh{box-shadow:2px 0 0 #43a047!important}
+th.sub.zcol,th.sub.zcol2,th.sub.zcol3{box-shadow:2px 0 0 #66bb6a!important}
+th.imgcol{box-shadow:2px 0 0 #2e7d32!important}
+td.first,td.zcol{box-shadow:2px 0 0 #e8f5e9!important}
+td.zcol2,td.zcol3{box-shadow:2px 0 0 #fff!important}
+tr:nth-child(even) td.zcol2,tr:nth-child(even) td.zcol3{box-shadow:2px 0 0 #f7fcf8!important}
+
 </style></head>
 <body><div class="wrap"><a class="back" href="../index.html">← 回語言對照表</a><h1>鳥類</h1><div class="sub">點 🔊 聽發音 · 台語／客語若系統沒語音會用拼音朗讀 · 表格可左右滑：<b>圖片＋繁體中文固定</b>不動<br>語言分兩大類，<b>右上角可切換</b>：中華語言（簡體中文·台語·客語）／常見語言（美式英文·英式英文·日文·韓文）</div><div id="catbar"></div><div id="box"><div class="status">載入中…</div></div><div class="note">資料來源：原本的 Google 試算表（即時讀取）</div></div><script>
 // 語言名稱顯示標題（括號內用該語言自己的寫法）— 孝瓏 2026-09-16「頂端請加()」
@@ -107,10 +115,21 @@ function setMode(m){
   setFrozenOffsets();
   try{localStorage.setItem('langmode',m);}catch(e){}
 }
+function lockFrozenWidths(){
+  // 把凍結欄寬度鎖成整數，避免小數造成 1px 縫隙（孝瓏 2026-09-16 回報）
+  [['th.zcol','td.zcol'],['th.zcol2','td.zcol2'],['th.zcol3','td.zcol3']].forEach(function(p){
+    var th=document.querySelector(p[0]); if(!th) return;
+    var w=Math.round(th.getBoundingClientRect().width); if(!w) return;
+    document.querySelectorAll(p[0]+','+p[1]).forEach(function(e){
+      e.style.width=w+'px'; e.style.minWidth=w+'px'; e.style.maxWidth=w+'px';
+    });
+  });
+}
 function setFrozenOffsets(){
   var img=document.querySelector('th.imgcol');
   var w1=document.querySelector('th.zcol'), w2=document.querySelector('th.zcol2');
   if(!img) return;
+  lockFrozenWidths();
   var x=Math.round(img.getBoundingClientRect().width);
   var s=document.documentElement.style;
   s.setProperty('--l1', x+'px');

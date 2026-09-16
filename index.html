@@ -84,6 +84,14 @@ body[data-mode="cat1"] .cc.cat2,body[data-mode="cat1"] .cc.cat3{display:none}
 body[data-mode="cat2"] .cc.cat1,body[data-mode="cat2"] .cc.cat3{display:none}
 body[data-mode="cat3"] .cc.cat1,body[data-mode="cat3"] .cc.cat2{display:none}
 @media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
+/* ==== 凍結欄右緣遮蔽（最後覆蓋；避免左右捲動時出現髮絲縫隙）==== */
+th.zcolh{box-shadow:2px 0 0 #43a047!important}
+th.sub.zcol,th.sub.zcol2,th.sub.zcol3{box-shadow:2px 0 0 #66bb6a!important}
+th.imgcol{box-shadow:2px 0 0 #2e7d32!important}
+td.first,td.zcol{box-shadow:2px 0 0 #e8f5e9!important}
+td.zcol2,td.zcol3{box-shadow:2px 0 0 #fff!important}
+tr:nth-child(even) td.zcol2,tr:nth-child(even) td.zcol3{box-shadow:2px 0 0 #f7fcf8!important}
+
 </style></head>
 <body><div class="wrap">
 <h1>語言對照表</h1>
