@@ -92,7 +92,8 @@ th.imgcol{box-shadow:1px 0 0 #2e7d32!important}
 td.first,td.zcol{box-shadow:1px 0 0 #e8f5e9!important}
 td.zcol2,td.zcol3{box-shadow:1px 0 0 #fff!important}
 tr:nth-child(even) td.zcol2,tr:nth-child(even) td.zcol3{box-shadow:1px 0 0 #f7fcf8!important}
-/* 凍結區右緣自己畫一條粗分隔線（跟著凍結欄，捲動時不會消失） */
+/* 凍結區右緣自己畫一條粗分隔線（跟著凍結欄，捲動時不會消失；第一列也要，否則會錯位） */
+th.zcolh{border-right:3px solid #14532d}
 body[data-mode="cat1"] th.zcol3,body[data-mode="all"] th.zcol3{border-right:3px solid #14532d}
 body[data-mode="cat1"] td.zcol3,body[data-mode="all"] td.zcol3{border-right:3px solid #a5d6a7}
 @media(max-width:520px){#catbar{top:auto;bottom:10px;right:10px}}
