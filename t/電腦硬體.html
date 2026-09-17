@@ -230,8 +230,11 @@ Promise.all([
 });
 function clean(v){return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();}
 function cleanFull(v){return v==null?'':String(v).replace(/\r/g,'');}
-fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
- .then(r=>r.text()).then(t=>{
+Promise.all([
+  fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json').then(r=>r.text()),
+  fetch('../data/korean.json?t='+Date.now()).then(r=>r.ok?r.json():{}).catch(()=>({}))
+]).then(([t,ko])=>{
+   window.__KO__=ko||{};
    const j=JSON.parse(t.substring(t.indexOf('{'),t.lastIndexOf('}')+1));
    const tb=j.table;
    const raw=tb.rows.map(r=>r.c.map(c=>c?(c.f!=null?String(c.f):(c.v==null?'':String(c.v))):''));
@@ -247,6 +250,17 @@ fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
      g.cols=[];for(let i=g.start;i<end;i++)g.cols.push(i);
    });
    let use=LANG.filter(g=>g.cols.some(c=>clean(sub[c])||data.some(r=>clean(r[c]))));
+   // ── 韓文對照層（試算表沒有韓文欄→自動補上；資料來自 data/korean.json，免費來源）──
+   (function(){
+     const KO=(window.__KO__||{})[TOPIC]||{};
+     if(!Object.keys(KO).length) return;
+     if(LANG.some(g=>g.name==='韓文')) return;      // 試算表已有韓文欄就不動
+     const c0=hdr.length,c1=hdr.length+1;
+     hdr[c0]='韓文'; hdr[c1]=''; sub[c0]='寫法'; sub[c1]='羅馬拼音';
+     const zhCol=use.length?use[0].cols[0]:1;
+     data.forEach(r=>{const w=clean(r[zhCol]);const e=KO[w];if(e){r[c0]=e.ko||'';r[c1]=e.ro||'';}});
+     use.push({name:'韓文',start:c0,cols:[c0,c1]});
+   })();
    const first=groups.length?groups[0]:null;   // 第一欄 = 圖示欄
    const iconCol=(first&&clean(hdr[first.start])==='圖示')?first.start:0;
    // ── 語言分類：繁體中文固定（置頂）；中華語言＝簡體·台語·客語；常見語言＝英·日·韓 ──

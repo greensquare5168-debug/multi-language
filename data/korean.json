@@ -1,0 +1,4160 @@
+{
+ "數字": {
+  "數字": {
+   "ko": "숫자",
+   "ro": "Sutja",
+   "src": "wiki"
+  },
+  "十五": {
+   "ko": "열다섯",
+   "ro": "Yeoldaseot",
+   "src": "mymemory"
+  },
+  "十七": {
+   "ko": "세븐틴",
+   "ro": "Sebeuntin",
+   "src": "mymemory"
+  },
+  "一千萬": {
+   "ko": "1천만",
+   "ro": "1cheonman",
+   "src": "mymemory"
+  },
+  "一億": {
+   "ko": "1억",
+   "ro": "1eok",
+   "src": "mymemory"
+  },
+  "十億": {
+   "ko": "수십억달러",
+   "ro": "Susibeokdalreo",
+   "src": "mymemory"
+  },
+  "一百億": {
+   "ko": "100억",
+   "ro": "100eok",
+   "src": "mymemory"
+  },
+  "一千億": {
+   "ko": "1천억",
+   "ro": "1cheoneok",
+   "src": "mymemory"
+  },
+  "一兆": {
+   "ko": "1조",
+   "ro": "1jo",
+   "src": "mymemory"
+  },
+  "四分之一": {
+   "ko": "분기",
+   "ro": "Bungi",
+   "src": "mymemory"
+  },
+  "零點一": {
+   "ko": "제로원",
+   "ro": "Jerowon",
+   "src": "mymemory"
+  }
+ },
+ "形狀": {
+  "形狀": {
+   "ko": "모양",
+   "ro": "Moyang",
+   "src": "wiki"
+  },
+  "圓形": {
+   "ko": "원",
+   "ro": "Won",
+   "src": "wiki"
+  },
+  "三角形": {
+   "ko": "삼각형",
+   "ro": "Samgakhyeong",
+   "src": "wiki"
+  },
+  "正方形": {
+   "ko": "정사각형",
+   "ro": "Jeongsagakhyeong",
+   "src": "wiki"
+  },
+  "長方形": {
+   "ko": "직사각형",
+   "ro": "Jiksagakhyeong",
+   "src": "mymemory"
+  },
+  "平行四邊形": {
+   "ko": "평행사변형",
+   "ro": "Pyeonghaengsabyeonhyeong",
+   "src": "wiki"
+  },
+  "菱形": {
+   "ko": "마름모",
+   "ro": "Mareummo",
+   "src": "wiki"
+  },
+  "梯形": {
+   "ko": "사다리꼴",
+   "ro": "Sadarikkol",
+   "src": "wiki"
+  },
+  "五角形": {
+   "ko": "펜타곤",
+   "ro": "Pentagon",
+   "src": "mymemory"
+  },
+  "六角形": {
+   "ko": "육각형",
+   "ro": "Yukgakhyeong",
+   "src": "mymemory"
+  },
+  "正方體": {
+   "ko": "정육면체",
+   "ro": "Jeongyukmyeonche",
+   "src": "wiki"
+  },
+  "長方體": {
+   "ko": "직육면체",
+   "ro": "Jigyukmyeonche",
+   "src": "wiki"
+  },
+  "球體": {
+   "ko": "공",
+   "ro": "Gong",
+   "src": "wiki"
+  },
+  "圓柱體": {
+   "ko": "실린더",
+   "ro": "Silrindeo",
+   "src": "mymemory"
+  },
+  "三角柱體": {
+   "ko": "삼각형원통",
+   "ro": "Samgakhyeongwontong",
+   "src": "mymemory"
+  },
+  "圓錐體": {
+   "ko": "원뿔",
+   "ro": "Wonppul",
+   "src": "mymemory"
+  }
+ },
+ "顏色": {
+  "顏色": {
+   "ko": "색",
+   "ro": "Saek",
+   "src": "wiki"
+  },
+  "紅色": {
+   "ko": "빨강",
+   "ro": "Ppalgang",
+   "src": "wiki"
+  },
+  "藍色": {
+   "ko": "파랑",
+   "ro": "Parang",
+   "src": "wiki"
+  },
+  "黃色": {
+   "ko": "노랑",
+   "ro": "Norang",
+   "src": "wiki"
+  },
+  "綠色": {
+   "ko": "녹색",
+   "ro": "Noksaek",
+   "src": "wiki"
+  },
+  "橘色": {
+   "ko": "오렌지",
+   "ro": "Orenji",
+   "src": "mymemory"
+  },
+  "紫色": {
+   "ko": "자주",
+   "ro": "Jaju",
+   "src": "wiki"
+  },
+  "粉紅色": {
+   "ko": "분홍",
+   "ro": "Bunhong",
+   "src": "wiki"
+  },
+  "黑色": {
+   "ko": "검정",
+   "ro": "Geomjeong",
+   "src": "wiki"
+  },
+  "白色": {
+   "ko": "하양",
+   "ro": "Hayang",
+   "src": "wiki"
+  },
+  "咖啡色": {
+   "ko": "갈색",
+   "ro": "Galsaek",
+   "src": "mymemory"
+  },
+  "金色": {
+   "ko": "금색",
+   "ro": "Geumsaek",
+   "src": "wiki"
+  },
+  "銀色": {
+   "ko": "은색",
+   "ro": "Eunsaek",
+   "src": "wiki"
+  },
+  "灰色": {
+   "ko": "회색",
+   "ro": "Hoesaek",
+   "src": "wiki"
+  }
+ },
+ "方位": {
+  "方位": {
+   "ko": "방위",
+   "ro": "Bangwi",
+   "src": "wiki"
+  },
+  "上": {
+   "ko": "상하좌우",
+   "ro": "Sanghajwau",
+   "src": "wiki"
+  },
+  "下": {
+   "ko": "상대적방향",
+   "ro": "Sangdaejeokbanghyang",
+   "src": "wiki"
+  },
+  "左": {
+   "ko": "상하좌우",
+   "ro": "Sanghajwau",
+   "src": "wiki"
+  },
+  "右": {
+   "ko": "상하좌우",
+   "ro": "Sanghajwau",
+   "src": "wiki"
+  },
+  "東": {
+   "ko": "동쪽",
+   "ro": "Dongjjok",
+   "src": "wiki"
+  },
+  "西": {
+   "ko": "서쪽",
+   "ro": "Seojjok",
+   "src": "wiki"
+  },
+  "南": {
+   "ko": "남쪽",
+   "ro": "Namjjok",
+   "src": "wiki"
+  },
+  "北": {
+   "ko": "북쪽",
+   "ro": "Bukjjok",
+   "src": "wiki"
+  }
+ },
+ "科目": {
+  "科目": {
+   "ko": "학문분야목록",
+   "ro": "Hakmunbunyamokrok",
+   "src": "wiki"
+  },
+  "國語": {
+   "ko": "중국어",
+   "ro": "Junggugeo",
+   "src": "mymemory"
+  },
+  "數學": {
+   "ko": "수학",
+   "ro": "Suhak",
+   "src": "wiki"
+  },
+  "英語": {
+   "ko": "영어",
+   "ro": "Yeongeo",
+   "src": "wiki"
+  },
+  "歷史": {
+   "ko": "역사",
+   "ro": "Yeoksa",
+   "src": "wiki"
+  },
+  "地理": {
+   "ko": "지리학",
+   "ro": "Jirihak",
+   "src": "wiki"
+  },
+  "生物": {
+   "ko": "생물",
+   "ro": "Saengmul",
+   "src": "wiki"
+  },
+  "科學": {
+   "ko": "과학",
+   "ro": "Gwahak",
+   "src": "wiki"
+  },
+  "物理": {
+   "ko": "물리학",
+   "ro": "Mulrihak",
+   "src": "wiki"
+  },
+  "化學": {
+   "ko": "화학",
+   "ro": "Hwahak",
+   "src": "wiki"
+  },
+  "美術": {
+   "ko": "미술",
+   "ro": "Misul",
+   "src": "wiki"
+  },
+  "音樂": {
+   "ko": "음악",
+   "ro": "Eumak",
+   "src": "wiki"
+  },
+  "社會": {
+   "ko": "사회",
+   "ro": "Sahoe",
+   "src": "wiki"
+  },
+  "體育": {
+   "ko": "스포츠",
+   "ro": "Seupocheu",
+   "src": "mymemory"
+  }
+ },
+ "月份": {
+  "月份": {
+   "ko": "달",
+   "ro": "Dal",
+   "src": "wiki"
+  },
+  "一月": {
+   "ko": "1월",
+   "ro": "1wol",
+   "src": "mymemory"
+  },
+  "二月": {
+   "ko": "2월",
+   "ro": "2wol",
+   "src": "mymemory"
+  },
+  "三月": {
+   "ko": "3월",
+   "ro": "3wol",
+   "src": "mymemory"
+  },
+  "四月": {
+   "ko": "4월",
+   "ro": "4wol",
+   "src": "wiki"
+  },
+  "五月": {
+   "ko": "좋다",
+   "ro": "Jota",
+   "src": "mymemory"
+  },
+  "六月": {
+   "ko": "6월",
+   "ro": "6wol",
+   "src": "mymemory"
+  },
+  "七月": {
+   "ko": "7월",
+   "ro": "7wol",
+   "src": "mymemory"
+  },
+  "八月": {
+   "ko": "어거스트",
+   "ro": "Eogeoseuteu",
+   "src": "wiki"
+  },
+  "九月": {
+   "ko": "9월",
+   "ro": "9wol",
+   "src": "wiki"
+  },
+  "十月": {
+   "ko": "10월",
+   "ro": "10wol",
+   "src": "wiki"
+  },
+  "十一月": {
+   "ko": "11월",
+   "ro": "11wol",
+   "src": "mymemory"
+  },
+  "十二月": {
+   "ko": "12월",
+   "ro": "12wol",
+   "src": "mymemory"
+  }
+ },
+ "季節": {
+  "季節": {
+   "ko": "계절",
+   "ro": "Gyejeol",
+   "src": "wiki"
+  },
+  "春": {
+   "ko": "봄",
+   "ro": "Bom",
+   "src": "wiki"
+  },
+  "夏": {
+   "ko": "여름",
+   "ro": "Yeoreum",
+   "src": "wiki"
+  },
+  "秋": {
+   "ko": "가을",
+   "ro": "Gaeul",
+   "src": "wiki"
+  },
+  "冬": {
+   "ko": "겨울",
+   "ro": "Gyeoul",
+   "src": "wiki"
+  }
+ },
+ "星期週": {
+  "星期": {
+   "ko": "주",
+   "ro": "Ju",
+   "src": "mymemory"
+  },
+  "星期一": {
+   "ko": "월요일",
+   "ro": "Woryoil",
+   "src": "wiki"
+  },
+  "星期二": {
+   "ko": "화요일",
+   "ro": "Hwayoil",
+   "src": "wiki"
+  },
+  "星期三": {
+   "ko": "수요일",
+   "ro": "Suyoil",
+   "src": "wiki"
+  },
+  "星期四": {
+   "ko": "목요일",
+   "ro": "Mogyoil",
+   "src": "wiki"
+  },
+  "星期五": {
+   "ko": "금요일",
+   "ro": "Geumyoil",
+   "src": "wiki"
+  },
+  "星期六": {
+   "ko": "토요일",
+   "ro": "Toyoil",
+   "src": "wiki"
+  },
+  "星期日": {
+   "ko": "일요일",
+   "ro": "Iryoil",
+   "src": "wiki"
+  }
+ },
+ "時段": {
+  "時段": {
+   "ko": "시간",
+   "ro": "Sigan",
+   "src": "wiki"
+  },
+  "早上": {
+   "ko": "오전",
+   "ro": "Ojeon",
+   "src": "mymemory"
+  },
+  "中午": {
+   "ko": "한낮",
+   "ro": "Hannat",
+   "src": "wiki"
+  },
+  "傍晚": {
+   "ko": "저녁",
+   "ro": "Jeonyeok",
+   "src": "mymemory"
+  },
+  "晚上": {
+   "ko": "저녁",
+   "ro": "Jeonyeok",
+   "src": "mymemory"
+  }
+ },
+ "時間": {
+  "時間": {
+   "ko": "시간",
+   "ro": "Sigan",
+   "src": "wiki"
+  },
+  "一點鐘": {
+   "ko": "1시",
+   "ro": "1si",
+   "src": "mymemory"
+  },
+  "二點鐘": {
+   "ko": "2시",
+   "ro": "2si",
+   "src": "mymemory"
+  },
+  "三點鐘": {
+   "ko": "3시",
+   "ro": "3si",
+   "src": "mymemory"
+  },
+  "四點鐘": {
+   "ko": "4시",
+   "ro": "4si",
+   "src": "mymemory"
+  },
+  "五點鐘": {
+   "ko": "5시",
+   "ro": "5si",
+   "src": "mymemory"
+  },
+  "六點鐘": {
+   "ko": "6시",
+   "ro": "6si",
+   "src": "mymemory"
+  },
+  "七點鐘": {
+   "ko": "7시",
+   "ro": "7si",
+   "src": "mymemory"
+  },
+  "八點鐘": {
+   "ko": "8시",
+   "ro": "8si",
+   "src": "mymemory"
+  },
+  "九點鐘": {
+   "ko": "9시",
+   "ro": "9si",
+   "src": "mymemory"
+  },
+  "十點鐘": {
+   "ko": "10시",
+   "ro": "10si",
+   "src": "mymemory"
+  },
+  "十一點鐘": {
+   "ko": "11시",
+   "ro": "11si",
+   "src": "mymemory"
+  },
+  "十二點鐘": {
+   "ko": "12시",
+   "ro": "12si",
+   "src": "mymemory"
+  }
+ },
+ "場所": {
+  "場所": {
+   "ko": "장소",
+   "ro": "Jangso",
+   "src": "mymemory"
+  },
+  "學校": {
+   "ko": "학교",
+   "ro": "Hakgyo",
+   "src": "wiki"
+  },
+  "幼稚園": {
+   "ko": "유치원",
+   "ro": "Yuchiwon",
+   "src": "wiki"
+  },
+  "圖書館": {
+   "ko": "도서관",
+   "ro": "Doseogwan",
+   "src": "wiki"
+  },
+  "銀行": {
+   "ko": "은행",
+   "ro": "Eunhaeng",
+   "src": "wiki"
+  },
+  "郵局": {
+   "ko": "우체국",
+   "ro": "Ucheguk",
+   "src": "wiki"
+  },
+  "醫院": {
+   "ko": "병원",
+   "ro": "Byeongwon",
+   "src": "wiki"
+  },
+  "餐廳": {
+   "ko": "레스토랑",
+   "ro": "Reseutorang",
+   "src": "mymemory"
+  },
+  "車站": {
+   "ko": "대중교통정류장",
+   "ro": "Daejunggyotongjeongryujang",
+   "src": "wiki"
+  },
+  "機場": {
+   "ko": "공항",
+   "ro": "Gonghang",
+   "src": "wiki"
+  },
+  "動物園": {
+   "ko": "동물원",
+   "ro": "Dongmurwon",
+   "src": "wiki"
+  },
+  "公司": {
+   "ko": "회사",
+   "ro": "Hoesa",
+   "src": "wiki"
+  },
+  "工廠": {
+   "ko": "공장",
+   "ro": "Gongjang",
+   "src": "wiki"
+  },
+  "電影院": {
+   "ko": "영화관",
+   "ro": "Yeonghwagwan",
+   "src": "wiki"
+  },
+  "劇院": {
+   "ko": "연극",
+   "ro": "Yeongeuk",
+   "src": "mymemory"
+  },
+  "加油站": {
+   "ko": "주유소",
+   "ro": "Juyuso",
+   "src": "wiki"
+  },
+  "停車場": {
+   "ko": "주차",
+   "ro": "Jucha",
+   "src": "wiki"
+  },
+  "博物館": {
+   "ko": "박물관",
+   "ro": "Bakmulgwan",
+   "src": "wiki"
+  },
+  "旅館": {
+   "ko": "호텔",
+   "ro": "Hotel",
+   "src": "wiki"
+  },
+  "商店": {
+   "ko": "가게",
+   "ro": "Gage",
+   "src": "wiki"
+  },
+  "超市": {
+   "ko": "슈퍼마켓",
+   "ro": "Syupeomaket",
+   "src": "wiki"
+  },
+  "百貨公司": {
+   "ko": "백화점",
+   "ro": "Baekhwajeom",
+   "src": "wiki"
+  },
+  "酒吧": {
+   "ko": "바",
+   "ro": "Ba",
+   "src": "wiki"
+  },
+  "法院": {
+   "ko": "법원",
+   "ro": "Beobwon",
+   "src": "wiki"
+  },
+  "公園": {
+   "ko": "공원",
+   "ro": "Gongwon",
+   "src": "wiki"
+  },
+  "遊樂園": {
+   "ko": "놀이공원",
+   "ro": "Norigongwon",
+   "src": "wiki"
+  }
+ },
+ "運動": {
+  "運動": {
+   "ko": "스포츠",
+   "ro": "Seupocheu",
+   "src": "wiki"
+  },
+  "足球": {
+   "ko": "축구",
+   "ro": "Chukgu",
+   "src": "wiki"
+  },
+  "籃球": {
+   "ko": "농구",
+   "ro": "Nonggu",
+   "src": "wiki"
+  },
+  "排球": {
+   "ko": "배구",
+   "ro": "Baegu",
+   "src": "wiki"
+  },
+  "網球": {
+   "ko": "테니스",
+   "ro": "Teniseu",
+   "src": "wiki"
+  },
+  "橄欖球": {
+   "ko": "럭비유니언",
+   "ro": "Reokbiyunieon",
+   "src": "wiki"
+  },
+  "躲避球": {
+   "ko": "피구",
+   "ro": "Pigu",
+   "src": "mymemory"
+  },
+  "桌球": {
+   "ko": "당구",
+   "ro": "Danggu",
+   "src": "mymemory"
+  },
+  "撞球": {
+   "ko": "당구",
+   "ro": "Danggu",
+   "src": "wiki"
+  },
+  "保齡球": {
+   "ko": "텐핀볼링",
+   "ro": "Tenpinbolring",
+   "src": "wiki"
+  },
+  "高爾夫球": {
+   "ko": "골프",
+   "ro": "Golpeu",
+   "src": "wiki"
+  },
+  "直排輪": {
+   "ko": "인라인휠",
+   "ro": "Inrainhwil",
+   "src": "mymemory"
+  },
+  "溜冰": {
+   "ko": "아이스스케이팅",
+   "ro": "Aiseuseukeiting",
+   "src": "mymemory"
+  },
+  "曲棍球": {
+   "ko": "하키",
+   "ro": "Haki",
+   "src": "wiki"
+  },
+  "游泳": {
+   "ko": "수영",
+   "ro": "Suyeong",
+   "src": "wiki"
+  },
+  "浮淺": {
+   "ko": "얕음",
+   "ro": "Yateum",
+   "src": "mymemory"
+  },
+  "潛水": {
+   "ko": "잠수",
+   "ro": "Jamsu",
+   "src": "wiki"
+  },
+  "衝浪": {
+   "ko": "파도타기",
+   "ro": "Padotagi",
+   "src": "wiki"
+  },
+  "風浪板": {
+   "ko": "윈드서핑",
+   "ro": "Windeuseoping",
+   "src": "wiki"
+  },
+  "拔河": {
+   "ko": "줄다리기",
+   "ro": "Juldarigi",
+   "src": "wiki"
+  },
+  "跳繩": {
+   "ko": "줄넘기",
+   "ro": "Julneomgi",
+   "src": "wiki"
+  },
+  "槓鈴": {
+   "ko": "역기",
+   "ro": "Yeokgi",
+   "src": "wiki"
+  },
+  "啞鈴": {
+   "ko": "아령",
+   "ro": "Aryeong",
+   "src": "wiki"
+  },
+  "瑜珈": {
+   "ko": "요가",
+   "ro": "Yoga",
+   "src": "wiki"
+  },
+  "標槍": {
+   "ko": "재블린",
+   "ro": "Jaebeulrin",
+   "src": "wiki"
+  },
+  "鏈球": {
+   "ko": "해머던지기",
+   "ro": "Haemeodeonjigi",
+   "src": "wiki"
+  },
+  "鐵餅": {
+   "ko": "원반던지기",
+   "ro": "Wonbandeonjigi",
+   "src": "wiki"
+  },
+  "鉛球": {
+   "ko": "포환던지기",
+   "ro": "Pohwandeonjigi",
+   "src": "wiki"
+  },
+  "射擊": {
+   "ko": "사격",
+   "ro": "Sagyeok",
+   "src": "wiki"
+  },
+  "射箭": {
+   "ko": "궁술",
+   "ro": "Gungsul",
+   "src": "wiki"
+  },
+  "空手道": {
+   "ko": "공수도",
+   "ro": "Gongsudo",
+   "src": "wiki"
+  },
+  "跆拳道": {
+   "ko": "태권도",
+   "ro": "Taegwondo",
+   "src": "wiki"
+  },
+  "柔道": {
+   "ko": "유도",
+   "ro": "Yudo",
+   "src": "wiki"
+  },
+  "劍道": {
+   "ko": "검도",
+   "ro": "Geomdo",
+   "src": "wiki"
+  },
+  "擊劍": {
+   "ko": "펜싱",
+   "ro": "Pensing",
+   "src": "wiki"
+  },
+  "拳擊": {
+   "ko": "권투",
+   "ro": "Gwontu",
+   "src": "wiki"
+  },
+  "摔角": {
+   "ko": "레슬링",
+   "ro": "Reseulring",
+   "src": "mymemory"
+  },
+  "相撲": {
+   "ko": "스모",
+   "ro": "Seumo",
+   "src": "wiki"
+  },
+  "攀岩": {
+   "ko": "암벽등반",
+   "ro": "Ambyeokdeungban",
+   "src": "wiki"
+  },
+  "降落傘": {
+   "ko": "낙하산",
+   "ro": "Nakhasan",
+   "src": "wiki"
+  },
+  "飛行傘": {
+   "ko": "우산",
+   "ro": "Usan",
+   "src": "mymemory"
+  },
+  "滑翔翼": {
+   "ko": "행글라이딩",
+   "ro": "Haenggeulraiding",
+   "src": "wiki"
+  }
+ },
+ "娛樂": {
+  "娛樂": {
+   "ko": "엔터테인먼트",
+   "ro": "Enteoteinmeonteu",
+   "src": "wiki"
+  },
+  "卡拉OK": {
+   "ko": "가라오케",
+   "ro": "Garaoke",
+   "src": "wiki"
+  },
+  "象棋": {
+   "ko": "샹치",
+   "ro": "Syangchi",
+   "src": "wiki"
+  },
+  "暗棋": {
+   "ko": "숨겨진체스",
+   "ro": "Sumgyeojincheseu",
+   "src": "mymemory"
+  },
+  "圍棋": {
+   "ko": "바둑",
+   "ro": "Baduk",
+   "src": "wiki"
+  },
+  "跳棋": {
+   "ko": "체커",
+   "ro": "Chekeo",
+   "src": "mymemory"
+  },
+  "西洋棋": {
+   "ko": "체스",
+   "ro": "Cheseu",
+   "src": "wiki"
+  },
+  "撲克牌": {
+   "ko": "포커카드",
+   "ro": "Pokeokadeu",
+   "src": "mymemory"
+  },
+  "魔術方塊": {
+   "ko": "루빅스큐브",
+   "ro": "Rubikseukyubeu",
+   "src": "wiki"
+  },
+  "骰子": {
+   "ko": "주사위",
+   "ro": "Jusawi",
+   "src": "wiki"
+  },
+  "轉盤": {
+   "ko": "턴테이블",
+   "ro": "Teonteibeul",
+   "src": "mymemory"
+  },
+  "籌碼": {
+   "ko": "카지노토큰",
+   "ro": "Kajinotokeun",
+   "src": "wiki"
+  },
+  "麻將": {
+   "ko": "마작",
+   "ro": "Majak",
+   "src": "wiki"
+  },
+  "骨牌": {
+   "ko": "골패",
+   "ro": "Golpae",
+   "src": "wiki"
+  },
+  "數獨": {
+   "ko": "스도쿠",
+   "ro": "Seudoku",
+   "src": "wiki"
+  },
+  "填字遊戲": {
+   "ko": "십자말풀이퍼즐",
+   "ro": "Sipjamalpuripeojeul",
+   "src": "mymemory"
+  },
+  "彈珠檯": {
+   "ko": "핀볼테이블",
+   "ro": "Pinbolteibeul",
+   "src": "mymemory"
+  },
+  "小鋼珠": {
+   "ko": "파친코",
+   "ro": "Pachinko",
+   "src": "wiki"
+  },
+  "街機": {
+   "ko": "아케이드비디오게임",
+   "ro": "Akeideubidiogeim",
+   "src": "wiki"
+  },
+  "扭蛋機": {
+   "ko": "Gacha기계",
+   "ro": "Gachagigye",
+   "src": "mymemory"
+  },
+  "角子機": {
+   "ko": "슬롯머신",
+   "ro": "Seulrotmeosin",
+   "src": "mymemory"
+  }
+ },
+ "水果": {
+  "水果": {
+   "ko": "과일",
+   "ro": "Gwail",
+   "src": "wiki"
+  },
+  "梨子": {
+   "ko": "배",
+   "ro": "Bae",
+   "src": "human"
+  },
+  "李子": {
+   "ko": "자두",
+   "ro": "Jadu",
+   "src": "human"
+  },
+  "杏子": {
+   "ko": "살구",
+   "ro": "Salgu",
+   "src": "human"
+  },
+  "香蕉": {
+   "ko": "바나나",
+   "ro": "Banana",
+   "src": "wiki"
+  },
+  "桃子": {
+   "ko": "복숭아",
+   "ro": "Boksunga",
+   "src": "human"
+  },
+  "芭樂": {
+   "ko": "구아바",
+   "ro": "Guaba",
+   "src": "human"
+  },
+  "葡萄": {
+   "ko": "포도",
+   "ro": "Podo",
+   "src": "wiki"
+  },
+  "櫻桃": {
+   "ko": "체리",
+   "ro": "Cheri",
+   "src": "human"
+  },
+  "奇異果": {
+   "ko": "키위",
+   "ro": "Kiwi",
+   "src": "human"
+  },
+  "西瓜": {
+   "ko": "수박",
+   "ro": "Subak",
+   "src": "wiki"
+  },
+  "草莓": {
+   "ko": "딸기",
+   "ro": "Ttalgi",
+   "src": "wiki"
+  },
+  "藍莓": {
+   "ko": "블루베리",
+   "ro": "Beulruberi",
+   "src": "human"
+  },
+  "黑莓": {
+   "ko": "블랙베리",
+   "ro": "Beulraekberi",
+   "src": "human"
+  },
+  "蔓越莓": {
+   "ko": "크랜베리",
+   "ro": "Keuraenberi",
+   "src": "human"
+  },
+  "覆盆子": {
+   "ko": "라즈베리",
+   "ro": "Rajeuberi",
+   "src": "human"
+  },
+  "醋栗": {
+   "ko": "구스베리",
+   "ro": "Guseuberi",
+   "src": "human"
+  },
+  "桑葚": {
+   "ko": "오디",
+   "ro": "Odi",
+   "src": "human"
+  },
+  "柳橙": {
+   "ko": "오렌지",
+   "ro": "Orenji",
+   "src": "human"
+  },
+  "橘子": {
+   "ko": "귤",
+   "ro": "Gyul",
+   "src": "human"
+  },
+  "柚子": {
+   "ko": "유자",
+   "ro": "Yuja",
+   "src": "human"
+  },
+  "檸檬": {
+   "ko": "레몬",
+   "ro": "Remon",
+   "src": "human"
+  },
+  "萊姆": {
+   "ko": "라임",
+   "ro": "Raim",
+   "src": "human"
+  },
+  "葡萄柚": {
+   "ko": "자몽",
+   "ro": "Jamong",
+   "src": "human"
+  },
+  "芒果": {
+   "ko": "망고",
+   "ro": "Manggo",
+   "src": "human"
+  },
+  "鳳梨": {
+   "ko": "파인애플",
+   "ro": "Painaepeul",
+   "src": "human"
+  },
+  "酪梨": {
+   "ko": "아보카도",
+   "ro": "Abokado",
+   "src": "human"
+  },
+  "釋迦": {
+   "ko": "슈가애플",
+   "ro": "Syugaaepeul",
+   "src": "human"
+  },
+  "荔枝": {
+   "ko": "리치",
+   "ro": "Richi",
+   "src": "human"
+  },
+  "龍眼": {
+   "ko": "용안",
+   "ro": "Yongan",
+   "src": "human"
+  },
+  "蓮霧": {
+   "ko": "왁스애플",
+   "ro": "Wakseuaepeul",
+   "src": "human"
+  },
+  "哈密瓜": {
+   "ko": "멜론",
+   "ro": "Melron",
+   "src": "human"
+  },
+  "椰子": {
+   "ko": "코코넛",
+   "ro": "Kokoneot",
+   "src": "human"
+  },
+  "甘蔗": {
+   "ko": "사탕수수",
+   "ro": "Satangsusu",
+   "src": "human"
+  },
+  "楊桃": {
+   "ko": "스타프루트",
+   "ro": "Seutapeuruteu",
+   "src": "human"
+  },
+  "無花果": {
+   "ko": "무화과",
+   "ro": "Muhwagwa",
+   "src": "human"
+  },
+  "火龍果": {
+   "ko": "용과",
+   "ro": "Yonggwa",
+   "src": "human"
+  },
+  "柿子": {
+   "ko": "감",
+   "ro": "Gam",
+   "src": "human"
+  },
+  "橄欖": {
+   "ko": "올리브",
+   "ro": "Olribeu",
+   "src": "human"
+  },
+  "棗子": {
+   "ko": "대추",
+   "ro": "Daechu",
+   "src": "human"
+  },
+  "枇杷": {
+   "ko": "비파",
+   "ro": "Bipa",
+   "src": "human"
+  },
+  "石榴": {
+   "ko": "석류",
+   "ro": "Seokryu",
+   "src": "human"
+  },
+  "榴槤": {
+   "ko": "두리안",
+   "ro": "Durian",
+   "src": "human"
+  },
+  "山竹": {
+   "ko": "망고스틴",
+   "ro": "Manggoseutin",
+   "src": "human"
+  },
+  "紅毛丹": {
+   "ko": "람부탄",
+   "ro": "Rambutan",
+   "src": "human"
+  },
+  "蛇皮果": {
+   "ko": "살라크",
+   "ro": "Salrakeu",
+   "src": "human"
+  },
+  "愛玉": {
+   "ko": "러브제이드",
+   "ro": "Reobeujeideu",
+   "src": "mymemory"
+  },
+  "可可果": {
+   "ko": "카카오",
+   "ro": "Kakao",
+   "src": "human"
+  },
+  "咖啡果": {
+   "ko": "커피",
+   "ro": "Keopi",
+   "src": "human"
+  }
+ },
+ "飲料": {
+  "飲料": {
+   "ko": "음료",
+   "ro": "Eumryo",
+   "src": "wiki"
+  },
+  "水": {
+   "ko": "물",
+   "ro": "Mul",
+   "src": "wiki"
+  },
+  "牛奶": {
+   "ko": "우유",
+   "ro": "Uyu",
+   "src": "wiki"
+  },
+  "優酪乳": {
+   "ko": "요구르트",
+   "ro": "Yogureuteu",
+   "src": "wiki"
+  },
+  "優格": {
+   "ko": "요구르트",
+   "ro": "Yogureuteu",
+   "src": "wiki"
+  },
+  "豆漿": {
+   "ko": "더우장",
+   "ro": "Deoujang",
+   "src": "wiki"
+  },
+  "果汁": {
+   "ko": "주스",
+   "ro": "Juseu",
+   "src": "wiki"
+  },
+  "汽水": {
+   "ko": "청량음료",
+   "ro": "Cheongryangeumryo",
+   "src": "wiki"
+  },
+  "彈珠汽水": {
+   "ko": "라무네",
+   "ro": "Ramune",
+   "src": "wiki"
+  },
+  "可樂": {
+   "ko": "콜라",
+   "ro": "Kolra",
+   "src": "wiki"
+  },
+  "沙士": {
+   "ko": "살사",
+   "ro": "Salsa",
+   "src": "mymemory"
+  },
+  "奶昔": {
+   "ko": "밀크셰이크",
+   "ro": "Milkeusyeikeu",
+   "src": "wiki"
+  },
+  "珍珠奶茶": {
+   "ko": "버블티",
+   "ro": "Beobeulti",
+   "src": "wiki"
+  },
+  "咖啡": {
+   "ko": "커피",
+   "ro": "Keopi",
+   "src": "wiki"
+  },
+  "茶": {
+   "ko": "차",
+   "ro": "Cha",
+   "src": "wiki"
+  },
+  "酒": {
+   "ko": "술",
+   "ro": "Sul",
+   "src": "wiki"
+  }
+ },
+ "甜點": {
+  "甜點": {
+   "ko": "후식",
+   "ro": "Husik",
+   "src": "wiki"
+  },
+  "餅乾": {
+   "ko": "비스킷",
+   "ro": "Biseukit",
+   "src": "wiki"
+  },
+  "糖果": {
+   "ko": "사탕",
+   "ro": "Satang",
+   "src": "wiki"
+  },
+  "甜甜圈": {
+   "ko": "도넛",
+   "ro": "Doneot",
+   "src": "wiki"
+  },
+  "貝果": {
+   "ko": "베이글",
+   "ro": "Beigeul",
+   "src": "wiki"
+  },
+  "棒棒糖": {
+   "ko": "막대사탕",
+   "ro": "Makdaesatang",
+   "src": "wiki"
+  },
+  "拐杖糖": {
+   "ko": "캔디케인",
+   "ro": "Kaendikein",
+   "src": "wiki"
+  },
+  "口香糖": {
+   "ko": "껌",
+   "ro": "Kkeom",
+   "src": "wiki"
+  },
+  "泡芙": {
+   "ko": "프로피트롤",
+   "ro": "Peuropiteurol",
+   "src": "wiki"
+  },
+  "閃電泡芙": {
+   "ko": "에클레르",
+   "ro": "Ekeulrereu",
+   "src": "wiki"
+  },
+  "布丁": {
+   "ko": "푸딩",
+   "ro": "Puding",
+   "src": "wiki"
+  },
+  "果凍": {
+   "ko": "젤리",
+   "ro": "Jelri",
+   "src": "wiki"
+  },
+  "巧克力": {
+   "ko": "초콜릿",
+   "ro": "Chokolrit",
+   "src": "wiki"
+  },
+  "棉花糖(顆狀)": {
+   "ko": "마시멜로",
+   "ro": "Masimelro",
+   "src": "mymemory"
+  },
+  "棉花糖(絲狀)": {
+   "ko": "마시멜로",
+   "ro": "Masimelro",
+   "src": "mymemory"
+  },
+  "冰淇淋": {
+   "ko": "아이스크림",
+   "ro": "Aiseukeurim",
+   "src": "wiki"
+  },
+  "冰棒": {
+   "ko": "막대아이스크림",
+   "ro": "Makdaeaiseukeurim",
+   "src": "wiki"
+  },
+  "聖代": {
+   "ko": "선디",
+   "ro": "Seondi",
+   "src": "wiki"
+  },
+  "挫冰": {
+   "ko": "동상",
+   "ro": "Dongsang",
+   "src": "mymemory"
+  },
+  "蛋糕": {
+   "ko": "케이크",
+   "ro": "Keikeu",
+   "src": "wiki"
+  },
+  "馬芬": {
+   "ko": "머핀",
+   "ro": "Meopin",
+   "src": "mymemory"
+  },
+  "派": {
+   "ko": "파이",
+   "ro": "Pai",
+   "src": "mymemory"
+  },
+  "塔": {
+   "ko": "탑파",
+   "ro": "Tappa",
+   "src": "wiki"
+  },
+  "鬆餅": {
+   "ko": "머핀",
+   "ro": "Meopin",
+   "src": "mymemory"
+  },
+  "華夫餅": {
+   "ko": "와플",
+   "ro": "Wapeul",
+   "src": "mymemory"
+  },
+  "可麗餅": {
+   "ko": "크레프",
+   "ro": "Keurepeu",
+   "src": "wiki"
+  },
+  "爆米花": {
+   "ko": "팝콘",
+   "ro": "Papkon",
+   "src": "wiki"
+  },
+  "提拉米蘇": {
+   "ko": "티라미수",
+   "ro": "Tiramisu",
+   "src": "wiki"
+  },
+  "鳳梨酥": {
+   "ko": "펑리수",
+   "ro": "Peongrisu",
+   "src": "wiki"
+  },
+  "麻糬": {
+   "ko": "모찌",
+   "ro": "Mojji",
+   "src": "wiki"
+  },
+  "和菓子": {
+   "ko": "화과자",
+   "ro": "Hwagwaja",
+   "src": "wiki"
+  },
+  "椪糖": {
+   "ko": "벌집사탕",
+   "ro": "Beoljipsatang",
+   "src": "wiki"
+  }
+ },
+ "生鮮食品": {
+  "生鮮食品": {
+   "ko": "식료품",
+   "ro": "Sikryopum",
+   "src": "mymemory"
+  },
+  "米": {
+   "ko": "쌀",
+   "ro": "Ssal",
+   "src": "wiki"
+  },
+  "蛋": {
+   "ko": "알",
+   "ro": "Al",
+   "src": "wiki"
+  },
+  "皮蛋": {
+   "ko": "피단",
+   "ro": "Pidan",
+   "src": "wiki"
+  },
+  "黃油": {
+   "ko": "버터",
+   "ro": "Beoteo",
+   "src": "mymemory"
+  },
+  "起司": {
+   "ko": "치즈",
+   "ro": "Chijeu",
+   "src": "mymemory"
+  },
+  "肉": {
+   "ko": "육류",
+   "ro": "Yukryu",
+   "src": "mymemory"
+  },
+  "雞肉": {
+   "ko": "닭고기",
+   "ro": "Dakgogi",
+   "src": "wiki"
+  },
+  "牛肉": {
+   "ko": "쇠고기",
+   "ro": "Soegogi",
+   "src": "wiki"
+  },
+  "豬肉": {
+   "ko": "돼지고기",
+   "ro": "Dwaejigogi",
+   "src": "wiki"
+  },
+  "羊肉": {
+   "ko": "양고기",
+   "ro": "Yanggogi",
+   "src": "mymemory"
+  },
+  "火腿": {
+   "ko": "햄",
+   "ro": "Haem",
+   "src": "wiki"
+  },
+  "香腸": {
+   "ko": "소시지",
+   "ro": "Sosiji",
+   "src": "wiki"
+  },
+  "培根": {
+   "ko": "베이컨",
+   "ro": "Beikeon",
+   "src": "wiki"
+  },
+  "豆腐": {
+   "ko": "두부",
+   "ro": "Dubu",
+   "src": "wiki"
+  }
+ },
+ "夜市小吃": {
+  "夜市小吃": {
+   "ko": "야시장간식",
+   "ro": "Yasijanggansik",
+   "src": "mymemory"
+  },
+  "蚵仔煎": {
+   "ko": "어아찌안",
+   "ro": "Eoajjian",
+   "src": "wiki"
+  },
+  "臭豆腐": {
+   "ko": "취두부",
+   "ro": "Chwidubu",
+   "src": "wiki"
+  },
+  "肉圓": {
+   "ko": "미트볼",
+   "ro": "Miteubol",
+   "src": "wiki"
+  },
+  "麵線糊": {
+   "ko": "어아미수앙",
+   "ro": "Eoamisuang",
+   "src": "wiki"
+  },
+  "鹽酥雞": {
+   "ko": "소금바삭한치킨",
+   "ro": "Sogeumbasakhanchikin",
+   "src": "mymemory"
+  },
+  "豬血糕": {
+   "ko": "띠후에꾸에",
+   "ro": "Ttihuekkue",
+   "src": "wiki"
+  },
+  "棺材板": {
+   "ko": "꾸앙차빵",
+   "ro": "Kkuangchappang",
+   "src": "wiki"
+  },
+  "韭菜盒子": {
+   "ko": "부추상자",
+   "ro": "Buchusangja",
+   "src": "mymemory"
+  },
+  "蔥油餅": {
+   "ko": "충유빙",
+   "ro": "Chungyubing",
+   "src": "wiki"
+  },
+  "大腸包小腸": {
+   "ko": "다창바오샤오창",
+   "ro": "Dachangbaosyaochang",
+   "src": "wiki"
+  },
+  "胡椒餅": {
+   "ko": "후추파이",
+   "ro": "Huchupai",
+   "src": "mymemory"
+  },
+  "刈包": {
+   "ko": "꾸아빠우",
+   "ro": "Kkuappau",
+   "src": "wiki"
+  },
+  "豆花": {
+   "ko": "두부푸딩",
+   "ro": "Dubupuding",
+   "src": "wiki"
+  },
+  "車輪餅": {
+   "ko": "이마가와야키",
+   "ro": "Imagawayaki",
+   "src": "wiki"
+  },
+  "雞蛋糕": {
+   "ko": "치킨케이크",
+   "ro": "Chikinkeikeu",
+   "src": "mymemory"
+  },
+  "潤餅": {
+   "ko": "룬삐앙",
+   "ro": "Runppiang",
+   "src": "wiki"
+  },
+  "粽子": {
+   "ko": "쭝쯔",
+   "ro": "Jjungjjeu",
+   "src": "wiki"
+  }
+ },
+ "交通工具": {
+  "交通工具": {
+   "ko": "탈것",
+   "ro": "Talgeot",
+   "src": "wiki"
+  },
+  "腳踏車": {
+   "ko": "자전거",
+   "ro": "Jajeongeo",
+   "src": "mymemory"
+  },
+  "三輪車": {
+   "ko": "삼륜차",
+   "ro": "Samryuncha",
+   "src": "wiki"
+  },
+  "獨輪車": {
+   "ko": "외발자전거",
+   "ro": "Oebaljajeongeo",
+   "src": "mymemory"
+  },
+  "摩托車": {
+   "ko": "모터사이클",
+   "ro": "Moteosaikeul",
+   "src": "wiki"
+  },
+  "汽車": {
+   "ko": "자동차",
+   "ro": "Jadongcha",
+   "src": "wiki"
+  },
+  "跑車": {
+   "ko": "스포츠카",
+   "ro": "Seupocheuka",
+   "src": "wiki"
+  },
+  "敞篷車": {
+   "ko": "컨버터블",
+   "ro": "Keonbeoteobeul",
+   "src": "mymemory"
+  },
+  "箱型車": {
+   "ko": "박스카",
+   "ro": "Bakseuka",
+   "src": "mymemory"
+  },
+  "露營車": {
+   "ko": "레크리에이션용탈것",
+   "ro": "Rekeurieisyeonyongtalgeot",
+   "src": "wiki"
+  },
+  "計程車": {
+   "ko": "택시",
+   "ro": "Taeksi",
+   "src": "wiki"
+  },
+  "公車": {
+   "ko": "버스",
+   "ro": "Beoseu",
+   "src": "mymemory"
+  },
+  "校車": {
+   "ko": "통학버스",
+   "ro": "Tonghakbeoseu",
+   "src": "wiki"
+  },
+  "郵務車": {
+   "ko": "우편차량",
+   "ro": "Upyeoncharyang",
+   "src": "mymemory"
+  },
+  "垃圾車": {
+   "ko": "쓰레기차",
+   "ro": "Sseuregicha",
+   "src": "mymemory"
+  },
+  "拖吊車": {
+   "ko": "견인차",
+   "ro": "Gyeonincha",
+   "src": "wiki"
+  },
+  "施救車": {
+   "ko": "구조트럭",
+   "ro": "Gujoteureok",
+   "src": "mymemory"
+  },
+  "吊卡車": {
+   "ko": "호이스트트럭",
+   "ro": "Hoiseuteuteureok",
+   "src": "mymemory"
+  },
+  "警車": {
+   "ko": "경찰차",
+   "ro": "Gyeongchalcha",
+   "src": "wiki"
+  },
+  "消防車": {
+   "ko": "소방차",
+   "ro": "Sobangcha",
+   "src": "wiki"
+  },
+  "雲梯車": {
+   "ko": "엘리베이터트럭",
+   "ro": "Elribeiteoteureok",
+   "src": "mymemory"
+  },
+  "救護車": {
+   "ko": "구급차",
+   "ro": "Gugeupcha",
+   "src": "wiki"
+  },
+  "挖土機": {
+   "ko": "굴삭기",
+   "ro": "Gulsakgi",
+   "src": "mymemory"
+  },
+  "推土機": {
+   "ko": "불도저",
+   "ro": "Buldojeo",
+   "src": "wiki"
+  },
+  "水泥車": {
+   "ko": "콘크리트믹서",
+   "ro": "Konkeuriteumikseo",
+   "src": "wiki"
+  },
+  "壓路機": {
+   "ko": "로드롤러",
+   "ro": "Rodeurolreo",
+   "src": "wiki"
+  },
+  "砂石車": {
+   "ko": "트럭",
+   "ro": "Teureok",
+   "src": "wiki"
+  },
+  "吊車": {
+   "ko": "크레인",
+   "ro": "Keurein",
+   "src": "mymemory"
+  },
+  "水泥泵浦車": {
+   "ko": "시멘트펌프트럭",
+   "ro": "Simenteupeompeuteureok",
+   "src": "mymemory"
+  },
+  "高空作業車": {
+   "ko": "공중작업트럭",
+   "ro": "Gongjungjageopteureok",
+   "src": "mymemory"
+  },
+  "貨車": {
+   "ko": "트럭",
+   "ro": "Teureok",
+   "src": "wiki"
+  },
+  "連結車": {
+   "ko": "장바구니연결",
+   "ro": "Jangbaguniyeongyeol",
+   "src": "mymemory"
+  },
+  "油罐車": {
+   "ko": "유조선트럭",
+   "ro": "Yujoseonteureok",
+   "src": "mymemory"
+  },
+  "灑水車": {
+   "ko": "살수차",
+   "ro": "Salsucha",
+   "src": "wiki"
+  },
+  "汽車運載車": {
+   "ko": "운송자",
+   "ro": "Unsongja",
+   "src": "mymemory"
+  },
+  "堆高機": {
+   "ko": "지게차",
+   "ro": "Jigecha",
+   "src": "wiki"
+  },
+  "越野車": {
+   "ko": "오프로드차량",
+   "ro": "Opeurodeucharyang",
+   "src": "wiki"
+  },
+  "吉普車": {
+   "ko": "지프",
+   "ro": "Jipeu",
+   "src": "mymemory"
+  },
+  "戰車": {
+   "ko": "탱크",
+   "ro": "Taengkeu",
+   "src": "mymemory"
+  },
+  "拖拉機": {
+   "ko": "트랙터",
+   "ro": "Teuraekteo",
+   "src": "mymemory"
+  },
+  "火車": {
+   "ko": "열차",
+   "ro": "Yeolcha",
+   "src": "wiki"
+  },
+  "高鐵": {
+   "ko": "고속철도",
+   "ro": "Gosokcheoldo",
+   "src": "wiki"
+  },
+  "輕軌": {
+   "ko": "라이트레일",
+   "ro": "Raiteureil",
+   "src": "wiki"
+  },
+  "飛機": {
+   "ko": "비행기",
+   "ro": "Bihaenggi",
+   "src": "wiki"
+  },
+  "噴射機": {
+   "ko": "제트기",
+   "ro": "Jeteugi",
+   "src": "wiki"
+  },
+  "戰鬥機": {
+   "ko": "전투기",
+   "ro": "Jeontugi",
+   "src": "mymemory"
+  },
+  "水上飛機": {
+   "ko": "수상기",
+   "ro": "Susanggi",
+   "src": "wiki"
+  },
+  "雙翼機": {
+   "ko": "복엽기",
+   "ro": "Bogyeopgi",
+   "src": "mymemory"
+  },
+  "直升機": {
+   "ko": "헬리콥터",
+   "ro": "Helrikopteo",
+   "src": "wiki"
+  },
+  "航機拖車": {
+   "ko": "항공기트레일러",
+   "ro": "Hanggonggiteureilreo",
+   "src": "mymemory"
+  },
+  "登機梯車": {
+   "ko": "탑승계단",
+   "ro": "Tapseunggyedan",
+   "src": "mymemory"
+  },
+  "熱氣球": {
+   "ko": "열기구",
+   "ro": "Yeolgigu",
+   "src": "mymemory"
+  },
+  "飛行船": {
+   "ko": "비행선",
+   "ro": "Bihaengseon",
+   "src": "mymemory"
+  },
+  "火箭": {
+   "ko": "로켓",
+   "ro": "Roket",
+   "src": "wiki"
+  },
+  "太空梭": {
+   "ko": "우주왕복선",
+   "ro": "Ujuwangbokseon",
+   "src": "mymemory"
+  },
+  "無人機": {
+   "ko": "드론",
+   "ro": "Deuron",
+   "src": "mymemory"
+  },
+  "纜車": {
+   "ko": "케이블카",
+   "ro": "Keibeulka",
+   "src": "mymemory"
+  },
+  "船": {
+   "ko": "보트",
+   "ro": "Boteu",
+   "src": "mymemory"
+  },
+  "獨木舟": {
+   "ko": "카누타기",
+   "ro": "Kanutagi",
+   "src": "mymemory"
+  },
+  "水上摩托車": {
+   "ko": "제트스키",
+   "ro": "Jeteuseuki",
+   "src": "mymemory"
+  },
+  "快艇": {
+   "ko": "스피드보트",
+   "ro": "Seupideuboteu",
+   "src": "mymemory"
+  },
+  "帆船": {
+   "ko": "범선",
+   "ro": "Beomseon",
+   "src": "wiki"
+  },
+  "輪船": {
+   "ko": "스팀보트",
+   "ro": "Seutimboteu",
+   "src": "mymemory"
+  },
+  "水翼船": {
+   "ko": "하이드로포일",
+   "ro": "Haideuropoil",
+   "src": "wiki"
+  },
+  "漁船": {
+   "ko": "어선",
+   "ro": "Eoseon",
+   "src": "mymemory"
+  },
+  "貨櫃船": {
+   "ko": "컨테이너선",
+   "ro": "Keonteineoseon",
+   "src": "wiki"
+  },
+  "破冰船": {
+   "ko": "아이스브레이커",
+   "ro": "Aiseubeureikeo",
+   "src": "mymemory"
+  },
+  "遊輪": {
+   "ko": "크루즈",
+   "ro": "Keurujeu",
+   "src": "mymemory"
+  },
+  "油輪": {
+   "ko": "유조선",
+   "ro": "Yujoseon",
+   "src": "mymemory"
+  },
+  "潛水艇": {
+   "ko": "잠수함",
+   "ro": "Jamsuham",
+   "src": "wiki"
+  },
+  "雪橇": {
+   "ko": "썰매타기",
+   "ro": "Sseolmaetagi",
+   "src": "mymemory"
+  },
+  "雪地摩托車": {
+   "ko": "스노모빌",
+   "ro": "Seunomobil",
+   "src": "mymemory"
+  },
+  "鏟雪車": {
+   "ko": "눈삽",
+   "ro": "Nunsap",
+   "src": "mymemory"
+  },
+  "轎子": {
+   "ko": "세단",
+   "ro": "Sedan",
+   "src": "mymemory"
+  },
+  "人力車": {
+   "ko": "인력거",
+   "ro": "Inryeokgeo",
+   "src": "mymemory"
+  },
+  "馬車": {
+   "ko": "운송",
+   "ro": "Unsong",
+   "src": "mymemory"
+  },
+  "古董車": {
+   "ko": "앤티크자동차",
+   "ro": "Aentikeujadongcha",
+   "src": "mymemory"
+  },
+  "雙層巴士": {
+   "ko": "2층버스",
+   "ro": "2cheungbeoseu",
+   "src": "mymemory"
+  },
+  "叮叮車": {
+   "ko": "팅커벨",
+   "ro": "Tingkeobel",
+   "src": "mymemory"
+  },
+  "鴨子車": {
+   "ko": "오리장바구니",
+   "ro": "Orijangbaguni",
+   "src": "mymemory"
+  },
+  "嘟嘟車": {
+   "ko": "툭툭",
+   "ro": "Tuktuk",
+   "src": "mymemory"
+  },
+  "貢多拉": {
+   "ko": "곤돌라",
+   "ro": "Gondolra",
+   "src": "mymemory"
+  }
+ },
+ "公共設施": {
+  "公共設施": {
+   "ko": "기반시설",
+   "ro": "Gibansiseol",
+   "src": "wiki"
+  },
+  "馬路": {
+   "ko": "도로",
+   "ro": "Doro",
+   "src": "wiki"
+  },
+  "人行道": {
+   "ko": "보도",
+   "ro": "Bodo",
+   "src": "wiki"
+  },
+  "橋": {
+   "ko": "다리",
+   "ro": "Dari",
+   "src": "wiki"
+  },
+  "紅綠燈": {
+   "ko": "신호등",
+   "ro": "Sinhodeung",
+   "src": "mymemory"
+  },
+  "斑馬線": {
+   "ko": "얼룩말선",
+   "ro": "Eolrukmalseon",
+   "src": "mymemory"
+  },
+  "交通錐": {
+   "ko": "트래픽콘",
+   "ro": "Teuraepikkon",
+   "src": "wiki"
+  },
+  "路燈": {
+   "ko": "가로등",
+   "ro": "Garodeung",
+   "src": "wiki"
+  },
+  "消防栓": {
+   "ko": "소화전",
+   "ro": "Sohwajeon",
+   "src": "wiki"
+  },
+  "郵筒": {
+   "ko": "우체통",
+   "ro": "Uchetong",
+   "src": "wiki"
+  },
+  "電線杆": {
+   "ko": "유틸리티극",
+   "ro": "Yutilritigeuk",
+   "src": "mymemory"
+  },
+  "下水道口": {
+   "ko": "하수구입구",
+   "ro": "Hasuguipgu",
+   "src": "mymemory"
+  },
+  "自動販賣機": {
+   "ko": "자동판매기",
+   "ro": "Jadongpanmaegi",
+   "src": "wiki"
+  },
+  "提款機": {
+   "ko": "현금자동입출금기",
+   "ro": "Hyeongeumjadongipchulgeumgi",
+   "src": "wiki"
+  },
+  "電梯": {
+   "ko": "엘리베이터",
+   "ro": "Elribeiteo",
+   "src": "mymemory"
+  },
+  "手扶梯": {
+   "ko": "에스컬레이터",
+   "ro": "Eseukeolreiteo",
+   "src": "mymemory"
+  },
+  "電動步道": {
+   "ko": "자동길",
+   "ro": "Jadonggil",
+   "src": "wiki"
+  },
+  "樓梯": {
+   "ko": "계단",
+   "ro": "Gyedan",
+   "src": "mymemory"
+  },
+  "長椅": {
+   "ko": "벤치",
+   "ro": "Benchi",
+   "src": "wiki"
+  },
+  "噴泉": {
+   "ko": "분수",
+   "ro": "Bunsu",
+   "src": "mymemory"
+  },
+  "電話亭": {
+   "ko": "공중전화박스",
+   "ro": "Gongjungjeonhwabakseu",
+   "src": "wiki"
+  }
+ },
+ "遊樂場設施": {
+  "遊樂場設施": {
+   "ko": "놀이터시설",
+   "ro": "Noriteosiseol",
+   "src": "mymemory"
+  },
+  "滑梯": {
+   "ko": "미끄럼틀",
+   "ro": "Mikkeureomteul",
+   "src": "wiki"
+  },
+  "鞦韆": {
+   "ko": "그네",
+   "ro": "Geune",
+   "src": "wiki"
+  },
+  "翹翹板": {
+   "ko": "롤러플레이트",
+   "ro": "Rolreopeulreiteu",
+   "src": "mymemory"
+  },
+  "攀爬架": {
+   "ko": "정글짐",
+   "ro": "Jeonggeuljim",
+   "src": "wiki"
+  },
+  "搖搖馬": {
+   "ko": "흔들마",
+   "ro": "Heundeulma",
+   "src": "mymemory"
+  }
+ },
+ "遊樂園設施": {
+  "遊樂園設施": {
+   "ko": "놀이공원시설",
+   "ro": "Norigongwonsiseol",
+   "src": "mymemory"
+  },
+  "雲霄飛車": {
+   "ko": "롤러코스터",
+   "ro": "Rolreokoseuteo",
+   "src": "wiki"
+  },
+  "摩天輪": {
+   "ko": "대관람차",
+   "ro": "Daegwanramcha",
+   "src": "wiki"
+  },
+  "旋轉木馬": {
+   "ko": "회전목마",
+   "ro": "Hoejeonmokma",
+   "src": "wiki"
+  },
+  "海盜船": {
+   "ko": "해적선",
+   "ro": "Haejeokseon",
+   "src": "mymemory"
+  },
+  "咖啡杯": {
+   "ko": "커피잔",
+   "ro": "Keopijan",
+   "src": "wiki"
+  },
+  "碰碰車": {
+   "ko": "범퍼카",
+   "ro": "Beompeoka",
+   "src": "wiki"
+  },
+  "輻射椅": {
+   "ko": "라디언트체어",
+   "ro": "Radieonteucheeo",
+   "src": "mymemory"
+  },
+  "大怒神": {
+   "ko": "분노의신",
+   "ro": "Bunnouisin",
+   "src": "mymemory"
+  }
+ },
+ "居家空間": {
+  "居家空間": {
+   "ko": "숙소공간",
+   "ro": "Suksogonggan",
+   "src": "mymemory"
+  },
+  "客廳": {
+   "ko": "응접실",
+   "ro": "Eungjeopsil",
+   "src": "wiki"
+  },
+  "廚房": {
+   "ko": "주방",
+   "ro": "Jubang",
+   "src": "wiki"
+  },
+  "飯廳": {
+   "ko": "식당",
+   "ro": "Sikdang",
+   "src": "wiki"
+  },
+  "浴室": {
+   "ko": "욕실",
+   "ro": "Yoksil",
+   "src": "wiki"
+  },
+  "廁所": {
+   "ko": "화장실",
+   "ro": "Hwajangsil",
+   "src": "wiki"
+  },
+  "臥室": {
+   "ko": "침실",
+   "ro": "Chimsil",
+   "src": "wiki"
+  },
+  "書房": {
+   "ko": "서재",
+   "ro": "Seojae",
+   "src": "wiki"
+  },
+  "花園": {
+   "ko": "정원",
+   "ro": "Jeongwon",
+   "src": "wiki"
+  },
+  "院子": {
+   "ko": "마당",
+   "ro": "Madang",
+   "src": "mymemory"
+  },
+  "陽台": {
+   "ko": "발코니",
+   "ro": "Balkoni",
+   "src": "wiki"
+  },
+  "閣樓": {
+   "ko": "다락방",
+   "ro": "Darakbang",
+   "src": "wiki"
+  },
+  "車庫": {
+   "ko": "차고",
+   "ro": "Chago",
+   "src": "mymemory"
+  },
+  "玄關": {
+   "ko": "겐칸",
+   "ro": "Genkan",
+   "src": "wiki"
+  }
+ },
+ "家具": {
+  "家具": {
+   "ko": "가구",
+   "ro": "Gagu",
+   "src": "mymemory"
+  },
+  "門": {
+   "ko": "문",
+   "ro": "Mun",
+   "src": "mymemory"
+  },
+  "窗戶": {
+   "ko": "창문",
+   "ro": "Changmun",
+   "src": "mymemory"
+  },
+  "桌子": {
+   "ko": "탁자",
+   "ro": "Takja",
+   "src": "mymemory"
+  },
+  "椅子": {
+   "ko": "의자",
+   "ro": "Uija",
+   "src": "mymemory"
+  },
+  "書桌": {
+   "ko": "책상",
+   "ro": "Chaeksang",
+   "src": "mymemory"
+  },
+  "抽屜": {
+   "ko": "서랍",
+   "ro": "Seorap",
+   "src": "mymemory"
+  },
+  "床": {
+   "ko": "침대",
+   "ro": "Chimdae",
+   "src": "mymemory"
+  },
+  "沙發": {
+   "ko": "소파",
+   "ro": "Sopa",
+   "src": "mymemory"
+  },
+  "梳妝台": {
+   "ko": "서랍장",
+   "ro": "Seorapjang",
+   "src": "mymemory"
+  },
+  "櫃子": {
+   "ko": "캐비닛",
+   "ro": "Kaebinit",
+   "src": "mymemory"
+  },
+  "衣櫃": {
+   "ko": "옷장",
+   "ro": "Otjang",
+   "src": "mymemory"
+  },
+  "書櫃": {
+   "ko": "책장",
+   "ro": "Chaekjang",
+   "src": "mymemory"
+  }
+ },
+ "電器": {
+  "電器": {
+   "ko": "가전제품",
+   "ro": "Gajeonjepum",
+   "src": "mymemory"
+  },
+  "收音機": {
+   "ko": "라디오",
+   "ro": "Radio",
+   "src": "mymemory"
+  },
+  "冰箱": {
+   "ko": "냉장고",
+   "ro": "Naengjanggo",
+   "src": "mymemory"
+  },
+  "吹風機": {
+   "ko": "헤어드라이어",
+   "ro": "Heeodeuraieo",
+   "src": "mymemory"
+  },
+  "電風扇": {
+   "ko": "선풍기",
+   "ro": "Seonpunggi",
+   "src": "mymemory"
+  },
+  "洗衣機": {
+   "ko": "세탁기",
+   "ro": "Setakgi",
+   "src": "mymemory"
+  },
+  "烘衣機": {
+   "ko": "건조기",
+   "ro": "Geonjogi",
+   "src": "mymemory"
+  },
+  "冷氣機": {
+   "ko": "에어컨",
+   "ro": "Eeokeon",
+   "src": "mymemory"
+  },
+  "暖氣機": {
+   "ko": "히터",
+   "ro": "Hiteo",
+   "src": "mymemory"
+  },
+  "烤箱": {
+   "ko": "오븐",
+   "ro": "Obeun",
+   "src": "mymemory"
+  },
+  "微波爐": {
+   "ko": "전자레인지",
+   "ro": "Jeonjareinji",
+   "src": "mymemory"
+  },
+  "果汁機": {
+   "ko": "믹서기",
+   "ro": "Mikseogi",
+   "src": "mymemory"
+  },
+  "手持攪拌機": {
+   "ko": "핸드블렌더",
+   "ro": "Haendeubeulrendeo",
+   "src": "mymemory"
+  },
+  "電動打蛋器": {
+   "ko": "전기에그비터",
+   "ro": "Jeongiegeubiteo",
+   "src": "mymemory"
+  },
+  "烤麵包機": {
+   "ko": "토스터",
+   "ro": "Toseuteo",
+   "src": "mymemory"
+  },
+  "電水壺": {
+   "ko": "전기주전자",
+   "ro": "Jeongijujeonja",
+   "src": "mymemory"
+  },
+  "熱水瓶": {
+   "ko": "보온병",
+   "ro": "Boonbyeong",
+   "src": "mymemory"
+  },
+  "調理機": {
+   "ko": "믹서기",
+   "ro": "Mikseogi",
+   "src": "mymemory"
+  },
+  "電飯鍋": {
+   "ko": "밥솥",
+   "ro": "Bapsot",
+   "src": "mymemory"
+  },
+  "咖啡機": {
+   "ko": "커피메이커",
+   "ro": "Keopimeikeo",
+   "src": "mymemory"
+  },
+  "摩卡壺": {
+   "ko": "모카냄비",
+   "ro": "Mokanaembi",
+   "src": "mymemory"
+  },
+  "氣泡水機": {
+   "ko": "스파클링워터머신",
+   "ro": "Seupakeulringwoteomeosin",
+   "src": "mymemory"
+  },
+  "洗碗機": {
+   "ko": "식기세척기",
+   "ro": "Sikgisecheokgi",
+   "src": "mymemory"
+  },
+  "氣炸鍋": {
+   "ko": "에어프라이어",
+   "ro": "Eeopeuraieo",
+   "src": "mymemory"
+  },
+  "電動牙刷": {
+   "ko": "전동칫솔",
+   "ro": "Jeondongchitsol",
+   "src": "mymemory"
+  },
+  "電動刮鬍刀": {
+   "ko": "전기면도기",
+   "ro": "Jeongimyeondogi",
+   "src": "mymemory"
+  },
+  "吸塵器": {
+   "ko": "진공청소기",
+   "ro": "Jingongcheongsogi",
+   "src": "mymemory"
+  },
+  "熨斗": {
+   "ko": "다리미",
+   "ro": "Darimi",
+   "src": "mymemory"
+  },
+  "加濕器": {
+   "ko": "가습기",
+   "ro": "Gaseupgi",
+   "src": "mymemory"
+  },
+  "電腦": {
+   "ko": "컴퓨터",
+   "ro": "Keompyuteo",
+   "src": "mymemory"
+  },
+  "碎紙機": {
+   "ko": "분쇄기",
+   "ro": "Bunswaegi",
+   "src": "mymemory"
+  },
+  "掃地機器人": {
+   "ko": "청소로봇",
+   "ro": "Cheongsorobot",
+   "src": "mymemory"
+  }
+ },
+ "電腦硬體": {
+  "電腦硬體": {
+   "ko": "컴퓨터하드웨어",
+   "ro": "Keompyuteohadeuweeo",
+   "src": "mymemory"
+  },
+  "螢幕": {
+   "ko": "디스플레이장치",
+   "ro": "Diseupeulreijangchi",
+   "src": "wiki"
+  },
+  "主機": {
+   "ko": "호스트",
+   "ro": "Hoseuteu",
+   "src": "mymemory"
+  },
+  "鍵盤": {
+   "ko": "컴퓨터자판",
+   "ro": "Keompyuteojapan",
+   "src": "wiki"
+  },
+  "滑鼠": {
+   "ko": "마우스",
+   "ro": "Mauseu",
+   "src": "wiki"
+  },
+  "喇叭": {
+   "ko": "음향혼",
+   "ro": "Eumhyanghon",
+   "src": "wiki"
+  },
+  "掃描器": {
+   "ko": "이미지스캐너",
+   "ro": "Imijiseukaeneo",
+   "src": "wiki"
+  },
+  "照相機": {
+   "ko": "사진기",
+   "ro": "Sajingi",
+   "src": "wiki"
+  },
+  "攝影機": {
+   "ko": "비디오카메라",
+   "ro": "Bidiokamera",
+   "src": "wiki"
+  },
+  "麥克風": {
+   "ko": "마이크로폰",
+   "ro": "Maikeuropon",
+   "src": "wiki"
+  },
+  "數位板": {
+   "ko": "태블릿",
+   "ro": "Taebeulrit",
+   "src": "mymemory"
+  },
+  "印表機": {
+   "ko": "프린터",
+   "ro": "Peurinteo",
+   "src": "wiki"
+  },
+  "投影機": {
+   "ko": "프로젝터",
+   "ro": "Peurojekteo",
+   "src": "wiki"
+  },
+  "耳機": {
+   "ko": "헤드폰",
+   "ro": "Hedeupon",
+   "src": "wiki"
+  },
+  "硬碟": {
+   "ko": "하드디스크드라이브",
+   "ro": "Hadeudiseukeudeuraibeu",
+   "src": "wiki"
+  },
+  "外接硬碟": {
+   "ko": "디스크인클로저",
+   "ro": "Diseukeuinkeulrojeo",
+   "src": "wiki"
+  },
+  "光碟片": {
+   "ko": "광디스크",
+   "ro": "Gwangdiseukeu",
+   "src": "wiki"
+  },
+  "隨身碟": {
+   "ko": "USB플래시드라이브",
+   "ro": "USBpeulraesideuraibeu",
+   "src": "wiki"
+  },
+  "記憶卡": {
+   "ko": "메모리카드",
+   "ro": "Memorikadeu",
+   "src": "wiki"
+  }
+ },
+ "餐具": {
+  "餐具": {
+   "ko": "식기",
+   "ro": "Sikgi",
+   "src": "wiki"
+  },
+  "湯匙": {
+   "ko": "탕츠",
+   "ro": "Tangcheu",
+   "src": "wiki"
+  },
+  "叉子": {
+   "ko": "포크",
+   "ro": "Pokeu",
+   "src": "mymemory"
+  },
+  "餐刀": {
+   "ko": "테이블나이프",
+   "ro": "Teibeulnaipeu",
+   "src": "wiki"
+  },
+  "叉匙": {
+   "ko": "스포크",
+   "ro": "Seupokeu",
+   "src": "wiki"
+  },
+  "筷子": {
+   "ko": "젓가락",
+   "ro": "Jeotgarak",
+   "src": "wiki"
+  },
+  "碗": {
+   "ko": "볼",
+   "ro": "Bol",
+   "src": "wiki"
+  },
+  "碗公": {
+   "ko": "볼",
+   "ro": "Bol",
+   "src": "wiki"
+  },
+  "盤子": {
+   "ko": "접시",
+   "ro": "Jeopsi",
+   "src": "wiki"
+  },
+  "杯子": {
+   "ko": "잔",
+   "ro": "Jan",
+   "src": "wiki"
+  },
+  "玻璃杯": {
+   "ko": "유리잔",
+   "ro": "Yurijan",
+   "src": "wiki"
+  },
+  "馬克杯": {
+   "ko": "머그잔",
+   "ro": "Meogeujan",
+   "src": "wiki"
+  }
+ },
+ "文具": {
+  "文具": {
+   "ko": "문방구",
+   "ro": "Munbanggu",
+   "src": "wiki"
+  },
+  "鉛筆": {
+   "ko": "연필",
+   "ro": "Yeonpil",
+   "src": "wiki"
+  },
+  "橡皮擦": {
+   "ko": "지우개",
+   "ro": "Jiugae",
+   "src": "wiki"
+  },
+  "尺": {
+   "ko": "자",
+   "ro": "Ja",
+   "src": "wiki"
+  },
+  "鉛筆盒": {
+   "ko": "필통",
+   "ro": "Piltong",
+   "src": "wiki"
+  },
+  "原子筆": {
+   "ko": "볼펜",
+   "ro": "Bolpen",
+   "src": "wiki"
+  },
+  "鋼筆": {
+   "ko": "만년필",
+   "ro": "Mannyeonpil",
+   "src": "wiki"
+  },
+  "彩色筆": {
+   "ko": "마커펜",
+   "ro": "Makeopen",
+   "src": "wiki"
+  },
+  "蠟筆": {
+   "ko": "크레용",
+   "ro": "Keureyong",
+   "src": "wiki"
+  },
+  "毛筆": {
+   "ko": "붓",
+   "ro": "But",
+   "src": "wiki"
+  },
+  "水彩筆": {
+   "ko": "수채화펜",
+   "ro": "Suchaehwapen",
+   "src": "mymemory"
+  },
+  "剪刀": {
+   "ko": "가위",
+   "ro": "Gawi",
+   "src": "wiki"
+  },
+  "膠水": {
+   "ko": "접착제",
+   "ro": "Jeopchakje",
+   "src": "wiki"
+  },
+  "口紅膠": {
+   "ko": "고체풀",
+   "ro": "Gochepul",
+   "src": "wiki"
+  },
+  "膠帶": {
+   "ko": "접착테이프",
+   "ro": "Jeopchakteipeu",
+   "src": "wiki"
+  },
+  "立可白": {
+   "ko": "리코펜",
+   "ro": "Rikopen",
+   "src": "mymemory"
+  },
+  "修正帶": {
+   "ko": "보정테이프",
+   "ro": "Bojeongteipeu",
+   "src": "mymemory"
+  },
+  "書": {
+   "ko": "책",
+   "ro": "Chaek",
+   "src": "wiki"
+  },
+  "筆記本": {
+   "ko": "공책",
+   "ro": "Gongchaek",
+   "src": "wiki"
+  },
+  "字典": {
+   "ko": "한자사전",
+   "ro": "Hanjasajeon",
+   "src": "wiki"
+  },
+  "墊板": {
+   "ko": "매트",
+   "ro": "Maeteu",
+   "src": "mymemory"
+  },
+  "紙": {
+   "ko": "종이",
+   "ro": "Jongi",
+   "src": "wiki"
+  },
+  "圓規": {
+   "ko": "컴퍼스",
+   "ro": "Keompeoseu",
+   "src": "wiki"
+  },
+  "三角板": {
+   "ko": "삼각자",
+   "ro": "Samgakja",
+   "src": "wiki"
+  },
+  "量角器": {
+   "ko": "각도기",
+   "ro": "Gakdogi",
+   "src": "wiki"
+  },
+  "削鉛筆機": {
+   "ko": "연필깎이",
+   "ro": "Yeonpilkkakki",
+   "src": "mymemory"
+  },
+  "計算機": {
+   "ko": "컴퓨터",
+   "ro": "Keompyuteo",
+   "src": "wiki"
+  }
+ },
+ "工具": {
+  "工具": {
+   "ko": "도구",
+   "ro": "Dogu",
+   "src": "wiki"
+  },
+  "鐵鎚": {
+   "ko": "망치",
+   "ro": "Mangchi",
+   "src": "mymemory"
+  },
+  "木槌": {
+   "ko": "나무망치",
+   "ro": "Namumangchi",
+   "src": "mymemory"
+  },
+  "螺絲起子": {
+   "ko": "스크루드라이버",
+   "ro": "Seukeurudeuraibeo",
+   "src": "wiki"
+  },
+  "扳手": {
+   "ko": "스패너",
+   "ro": "Seupaeneo",
+   "src": "wiki"
+  },
+  "活動扳手": {
+   "ko": "어저스터블스패너",
+   "ro": "Eojeoseuteobeulseupaeneo",
+   "src": "wiki"
+  },
+  "鋸子": {
+   "ko": "톱",
+   "ro": "Top",
+   "src": "wiki"
+  },
+  "鉗子": {
+   "ko": "플라이어",
+   "ro": "Peulraieo",
+   "src": "wiki"
+  },
+  "水平儀": {
+   "ko": "수준기",
+   "ro": "Sujungi",
+   "src": "wiki"
+  },
+  "鐵撬": {
+   "ko": "쇠지렛대",
+   "ro": "Soejiretdae",
+   "src": "wiki"
+  },
+  "電鑽": {
+   "ko": "전동드릴",
+   "ro": "Jeondongdeuril",
+   "src": "mymemory"
+  },
+  "電鋸": {
+   "ko": "사슬톱",
+   "ro": "Saseultop",
+   "src": "wiki"
+  }
+ },
+ "零件": {
+  "零件": {
+   "ko": "부품",
+   "ro": "Bupum",
+   "src": "mymemory"
+  },
+  "釘子": {
+   "ko": "손톱",
+   "ro": "Sontop",
+   "src": "mymemory"
+  },
+  "螺絲": {
+   "ko": "나사",
+   "ro": "Nasa",
+   "src": "mymemory"
+  },
+  "螺栓": {
+   "ko": "볼트",
+   "ro": "Bolteu",
+   "src": "mymemory"
+  },
+  "墊圈": {
+   "ko": "세탁기",
+   "ro": "Setakgi",
+   "src": "mymemory"
+  },
+  "螺帽": {
+   "ko": "견과류",
+   "ro": "Gyeongwaryu",
+   "src": "mymemory"
+  },
+  "彈簧": {
+   "ko": "봄",
+   "ro": "Bom",
+   "src": "mymemory"
+  },
+  "輪": {
+   "ko": "원형",
+   "ro": "Wonhyeong",
+   "src": "mymemory"
+  },
+  "軸": {
+   "ko": "축",
+   "ro": "Chuk",
+   "src": "mymemory"
+  },
+  "滑輪": {
+   "ko": "풀리",
+   "ro": "Pulri",
+   "src": "mymemory"
+  },
+  "齒輪": {
+   "ko": "기어",
+   "ro": "Gieo",
+   "src": "mymemory"
+  },
+  "培林": {
+   "ko": "페린",
+   "ro": "Perin",
+   "src": "mymemory"
+  },
+  "門把": {
+   "ko": "문손잡이",
+   "ro": "Munsonjabi",
+   "src": "mymemory"
+  },
+  "方向盤": {
+   "ko": "스티어링휠",
+   "ro": "Seutieoringhwil",
+   "src": "mymemory"
+  },
+  "插頭": {
+   "ko": "플러그",
+   "ro": "Peulreogeu",
+   "src": "mymemory"
+  },
+  "插座": {
+   "ko": "소켓",
+   "ro": "Soket",
+   "src": "mymemory"
+  },
+  "按鈕": {
+   "ko": "버튼",
+   "ro": "Beoteun",
+   "src": "mymemory"
+  },
+  "開關": {
+   "ko": "전환",
+   "ro": "Jeonhwan",
+   "src": "mymemory"
+  },
+  "電線": {
+   "ko": "와이어",
+   "ro": "Waieo",
+   "src": "mymemory"
+  },
+  "電阻": {
+   "ko": "저항",
+   "ro": "Jeohang",
+   "src": "mymemory"
+  }
+ },
+ "實驗器材": {
+  "實驗器材": {
+   "ko": "실험장비",
+   "ro": "Silheomjangbi",
+   "src": "mymemory"
+  },
+  "試管": {
+   "ko": "시험관",
+   "ro": "Siheomgwan",
+   "src": "wiki"
+  },
+  "燒杯": {
+   "ko": "비이커",
+   "ro": "Biikeo",
+   "src": "mymemory"
+  },
+  "燒瓶": {
+   "ko": "플라스크",
+   "ro": "Peulraseukeu",
+   "src": "mymemory"
+  },
+  "錐形瓶": {
+   "ko": "삼각플라스크",
+   "ro": "Samgakpeulraseukeu",
+   "src": "wiki"
+  },
+  "量筒": {
+   "ko": "눈금실린더",
+   "ro": "Nungeumsilrindeo",
+   "src": "wiki"
+  },
+  "漏斗": {
+   "ko": "깔때기",
+   "ro": "Kkalttaegi",
+   "src": "wiki"
+  },
+  "滴管": {
+   "ko": "점안기",
+   "ro": "Jeomangi",
+   "src": "wiki"
+  },
+  "酒精燈": {
+   "ko": "알코올램프",
+   "ro": "Alkoolraempeu",
+   "src": "wiki"
+  },
+  "磁鐵": {
+   "ko": "자석",
+   "ro": "Jaseok",
+   "src": "wiki"
+  }
+ },
+ "服飾": {
+  "服飾": {
+   "ko": "의류",
+   "ro": "Uiryu",
+   "src": "mymemory"
+  },
+  "T恤": {
+   "ko": "티셔츠",
+   "ro": "Tisyeocheu",
+   "src": "wiki"
+  },
+  "襯衫": {
+   "ko": "셔츠",
+   "ro": "Syeocheu",
+   "src": "wiki"
+  },
+  "外套": {
+   "ko": "겉옷",
+   "ro": "Geotot",
+   "src": "wiki"
+  },
+  "雨衣": {
+   "ko": "비옷",
+   "ro": "Biot",
+   "src": "wiki"
+  },
+  "背心": {
+   "ko": "민소매셔츠",
+   "ro": "Minsomaesyeocheu",
+   "src": "wiki"
+  },
+  "長褲": {
+   "ko": "바지",
+   "ro": "Baji",
+   "src": "mymemory"
+  },
+  "短褲": {
+   "ko": "반바지",
+   "ro": "Banbaji",
+   "src": "wiki"
+  },
+  "洋裝": {
+   "ko": "드레스",
+   "ro": "Deureseu",
+   "src": "wiki"
+  },
+  "裙子": {
+   "ko": "치마",
+   "ro": "Chima",
+   "src": "wiki"
+  },
+  "手套": {
+   "ko": "장갑",
+   "ro": "Janggap",
+   "src": "wiki"
+  },
+  "襪子": {
+   "ko": "양말",
+   "ro": "Yangmal",
+   "src": "mymemory"
+  },
+  "鞋子": {
+   "ko": "신발",
+   "ro": "Sinbal",
+   "src": "wiki"
+  },
+  "球鞋": {
+   "ko": "스니커즈",
+   "ro": "Seunikeojeu",
+   "src": "wiki"
+  },
+  "靴子": {
+   "ko": "부츠",
+   "ro": "Bucheu",
+   "src": "wiki"
+  },
+  "夾腳拖": {
+   "ko": "플립플롭스",
+   "ro": "Peulrippeulropseu",
+   "src": "wiki"
+  },
+  "拖鞋": {
+   "ko": "슬리퍼",
+   "ro": "Seulripeo",
+   "src": "wiki"
+  },
+  "高跟鞋": {
+   "ko": "하이힐",
+   "ro": "Haihil",
+   "src": "wiki"
+  },
+  "眼鏡": {
+   "ko": "안경",
+   "ro": "Angyeong",
+   "src": "wiki"
+  },
+  "墨鏡": {
+   "ko": "선글라스",
+   "ro": "Seongeulraseu",
+   "src": "mymemory"
+  },
+  "帽子": {
+   "ko": "모자",
+   "ro": "Moja",
+   "src": "wiki"
+  },
+  "棒球帽": {
+   "ko": "야구모자",
+   "ro": "Yagumoja",
+   "src": "mymemory"
+  },
+  "領帶": {
+   "ko": "넥타이",
+   "ro": "Nektai",
+   "src": "wiki"
+  },
+  "領結": {
+   "ko": "나비넥타이",
+   "ro": "Nabinektai",
+   "src": "wiki"
+  },
+  "圍巾": {
+   "ko": "스카프",
+   "ro": "Seukapeu",
+   "src": "wiki"
+  },
+  "內褲": {
+   "ko": "속옷",
+   "ro": "Sogot",
+   "src": "wiki"
+  },
+  "胸罩": {
+   "ko": "브래지어",
+   "ro": "Beuraejieo",
+   "src": "wiki"
+  },
+  "泳衣": {
+   "ko": "수영복",
+   "ro": "Suyeongbok",
+   "src": "wiki"
+  },
+  "比基尼": {
+   "ko": "비키니",
+   "ro": "Bikini",
+   "src": "wiki"
+  }
+ },
+ "包裝": {
+  "包裝": {
+   "ko": "포장",
+   "ro": "Pojang",
+   "src": "wiki"
+  },
+  "袋子": {
+   "ko": "가방",
+   "ro": "Gabang",
+   "src": "wiki"
+  },
+  "盒子": {
+   "ko": "상자",
+   "ro": "Sangja",
+   "src": "wiki"
+  },
+  "寶特瓶": {
+   "ko": "페트병",
+   "ro": "Peteubyeong",
+   "src": "wiki"
+  },
+  "新鮮屋": {
+   "ko": "신선한집",
+   "ro": "Sinseonhanjip",
+   "src": "mymemory"
+  },
+  "鋁箔包": {
+   "ko": "호일백",
+   "ro": "Hoilbaek",
+   "src": "mymemory"
+  },
+  "捲": {
+   "ko": "롤",
+   "ro": "Rol",
+   "src": "mymemory"
+  },
+  "廣口瓶": {
+   "ko": "구내식당병",
+   "ro": "Gunaesikdangbyeong",
+   "src": "mymemory"
+  },
+  "易開罐": {
+   "ko": "원터치캔",
+   "ro": "Wonteochikaen",
+   "src": "wiki"
+  },
+  "罐頭": {
+   "ko": "깡통",
+   "ro": "Kkangtong",
+   "src": "wiki"
+  },
+  "噴霧罐": {
+   "ko": "스프레이캔",
+   "ro": "Seupeureikaen",
+   "src": "mymemory"
+  },
+  "軟管": {
+   "ko": "호스",
+   "ro": "Hoseu",
+   "src": "wiki"
+  }
+ },
+ "植物": {
+  "植物": {
+   "ko": "식물",
+   "ro": "Sikmul",
+   "src": "wiki"
+  },
+  "仙人掌": {
+   "ko": "선인장",
+   "ro": "Seoninjang",
+   "src": "wiki"
+  },
+  "向日葵": {
+   "ko": "해바라기",
+   "ro": "Haebaragi",
+   "src": "wiki"
+  },
+  "含羞草": {
+   "ko": "미모사",
+   "ro": "Mimosa",
+   "src": "wiki"
+  },
+  "捕蠅草": {
+   "ko": "파리지옥",
+   "ro": "Parijiok",
+   "src": "wiki"
+  },
+  "櫻": {
+   "ko": "사쿠라",
+   "ro": "Sakura",
+   "src": "mymemory"
+  },
+  "玫瑰": {
+   "ko": "해당화",
+   "ro": "Haedanghwa",
+   "src": "wiki"
+  },
+  "蓮": {
+   "ko": "연꽃",
+   "ro": "Yeonkkot",
+   "src": "wiki"
+  }
+ },
+ "動物": {
+  "動物": {
+   "ko": "동물",
+   "ro": "Dongmul",
+   "src": "mymemory"
+  },
+  "狗": {
+   "ko": "개",
+   "ro": "Gae",
+   "src": "mymemory"
+  },
+  "貓咪": {
+   "ko": "고양이",
+   "ro": "Goyangi",
+   "src": "mymemory"
+  },
+  "老鼠": {
+   "ko": "생쥐",
+   "ro": "Saengjwi",
+   "src": "mymemory"
+  },
+  "猴子": {
+   "ko": "원숭이",
+   "ro": "Wonsungi",
+   "src": "mymemory"
+  },
+  "兔子": {
+   "ko": "토끼",
+   "ro": "Tokki",
+   "src": "mymemory"
+  },
+  "松鼠": {
+   "ko": "다람쥐",
+   "ro": "Daramjwi",
+   "src": "mymemory"
+  },
+  "刺蝟": {
+   "ko": "가오리",
+   "ro": "Gaori",
+   "src": "mymemory"
+  },
+  "豪豬": {
+   "ko": "고슴도치",
+   "ro": "Goseumdochi",
+   "src": "mymemory"
+  },
+  "樹懶": {
+   "ko": "나무늘보",
+   "ro": "Namuneulbo",
+   "src": "mymemory"
+  },
+  "蝙蝠": {
+   "ko": "박쥐",
+   "ro": "Bakjwi",
+   "src": "mymemory"
+  },
+  "乳牛": {
+   "ko": "젖소",
+   "ro": "Jeotso",
+   "src": "mymemory"
+  },
+  "綿羊": {
+   "ko": "양",
+   "ro": "Yang",
+   "src": "mymemory"
+  },
+  "山羊": {
+   "ko": "염소",
+   "ro": "Yeomso",
+   "src": "mymemory"
+  },
+  "馬": {
+   "ko": "말",
+   "ro": "Mal",
+   "src": "mymemory"
+  },
+  "驢子": {
+   "ko": "당나귀",
+   "ro": "Dangnagwi",
+   "src": "mymemory"
+  },
+  "騾子": {
+   "ko": "노새",
+   "ro": "Nosae",
+   "src": "mymemory"
+  },
+  "貓熊": {
+   "ko": "판다",
+   "ro": "Panda",
+   "src": "mymemory"
+  },
+  "無尾熊": {
+   "ko": "코알라",
+   "ro": "Koalra",
+   "src": "mymemory"
+  },
+  "袋鼠": {
+   "ko": "캥거루",
+   "ro": "Kaenggeoru",
+   "src": "mymemory"
+  },
+  "大象": {
+   "ko": "코끼리",
+   "ro": "Kokkiri",
+   "src": "mymemory"
+  },
+  "長頸鹿": {
+   "ko": "기린",
+   "ro": "Girin",
+   "src": "mymemory"
+  },
+  "河馬": {
+   "ko": "하마",
+   "ro": "Hama",
+   "src": "mymemory"
+  },
+  "犀牛": {
+   "ko": "코뿔소",
+   "ro": "Koppulso",
+   "src": "mymemory"
+  },
+  "獅子": {
+   "ko": "사자",
+   "ro": "Saja",
+   "src": "mymemory"
+  },
+  "老虎": {
+   "ko": "호랑이",
+   "ro": "Horangi",
+   "src": "mymemory"
+  },
+  "豹": {
+   "ko": "표범",
+   "ro": "Pyobeom",
+   "src": "mymemory"
+  },
+  "狐獴": {
+   "ko": "여우치",
+   "ro": "Yeouchi",
+   "src": "mymemory"
+  },
+  "水豚": {
+   "ko": "복어",
+   "ro": "Bogeo",
+   "src": "mymemory"
+  },
+  "駱駝": {
+   "ko": "낙타",
+   "ro": "Nakta",
+   "src": "mymemory"
+  },
+  "海豹": {
+   "ko": "씰",
+   "ro": "Ssil",
+   "src": "mymemory"
+  },
+  "海獅": {
+   "ko": "바다사자",
+   "ro": "Badasaja",
+   "src": "mymemory"
+  },
+  "海象": {
+   "ko": "왈러스",
+   "ro": "Walreoseu",
+   "src": "mymemory"
+  },
+  "海豚": {
+   "ko": "돌고래",
+   "ro": "Dolgorae",
+   "src": "mymemory"
+  },
+  "鯨魚": {
+   "ko": "고래",
+   "ro": "Gorae",
+   "src": "mymemory"
+  },
+  "虎鯨": {
+   "ko": "오르카스",
+   "ro": "Oreukaseu",
+   "src": "mymemory"
+  },
+  "白鯨": {
+   "ko": "벨루가",
+   "ro": "Belruga",
+   "src": "mymemory"
+  }
+ },
+ "鳥類": {
+  "鳥類": {
+   "ko": "새",
+   "ro": "Sae",
+   "src": "mymemory"
+  },
+  "雞": {
+   "ko": "닭",
+   "ro": "Dak",
+   "src": "mymemory"
+  },
+  "鴨子": {
+   "ko": "오리",
+   "ro": "Ori",
+   "src": "mymemory"
+  },
+  "鵝": {
+   "ko": "거위",
+   "ro": "Geowi",
+   "src": "mymemory"
+  },
+  "天鵝": {
+   "ko": "백조",
+   "ro": "Baekjo",
+   "src": "mymemory"
+  },
+  "鴿子": {
+   "ko": "비둘기",
+   "ro": "Bidulgi",
+   "src": "mymemory"
+  },
+  "麻雀": {
+   "ko": "마작",
+   "ro": "Majak",
+   "src": "mymemory"
+  },
+  "燕子": {
+   "ko": "제비",
+   "ro": "Jebi",
+   "src": "mymemory"
+  },
+  "烏鴉": {
+   "ko": "까마귀",
+   "ro": "Kkamagwi",
+   "src": "mymemory"
+  },
+  "海鷗": {
+   "ko": "갈매기",
+   "ro": "Galmaegi",
+   "src": "mymemory"
+  },
+  "信天翁": {
+   "ko": "알바트로스",
+   "ro": "Albateuroseu",
+   "src": "mymemory"
+  },
+  "翠鳥": {
+   "ko": "킹피셔",
+   "ro": "Kingpisyeo",
+   "src": "mymemory"
+  },
+  "夜鷺": {
+   "ko": "나이트헤론",
+   "ro": "Naiteuheron",
+   "src": "mymemory"
+  },
+  "蒼鷺": {
+   "ko": "헤론",
+   "ro": "Heron",
+   "src": "mymemory"
+  },
+  "綠繡眼": {
+   "ko": "녹색자수눈",
+   "ro": "Noksaekjasunun",
+   "src": "mymemory"
+  },
+  "蜂鳥": {
+   "ko": "벌새",
+   "ro": "Beolsae",
+   "src": "mymemory"
+  },
+  "孔雀": {
+   "ko": "공작새",
+   "ro": "Gongjaksae",
+   "src": "mymemory"
+  },
+  "企鵝": {
+   "ko": "펭귄",
+   "ro": "Penggwin",
+   "src": "mymemory"
+  },
+  "巨嘴鳥": {
+   "ko": "입의새",
+   "ro": "Ibuisae",
+   "src": "mymemory"
+  },
+  "貓頭鷹": {
+   "ko": "올빼미",
+   "ro": "Olppaemi",
+   "src": "mymemory"
+  },
+  "鸚鵡": {
+   "ko": "앵무새",
+   "ro": "Aengmusae",
+   "src": "mymemory"
+  },
+  "啄木鳥": {
+   "ko": "딱따구리",
+   "ro": "Ttakttaguri",
+   "src": "mymemory"
+  },
+  "紅鶴": {
+   "ko": "레드크레인",
+   "ro": "Redeukeurein",
+   "src": "mymemory"
+  },
+  "知更鳥": {
+   "ko": "흉내지빠귀",
+   "ro": "Hyungnaejippagwi",
+   "src": "mymemory"
+  },
+  "老鷹": {
+   "ko": "독수리",
+   "ro": "Doksuri",
+   "src": "mymemory"
+  },
+  "奇異鳥": {
+   "ko": "키위",
+   "ro": "Kiwi",
+   "src": "mymemory"
+  },
+  "走鵑": {
+   "ko": "시작하기",
+   "ro": "Sijakhagi",
+   "src": "mymemory"
+  },
+  "火雞": {
+   "ko": "터키",
+   "ro": "Teoki",
+   "src": "mymemory"
+  },
+  "鴕鳥": {
+   "ko": "타조",
+   "ro": "Tajo",
+   "src": "mymemory"
+  }
+ },
+ "爬蟲類": {
+  "爬蟲類": {
+   "ko": "파충류",
+   "ro": "Pachungryu",
+   "src": "wiki"
+  },
+  "變色龍": {
+   "ko": "카멜레온",
+   "ro": "Kamelreon",
+   "src": "wiki"
+  },
+  "蛇": {
+   "ko": "뱀",
+   "ro": "Baem",
+   "src": "wiki"
+  },
+  "鱷魚": {
+   "ko": "악어",
+   "ro": "Ageo",
+   "src": "wiki"
+  },
+  "烏龜": {
+   "ko": "거북",
+   "ro": "Geobuk",
+   "src": "wiki"
+  }
+ },
+ "魚類": {
+  "魚類": {
+   "ko": "물고기",
+   "ro": "Mulgogi",
+   "src": "wiki"
+  },
+  "金魚": {
+   "ko": "금붕어",
+   "ro": "Geumbungeo",
+   "src": "mymemory"
+  },
+  "燈籠魚": {
+   "ko": "랜턴피쉬",
+   "ro": "Raenteonpiswi",
+   "src": "mymemory"
+  },
+  "海馬": {
+   "ko": "해마",
+   "ro": "Haema",
+   "src": "wiki"
+  },
+  "鯊魚": {
+   "ko": "상어",
+   "ro": "Sangeo",
+   "src": "wiki"
+  },
+  "河魨": {
+   "ko": "복어",
+   "ro": "Bogeo",
+   "src": "wiki"
+  },
+  "食人魚": {
+   "ko": "피라냐",
+   "ro": "Piranya",
+   "src": "mymemory"
+  },
+  "鮭魚": {
+   "ko": "연어",
+   "ro": "Yeoneo",
+   "src": "mymemory"
+  },
+  "鮪魚": {
+   "ko": "다랑어",
+   "ro": "Darangeo",
+   "src": "wiki"
+  },
+  "鰻魚": {
+   "ko": "장어",
+   "ro": "Jangeo",
+   "src": "wiki"
+  },
+  "沙丁魚": {
+   "ko": "정어리",
+   "ro": "Jeongeori",
+   "src": "wiki"
+  },
+  "鱈魚": {
+   "ko": "대구류",
+   "ro": "Daeguryu",
+   "src": "wiki"
+  },
+  "鯉魚": {
+   "ko": "잉어",
+   "ro": "Ingeo",
+   "src": "wiki"
+  },
+  "鯛魚": {
+   "ko": "참돔",
+   "ro": "Chamdom",
+   "src": "wiki"
+  },
+  "石狗公": {
+   "ko": "쏨뱅이",
+   "ro": "Ssombaengi",
+   "src": "wiki"
+  },
+  "獅子魚": {
+   "ko": "사자성어",
+   "ro": "Sajaseongeo",
+   "src": "mymemory"
+  }
+ },
+ "昆蟲": {
+  "昆蟲": {
+   "ko": "곤충",
+   "ro": "Gonchung",
+   "src": "wiki"
+  },
+  "螞蟻": {
+   "ko": "개미",
+   "ro": "Gaemi",
+   "src": "wiki"
+  },
+  "毛毛蟲": {
+   "ko": "애벌레",
+   "ro": "Aebeolre",
+   "src": "wiki"
+  },
+  "蝴蝶": {
+   "ko": "나비",
+   "ro": "Nabi",
+   "src": "wiki"
+  },
+  "蜜蜂": {
+   "ko": "꿀벌",
+   "ro": "Kkulbeol",
+   "src": "wiki"
+  },
+  "獨角仙": {
+   "ko": "장수풍뎅이",
+   "ro": "Jangsupungdengi",
+   "src": "wiki"
+  },
+  "金龜子": {
+   "ko": "황금거북",
+   "ro": "Hwanggeumgeobuk",
+   "src": "mymemory"
+  },
+  "孑孓": {
+   "ko": "장구벌레",
+   "ro": "Janggubeolre",
+   "src": "wiki"
+  },
+  "蚊子": {
+   "ko": "모기",
+   "ro": "Mogi",
+   "src": "wiki"
+  },
+  "蒼蠅": {
+   "ko": "파리",
+   "ro": "Pari",
+   "src": "wiki"
+  },
+  "蟑螂": {
+   "ko": "바퀴벌레",
+   "ro": "Bakwibeolre",
+   "src": "wiki"
+  },
+  "葉脩": {
+   "ko": "예웨이",
+   "ro": "Yewei",
+   "src": "mymemory"
+  },
+  "蠶寶寶": {
+   "ko": "누에아기",
+   "ro": "Nueagi",
+   "src": "mymemory"
+  },
+  "飛蛾": {
+   "ko": "나방",
+   "ro": "Nabang",
+   "src": "mymemory"
+  },
+  "糞金龜": {
+   "ko": "배설물황금거북이",
+   "ro": "Baeseolmulhwanggeumgeobugi",
+   "src": "mymemory"
+  },
+  "天牛": {
+   "ko": "하늘소",
+   "ro": "Haneulso",
+   "src": "wiki"
+  },
+  "蟬": {
+   "ko": "낄낄거림",
+   "ro": "Kkilkkilgeorim",
+   "src": "mymemory"
+  }
+ },
+ "五官": {
+  "五官": {
+   "ko": "오감",
+   "ro": "Ogam",
+   "src": "mymemory"
+  },
+  "眼睛": {
+   "ko": "눈",
+   "ro": "Nun",
+   "src": "wiki"
+  },
+  "鼻子": {
+   "ko": "코",
+   "ro": "Ko",
+   "src": "wiki"
+  },
+  "嘴巴": {
+   "ko": "입",
+   "ro": "Ip",
+   "src": "wiki"
+  },
+  "耳朵": {
+   "ko": "귀",
+   "ro": "Gwi",
+   "src": "wiki"
+  }
+ },
+ "體內器官": {
+  "體內器官": {
+   "ko": "내부기관",
+   "ro": "Naebugigwan",
+   "src": "mymemory"
+  },
+  "大腦": {
+   "ko": "뇌",
+   "ro": "Noe",
+   "src": "mymemory"
+  },
+  "胃": {
+   "ko": "위",
+   "ro": "Wi",
+   "src": "mymemory"
+  },
+  "小腸": {
+   "ko": "소장",
+   "ro": "Sojang",
+   "src": "mymemory"
+  },
+  "大腸": {
+   "ko": "대장",
+   "ro": "Daejang",
+   "src": "mymemory"
+  },
+  "胰臟": {
+   "ko": "췌장",
+   "ro": "Chwejang",
+   "src": "mymemory"
+  },
+  "肝臟": {
+   "ko": "간",
+   "ro": "Gan",
+   "src": "mymemory"
+  },
+  "心臟": {
+   "ko": "심장",
+   "ro": "Simjang",
+   "src": "mymemory"
+  },
+  "肺臟": {
+   "ko": "폐",
+   "ro": "Pye",
+   "src": "mymemory"
+  },
+  "腎臟": {
+   "ko": "신장",
+   "ro": "Sinjang",
+   "src": "mymemory"
+  },
+  "膀胱": {
+   "ko": "방광",
+   "ro": "Banggwang",
+   "src": "mymemory"
+  }
+ },
+ "恐龍": {
+  "恐龍": {
+   "ko": "공룡",
+   "ro": "Gongryong",
+   "src": "mymemory"
+  },
+  "迷惑龍": {
+   "ko": "혼란의용",
+   "ro": "Honranuiyong",
+   "src": "mymemory"
+  },
+  "腕龍": {
+   "ko": "브라키오사우루스",
+   "ro": "Beurakiosauruseu",
+   "src": "mymemory"
+  },
+  "三角龍": {
+   "ko": "트리케라톱스",
+   "ro": "Teurikeratopseu",
+   "src": "mymemory"
+  },
+  "劍龍": {
+   "ko": "검룡",
+   "ro": "Geomryong",
+   "src": "mymemory"
+  },
+  "副龍節龍": {
+   "ko": "파라사우루스",
+   "ro": "Parasauruseu",
+   "src": "mymemory"
+  },
+  "腫頭龍": {
+   "ko": "트레마토사우루스",
+   "ro": "Teurematosauruseu",
+   "src": "mymemory"
+  },
+  "甲龍": {
+   "ko": "카파드래곤",
+   "ro": "Kapadeuraegon",
+   "src": "mymemory"
+  },
+  "竊蛋龍": {
+   "ko": "오비랍토로사우루스",
+   "ro": "Obiraptorosauruseu",
+   "src": "mymemory"
+  },
+  "似鳥龍": {
+   "ko": "새같은용",
+   "ro": "Saegateunyong",
+   "src": "mymemory"
+  },
+  "似雞龍": {
+   "ko": "닭용처럼",
+   "ro": "Dalgyongcheoreom",
+   "src": "mymemory"
+  },
+  "迅猛龍": {
+   "ko": "벨로키랍토르",
+   "ro": "Belrokiraptoreu",
+   "src": "mymemory"
+  },
+  "恐爪龍": {
+   "ko": "드레드클로드래곤",
+   "ro": "Deuredeukeulrodeuraegon",
+   "src": "mymemory"
+  },
+  "細顎龍": {
+   "ko": "키노사우루스",
+   "ro": "Kinosauruseu",
+   "src": "mymemory"
+  },
+  "腔骨龍": {
+   "ko": "코엘리아코사우루스",
+   "ro": "Koelriakosauruseu",
+   "src": "mymemory"
+  },
+  "異特龍": {
+   "ko": "알로사우루스",
+   "ro": "Alrosauruseu",
+   "src": "mymemory"
+  },
+  "暴龍": {
+   "ko": "티라노사우루스",
+   "ro": "Tiranosauruseu",
+   "src": "mymemory"
+  }
+ },
+ "星球": {
+  "星球": {
+   "ko": "천체",
+   "ro": "Cheonche",
+   "src": "wiki"
+  },
+  "太陽": {
+   "ko": "태양",
+   "ro": "Taeyang",
+   "src": "wiki"
+  },
+  "月亮": {
+   "ko": "달",
+   "ro": "Dal",
+   "src": "mymemory"
+  },
+  "水星": {
+   "ko": "수성",
+   "ro": "Suseong",
+   "src": "wiki"
+  },
+  "金星": {
+   "ko": "금성",
+   "ro": "Geumseong",
+   "src": "wiki"
+  },
+  "地球": {
+   "ko": "지구",
+   "ro": "Jigu",
+   "src": "wiki"
+  },
+  "火星": {
+   "ko": "화성",
+   "ro": "Hwaseong",
+   "src": "wiki"
+  },
+  "木星": {
+   "ko": "목성",
+   "ro": "Mokseong",
+   "src": "wiki"
+  },
+  "土星": {
+   "ko": "토성",
+   "ro": "Toseong",
+   "src": "wiki"
+  },
+  "天王星": {
+   "ko": "천왕성",
+   "ro": "Cheonwangseong",
+   "src": "wiki"
+  },
+  "海王星": {
+   "ko": "해왕성",
+   "ro": "Haewangseong",
+   "src": "wiki"
+  },
+  "冥王星": {
+   "ko": "명왕성",
+   "ro": "Myeongwangseong",
+   "src": "wiki"
+  }
+ },
+ "古董": {
+  "古董": {
+   "ko": "골동품",
+   "ro": "Goldongpum",
+   "src": "wiki"
+  },
+  "打字機": {
+   "ko": "타자기",
+   "ro": "Tajagi",
+   "src": "wiki"
+  },
+  "唱片": {
+   "ko": "기록",
+   "ro": "Girok",
+   "src": "mymemory"
+  },
+  "唱片機": {
+   "ko": "레코드플레이어",
+   "ro": "Rekodeupeulreieo",
+   "src": "mymemory"
+  },
+  "留聲機": {
+   "ko": "축음기",
+   "ro": "Chugeumgi",
+   "src": "wiki"
+  },
+  "點唱機": {
+   "ko": "주크박스",
+   "ro": "Jukeubakseu",
+   "src": "wiki"
+  },
+  "磁帶": {
+   "ko": "자기테이프",
+   "ro": "Jagiteipeu",
+   "src": "wiki"
+  },
+  "錄影帶": {
+   "ko": "비디오테이프",
+   "ro": "Bidioteipeu",
+   "src": "mymemory"
+  },
+  "錄音帶": {
+   "ko": "카세트테이프",
+   "ro": "Kaseteuteipeu",
+   "src": "wiki"
+  },
+  "磁帶機": {
+   "ko": "테이프드라이브",
+   "ro": "Teipeudeuraibeu",
+   "src": "wiki"
+  },
+  "底片": {
+   "ko": "음성",
+   "ro": "Eumseong",
+   "src": "mymemory"
+  },
+  "傳呼機": {
+   "ko": "무선호출기",
+   "ro": "Museonhochulgi",
+   "src": "wiki"
+  }
+ }
+}
