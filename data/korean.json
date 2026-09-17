@@ -206,14 +206,14 @@
    "src": "human"
   },
   "四分之一": {
-   "ko": "분기",
-   "ro": "bungi",
-   "src": "mymemory"
+   "ko": "사분의일",
+   "ro": "sabunuiil",
+   "src": "llm"
   },
   "零點一": {
-   "ko": "제로원",
-   "ro": "jerowon",
-   "src": "mymemory"
+   "ko": "십분의일",
+   "ro": "sipbunuiil",
+   "src": "llm"
   },
   "負一": {
    "ko": "마이너스 일",
@@ -263,9 +263,9 @@
    "src": "wiki"
   },
   "五角形": {
-   "ko": "펜타곤",
-   "ro": "pentagon",
-   "src": "mymemory"
+   "ko": "오각형",
+   "ro": "ogakhyeong",
+   "src": "llm"
   },
   "六角形": {
    "ko": "육각형",
@@ -288,14 +288,14 @@
    "src": "wiki"
   },
   "圓柱體": {
-   "ko": "실린더",
-   "ro": "silrindeo",
-   "src": "mymemory"
+   "ko": "원통체",
+   "ro": "wontongche",
+   "src": "llm"
   },
   "三角柱體": {
-   "ko": "삼각형원통",
-   "ro": "samgakhyeongwontong",
-   "src": "mymemory"
+   "ko": "삼각기둥",
+   "ro": "samgakgidung",
+   "src": "llm"
   },
   "圓錐體": {
    "ko": "원뿔",
@@ -429,9 +429,9 @@
    "src": "wiki"
   },
   "國語": {
-   "ko": "중국어",
-   "ro": "junggugeo",
-   "src": "mymemory"
+   "ko": "국어",
+   "ro": "gugeo",
+   "src": "llm"
   },
   "數學": {
    "ko": "수학",
@@ -501,19 +501,19 @@
    "src": "wiki"
   },
   "一月": {
-   "ko": "1월",
-   "ro": "1wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "二月": {
-   "ko": "2월",
-   "ro": "2wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "三月": {
-   "ko": "3월",
-   "ro": "3wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "四月": {
    "ko": "4월",
@@ -521,19 +521,19 @@
    "src": "wiki"
   },
   "五月": {
-   "ko": "좋다",
-   "ro": "jota",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "六月": {
-   "ko": "6월",
-   "ro": "6wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "七月": {
-   "ko": "7월",
-   "ro": "7wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "八月": {
    "ko": "어거스트",
@@ -551,14 +551,14 @@
    "src": "wiki"
   },
   "十一月": {
-   "ko": "11월",
-   "ro": "11wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   },
   "十二月": {
-   "ko": "12월",
-   "ro": "12wol",
-   "src": "mymemory"
+   "ko": "월",
+   "ro": "wol",
+   "src": "llm"
   }
  },
  "季節": {
@@ -590,9 +590,9 @@
  },
  "星期週": {
   "星期": {
-   "ko": "주",
-   "ro": "ju",
-   "src": "mymemory"
+   "ko": "요일",
+   "ro": "yoil",
+   "src": "llm"
   },
   "星期一": {
    "ko": "월요일",
@@ -856,9 +856,9 @@
    "src": "wiki"
   },
   "劇院": {
-   "ko": "연극",
-   "ro": "yeongeuk",
-   "src": "mymemory"
+   "ko": "극장",
+   "ro": "geukjang",
+   "src": "llm"
   },
   "加油站": {
    "ko": "주유소",
@@ -973,9 +973,9 @@
    "src": "wiki"
   },
   "直排輪": {
-   "ko": "인라인휠",
-   "ro": "inrainhwil",
-   "src": "mymemory"
+   "ko": "인라인",
+   "ro": "inrain",
+   "src": "llm"
   },
   "溜冰": {
    "ko": "아이스스케이팅",
@@ -1118,9 +1118,9 @@
    "src": "wiki"
   },
   "飛行傘": {
-   "ko": "우산",
-   "ro": "usan",
-   "src": "mymemory"
+   "ko": "플라이트슈트",
+   "ro": "peulraiteusyuteu",
+   "src": "llm"
   },
   "滑翔翼": {
    "ko": "행글라이딩",
@@ -1145,9 +1145,9 @@
    "src": "wiki"
   },
   "暗棋": {
-   "ko": "숨겨진체스",
-   "ro": "sumgyeojincheseu",
-   "src": "mymemory"
+   "ko": "암호체스",
+   "ro": "amhocheseu",
+   "src": "llm"
   },
   "圍棋": {
    "ko": "바둑",
@@ -1230,9 +1230,9 @@
    "src": "wiki"
   },
   "扭蛋機": {
-   "ko": "Gacha기계",
-   "ro": "gachagigye",
-   "src": "mymemory"
+   "ko": "기계",
+   "ro": "gigye",
+   "src": "llm"
   },
   "角子機": {
    "ko": "슬롯머신",
@@ -1544,9 +1544,9 @@
    "src": "wiki"
   },
   "沙士": {
-   "ko": "살사",
-   "ro": "salsa",
-   "src": "mymemory"
+   "ko": "사사",
+   "ro": "sasa",
+   "src": "llm"
   },
   "奶昔": {
    "ko": "밀크셰이크",
@@ -1666,9 +1666,9 @@
    "src": "wiki"
   },
   "挫冰": {
-   "ko": "동상",
-   "ro": "dongsang",
-   "src": "mymemory"
+   "ko": "빙수",
+   "ro": "bingsu",
+   "src": "llm"
   },
   "蛋糕": {
    "ko": "케이크",
@@ -1738,9 +1738,9 @@
  },
  "生鮮食品": {
   "生鮮食品": {
-   "ko": "식료품",
-   "ro": "sikryopum",
-   "src": "mymemory"
+   "ko": "신선식품",
+   "ro": "sinseonsikpum",
+   "src": "llm"
   },
   "米": {
    "ko": "쌀",
@@ -2007,9 +2007,9 @@
    "src": "wiki"
   },
   "雲梯車": {
-   "ko": "엘리베이터트럭",
-   "ro": "elribeiteoteureok",
-   "src": "mymemory"
+   "ko": "소방차",
+   "ro": "sobangcha",
+   "src": "llm"
   },
   "救護車": {
    "ko": "구급차",
@@ -2062,14 +2062,14 @@
    "src": "wiki"
   },
   "連結車": {
-   "ko": "장바구니연결",
-   "ro": "jangbaguniyeongyeol",
-   "src": "mymemory"
+   "ko": "연결차",
+   "ro": "yeongyeolcha",
+   "src": "llm"
   },
   "油罐車": {
-   "ko": "유조선트럭",
-   "ro": "yujoseonteureok",
-   "src": "mymemory"
+   "ko": "유조차",
+   "ro": "yujocha",
+   "src": "llm"
   },
   "灑水車": {
    "ko": "살수차",
@@ -2077,9 +2077,9 @@
    "src": "wiki"
   },
   "汽車運載車": {
-   "ko": "운송자",
-   "ro": "unsongja",
-   "src": "mymemory"
+   "ko": "운송차",
+   "ro": "unsongcha",
+   "src": "llm"
   },
   "堆高機": {
    "ko": "지게차",
@@ -2147,9 +2147,9 @@
    "src": "wiki"
   },
   "雙翼機": {
-   "ko": "복엽기",
-   "ro": "bogyeopgi",
-   "src": "mymemory"
+   "ko": "이익기",
+   "ro": "iikgi",
+   "src": "llm"
   },
   "直升機": {
    "ko": "헬리콥터",
@@ -2157,14 +2157,14 @@
    "src": "wiki"
   },
   "航機拖車": {
-   "ko": "항공기트레일러",
-   "ro": "hanggonggiteureilreo",
-   "src": "mymemory"
+   "ko": "항공기",
+   "ro": "hanggonggi",
+   "src": "llm"
   },
   "登機梯車": {
-   "ko": "탑승계단",
-   "ro": "tapseunggyedan",
-   "src": "mymemory"
+   "ko": "탑승",
+   "ro": "tapseung",
+   "src": "llm"
   },
   "熱氣球": {
    "ko": "열기구",
@@ -2724,9 +2724,9 @@
    "src": "mymemory"
   },
   "電動打蛋器": {
-   "ko": "전기에그비터",
-   "ro": "jeongiegeubiteo",
-   "src": "mymemory"
+   "ko": "전기비터",
+   "ro": "jeongibiteo",
+   "src": "llm"
   },
   "烤麵包機": {
    "ko": "토스터",
@@ -2759,14 +2759,14 @@
    "src": "mymemory"
   },
   "摩卡壺": {
-   "ko": "모카냄비",
-   "ro": "mokanaembi",
-   "src": "mymemory"
+   "ko": "모카포트",
+   "ro": "mokapoteu",
+   "src": "llm"
   },
   "氣泡水機": {
-   "ko": "스파클링워터머신",
-   "ro": "seupakeulringwoteomeosin",
-   "src": "mymemory"
+   "ko": "스파클링머신",
+   "ro": "seupakeulringmeosin",
+   "src": "llm"
   },
   "洗碗機": {
    "ko": "식기세척기",
@@ -3184,9 +3184,9 @@
    "src": "mymemory"
   },
   "釘子": {
-   "ko": "손톱",
-   "ro": "sontop",
-   "src": "mymemory"
+   "ko": "못",
+   "ro": "mot",
+   "src": "llm"
   },
   "螺絲": {
    "ko": "나사",
@@ -3199,24 +3199,24 @@
    "src": "mymemory"
   },
   "墊圈": {
-   "ko": "세탁기",
-   "ro": "setakgi",
-   "src": "mymemory"
+   "ko": "링",
+   "ro": "ring",
+   "src": "llm"
   },
   "螺帽": {
-   "ko": "견과류",
-   "ro": "gyeongwaryu",
-   "src": "mymemory"
+   "ko": "머리",
+   "ro": "meori",
+   "src": "llm"
   },
   "彈簧": {
-   "ko": "봄",
-   "ro": "bom",
-   "src": "mymemory"
+   "ko": "스프링",
+   "ro": "seupeuring",
+   "src": "llm"
   },
   "輪": {
-   "ko": "원형",
-   "ro": "wonhyeong",
-   "src": "mymemory"
+   "ko": "바퀴",
+   "ro": "bakwi",
+   "src": "llm"
   },
   "軸": {
    "ko": "축",
@@ -3234,9 +3234,9 @@
    "src": "mymemory"
   },
   "培林": {
-   "ko": "페린",
-   "ro": "perin",
-   "src": "mymemory"
+   "ko": "베어링",
+   "ro": "beeoring",
+   "src": "llm"
   },
   "門把": {
    "ko": "문손잡이",
@@ -3244,9 +3244,9 @@
    "src": "mymemory"
   },
   "方向盤": {
-   "ko": "스티어링휠",
-   "ro": "seutieoringhwil",
-   "src": "mymemory"
+   "ko": "스티어링",
+   "ro": "seutieoring",
+   "src": "llm"
   },
   "插頭": {
    "ko": "플러그",
@@ -3264,9 +3264,9 @@
    "src": "mymemory"
   },
   "開關": {
-   "ko": "전환",
-   "ro": "jeonhwan",
-   "src": "mymemory"
+   "ko": "스위치",
+   "ro": "seuwichi",
+   "src": "llm"
   },
   "電線": {
    "ko": "와이어",
@@ -3500,9 +3500,9 @@
    "src": "wiki"
   },
   "新鮮屋": {
-   "ko": "신선한집",
-   "ro": "sinseonhanjip",
-   "src": "mymemory"
+   "ko": "신선한",
+   "ro": "sinseonhan",
+   "src": "llm"
   },
   "鋁箔包": {
    "ko": "호일백",
@@ -3515,9 +3515,9 @@
    "src": "mymemory"
   },
   "廣口瓶": {
-   "ko": "구내식당병",
-   "ro": "gunaesikdangbyeong",
-   "src": "mymemory"
+   "ko": "넓은",
+   "ro": "neolbeun",
+   "src": "llm"
   },
   "易開罐": {
    "ko": "원터치캔",
@@ -3709,9 +3709,9 @@
    "src": "mymemory"
   },
   "犀牛": {
-   "ko": "코뿔소",
-   "ro": "koppulso",
-   "src": "mymemory"
+   "ko": "코끼리",
+   "ro": "kokkiri",
+   "src": "llm"
   },
   "獅子": {
    "ko": "사자",
@@ -3734,9 +3734,9 @@
    "src": "mymemory"
   },
   "水豚": {
-   "ko": "복어",
-   "ro": "bogeo",
-   "src": "mymemory"
+   "ko": "수",
+   "ro": "su",
+   "src": "llm"
   },
   "駱駝": {
    "ko": "낙타",
@@ -3744,9 +3744,9 @@
    "src": "mymemory"
   },
   "海豹": {
-   "ko": "씰",
-   "ro": "ssil",
-   "src": "mymemory"
+   "ko": "시",
+   "ro": "si",
+   "src": "llm"
   },
   "海獅": {
    "ko": "바다사자",
@@ -3769,9 +3769,9 @@
    "src": "mymemory"
   },
   "虎鯨": {
-   "ko": "오르카스",
-   "ro": "oreukaseu",
-   "src": "mymemory"
+   "ko": "오르카",
+   "ro": "oreuka",
+   "src": "llm"
   },
   "白鯨": {
    "ko": "벨루가",
@@ -3816,9 +3816,9 @@
    "src": "mymemory"
   },
   "麻雀": {
-   "ko": "마작",
-   "ro": "majak",
-   "src": "mymemory"
+   "ko": "마귀",
+   "ro": "magwi",
+   "src": "llm"
   },
   "燕子": {
    "ko": "제비",
@@ -3851,9 +3851,9 @@
    "src": "human"
   },
   "夜鷺": {
-   "ko": "나이트헤론",
-   "ro": "naiteuheron",
-   "src": "mymemory"
+   "ko": "야행용",
+   "ro": "yahaengyong",
+   "src": "llm"
   },
   "蒼鷺": {
    "ko": "헤론",
@@ -4202,9 +4202,9 @@
    "src": "wiki"
   },
   "蟬": {
-   "ko": "낄낄거림",
-   "ro": "kkilkkilgeorim",
-   "src": "mymemory"
+   "ko": "까르르거림",
+   "ro": "kkareureugeorim",
+   "src": "llm"
   }
  },
  "五官": {
@@ -4298,9 +4298,9 @@
    "src": "mymemory"
   },
   "迷惑龍": {
-   "ko": "혼란의용",
-   "ro": "honranuiyong",
-   "src": "mymemory"
+   "ko": "혼란룡",
+   "ro": "honranryong",
+   "src": "llm"
   },
   "腕龍": {
    "ko": "브라키오사우루스",
@@ -4313,19 +4313,19 @@
    "src": "mymemory"
   },
   "劍龍": {
-   "ko": "검룡",
-   "ro": "geomryong",
-   "src": "mymemory"
+   "ko": "스테고사우루스",
+   "ro": "seutegosauruseu",
+   "src": "llm"
   },
   "副龍節龍": {
-   "ko": "파라사우루스",
-   "ro": "parasauruseu",
-   "src": "mymemory"
+   "ko": "파라사우로플라스",
+   "ro": "parasauropeulraseu",
+   "src": "llm"
   },
   "腫頭龍": {
-   "ko": "트레마토사우루스",
-   "ro": "teurematosauruseu",
-   "src": "mymemory"
+   "ko": "코리토사우루스",
+   "ro": "koritosauruseu",
+   "src": "llm"
   },
   "甲龍": {
    "ko": "카파드래곤",
@@ -4452,9 +4452,9 @@
    "src": "wiki"
   },
   "唱片": {
-   "ko": "기록",
-   "ro": "girok",
-   "src": "mymemory"
+   "ko": "레코드",
+   "ro": "rekodeu",
+   "src": "llm"
   },
   "唱片機": {
    "ko": "레코드플레이어",
@@ -4492,9 +4492,9 @@
    "src": "wiki"
   },
   "底片": {
-   "ko": "음성",
-   "ro": "eumseong",
-   "src": "mymemory"
+   "ko": "필름",
+   "ro": "pilreum",
+   "src": "llm"
   },
   "傳呼機": {
    "ko": "무선호출기",
