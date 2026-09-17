@@ -5,45 +5,205 @@
    "ro": "Sutja",
    "src": "wiki"
   },
+  "零": {
+   "ko": "영",
+   "ro": "Yeong",
+   "src": "rule"
+  },
+  "一": {
+   "ko": "일",
+   "ro": "Il",
+   "src": "rule"
+  },
+  "二": {
+   "ko": "이",
+   "ro": "I",
+   "src": "rule"
+  },
+  "三": {
+   "ko": "삼",
+   "ro": "Sam",
+   "src": "rule"
+  },
+  "四": {
+   "ko": "사",
+   "ro": "Sa",
+   "src": "rule"
+  },
+  "五": {
+   "ko": "오",
+   "ro": "O",
+   "src": "rule"
+  },
+  "六": {
+   "ko": "육",
+   "ro": "Yuk",
+   "src": "rule"
+  },
+  "七": {
+   "ko": "칠",
+   "ro": "Chil",
+   "src": "rule"
+  },
+  "八": {
+   "ko": "팔",
+   "ro": "Pal",
+   "src": "rule"
+  },
+  "九": {
+   "ko": "구",
+   "ro": "Gu",
+   "src": "rule"
+  },
+  "十": {
+   "ko": "십",
+   "ro": "Sip",
+   "src": "rule"
+  },
+  "十一": {
+   "ko": "십일",
+   "ro": "Sibil",
+   "src": "rule"
+  },
+  "十二": {
+   "ko": "십이",
+   "ro": "Sibi",
+   "src": "rule"
+  },
+  "十三": {
+   "ko": "십삼",
+   "ro": "Sipsam",
+   "src": "rule"
+  },
+  "十四": {
+   "ko": "십사",
+   "ro": "Sipsa",
+   "src": "rule"
+  },
   "十五": {
-   "ko": "열다섯",
-   "ro": "Yeoldaseot",
-   "src": "mymemory"
+   "ko": "십오",
+   "ro": "Sibo",
+   "src": "rule"
+  },
+  "十六": {
+   "ko": "십육",
+   "ro": "Sibyuk",
+   "src": "rule"
   },
   "十七": {
-   "ko": "세븐틴",
-   "ro": "Sebeuntin",
-   "src": "mymemory"
+   "ko": "십칠",
+   "ro": "Sipchil",
+   "src": "rule"
+  },
+  "十八": {
+   "ko": "십팔",
+   "ro": "Sippal",
+   "src": "rule"
+  },
+  "十九": {
+   "ko": "십구",
+   "ro": "Sipgu",
+   "src": "rule"
+  },
+  "二十": {
+   "ko": "이십",
+   "ro": "Isip",
+   "src": "rule"
+  },
+  "三十": {
+   "ko": "삼십",
+   "ro": "Samsip",
+   "src": "rule"
+  },
+  "四十": {
+   "ko": "사십",
+   "ro": "Sasip",
+   "src": "rule"
+  },
+  "五十": {
+   "ko": "오십",
+   "ro": "Osip",
+   "src": "rule"
+  },
+  "六十": {
+   "ko": "육십",
+   "ro": "Yuksip",
+   "src": "rule"
+  },
+  "七十": {
+   "ko": "칠십",
+   "ro": "Chilsip",
+   "src": "rule"
+  },
+  "八十": {
+   "ko": "팔십",
+   "ro": "Palsip",
+   "src": "rule"
+  },
+  "九十": {
+   "ko": "구십",
+   "ro": "Gusip",
+   "src": "rule"
+  },
+  "一百": {
+   "ko": "백",
+   "ro": "Baek",
+   "src": "rule"
+  },
+  "一千": {
+   "ko": "천",
+   "ro": "Cheon",
+   "src": "rule"
+  },
+  "一萬": {
+   "ko": "만",
+   "ro": "Man",
+   "src": "rule"
+  },
+  "十萬": {
+   "ko": "십만",
+   "ro": "Sipman",
+   "src": "rule"
+  },
+  "一百萬": {
+   "ko": "백만",
+   "ro": "Baekman",
+   "src": "rule"
   },
   "一千萬": {
-   "ko": "1천만",
-   "ro": "1cheonman",
-   "src": "mymemory"
+   "ko": "천만",
+   "ro": "Cheonman",
+   "src": "rule"
   },
   "一億": {
-   "ko": "1억",
-   "ro": "1eok",
-   "src": "mymemory"
+   "ko": "억",
+   "ro": "Eok",
+   "src": "rule"
   },
   "十億": {
-   "ko": "수십억달러",
-   "ro": "Susibeokdalreo",
-   "src": "mymemory"
+   "ko": "십억",
+   "ro": "Sibeok",
+   "src": "rule"
   },
   "一百億": {
-   "ko": "100억",
-   "ro": "100eok",
-   "src": "mymemory"
+   "ko": "백억",
+   "ro": "Baegeok",
+   "src": "rule"
   },
   "一千億": {
-   "ko": "1천억",
-   "ro": "1cheoneok",
-   "src": "mymemory"
+   "ko": "천억",
+   "ro": "Cheoneok",
+   "src": "rule"
   },
   "一兆": {
-   "ko": "1조",
-   "ro": "1jo",
-   "src": "mymemory"
+   "ko": "일조",
+   "ro": "Iljo",
+   "src": "rule"
+  },
+  "二分之一": {
+   "ko": "이분의 일",
+   "ro": "Ibunui il",
+   "src": "human"
   },
   "四分之一": {
    "ko": "분기",
@@ -54,6 +214,11 @@
    "ko": "제로원",
    "ro": "Jerowon",
    "src": "mymemory"
+  },
+  "負一": {
+   "ko": "마이너스 일",
+   "ro": "Maineoseu il",
+   "src": "human"
   }
  },
  "形狀": {
@@ -499,64 +664,124 @@
    "src": "wiki"
   },
   "一點鐘": {
-   "ko": "1시",
-   "ro": "1si",
-   "src": "mymemory"
+   "ko": "한 시",
+   "ro": "Han si",
+   "src": "rule"
+  },
+  "一點半": {
+   "ko": "한 시 반",
+   "ro": "Han si ban",
+   "src": "rule"
   },
   "二點鐘": {
-   "ko": "2시",
-   "ro": "2si",
-   "src": "mymemory"
+   "ko": "두 시",
+   "ro": "Du si",
+   "src": "rule"
+  },
+  "二點半": {
+   "ko": "두 시 반",
+   "ro": "Du si ban",
+   "src": "rule"
   },
   "三點鐘": {
-   "ko": "3시",
-   "ro": "3si",
-   "src": "mymemory"
+   "ko": "세 시",
+   "ro": "Se si",
+   "src": "rule"
+  },
+  "三點半": {
+   "ko": "세 시 반",
+   "ro": "Se si ban",
+   "src": "rule"
   },
   "四點鐘": {
-   "ko": "4시",
-   "ro": "4si",
-   "src": "mymemory"
+   "ko": "네 시",
+   "ro": "Ne si",
+   "src": "rule"
+  },
+  "四點半": {
+   "ko": "네 시 반",
+   "ro": "Ne si ban",
+   "src": "rule"
   },
   "五點鐘": {
-   "ko": "5시",
-   "ro": "5si",
-   "src": "mymemory"
+   "ko": "다섯 시",
+   "ro": "Daseot si",
+   "src": "rule"
+  },
+  "五點半": {
+   "ko": "다섯 시 반",
+   "ro": "Daseot si ban",
+   "src": "rule"
   },
   "六點鐘": {
-   "ko": "6시",
-   "ro": "6si",
-   "src": "mymemory"
+   "ko": "여섯 시",
+   "ro": "Yeoseot si",
+   "src": "rule"
+  },
+  "六點半": {
+   "ko": "여섯 시 반",
+   "ro": "Yeoseot si ban",
+   "src": "rule"
   },
   "七點鐘": {
-   "ko": "7시",
-   "ro": "7si",
-   "src": "mymemory"
+   "ko": "일곱 시",
+   "ro": "Ilgop si",
+   "src": "rule"
+  },
+  "七點半": {
+   "ko": "일곱 시 반",
+   "ro": "Ilgop si ban",
+   "src": "rule"
   },
   "八點鐘": {
-   "ko": "8시",
-   "ro": "8si",
-   "src": "mymemory"
+   "ko": "여덟 시",
+   "ro": "Yeodeol si",
+   "src": "rule"
+  },
+  "八點半": {
+   "ko": "여덟 시 반",
+   "ro": "Yeodeol si ban",
+   "src": "rule"
   },
   "九點鐘": {
-   "ko": "9시",
-   "ro": "9si",
-   "src": "mymemory"
+   "ko": "아홉 시",
+   "ro": "Ahop si",
+   "src": "rule"
+  },
+  "九點半": {
+   "ko": "아홉 시 반",
+   "ro": "Ahop si ban",
+   "src": "rule"
   },
   "十點鐘": {
-   "ko": "10시",
-   "ro": "10si",
-   "src": "mymemory"
+   "ko": "열 시",
+   "ro": "Yeol si",
+   "src": "rule"
+  },
+  "十點半": {
+   "ko": "열 시 반",
+   "ro": "Yeol si ban",
+   "src": "rule"
   },
   "十一點鐘": {
-   "ko": "11시",
-   "ro": "11si",
-   "src": "mymemory"
+   "ko": "열한 시",
+   "ro": "Yeolhan si",
+   "src": "rule"
+  },
+  "十一點半": {
+   "ko": "열한 시 반",
+   "ro": "Yeolhan si ban",
+   "src": "rule"
   },
   "十二點鐘": {
-   "ko": "12시",
-   "ro": "12si",
-   "src": "mymemory"
+   "ko": "열두 시",
+   "ro": "Yeoldu si",
+   "src": "rule"
+  },
+  "十二點半": {
+   "ko": "열두 시 반",
+   "ro": "Yeoldu si ban",
+   "src": "rule"
   }
  },
  "場所": {
@@ -929,6 +1154,11 @@
    "ro": "Baduk",
    "src": "wiki"
   },
+  "五子棋": {
+   "ko": "오목",
+   "ro": "Omok",
+   "src": "wiki"
+  },
   "跳棋": {
    "ko": "체커",
    "ro": "Chekeo",
@@ -1014,6 +1244,11 @@
   "水果": {
    "ko": "과일",
    "ro": "Gwail",
+   "src": "wiki"
+  },
+  "蘋果": {
+   "ko": "사과",
+   "ro": "Sagwa",
    "src": "wiki"
   },
   "梨子": {
@@ -1871,6 +2106,11 @@
    "ro": "Teuraekteo",
    "src": "mymemory"
   },
+  "捷運": {
+   "ko": "지하철",
+   "ro": "Jihacheol",
+   "src": "human"
+  },
   "火車": {
    "ko": "열차",
    "ro": "Yeolcha",
@@ -1960,6 +2200,11 @@
    "ko": "보트",
    "ro": "Boteu",
    "src": "mymemory"
+  },
+  "筏": {
+   "ko": "뗏목",
+   "ro": "Ttetmok",
+   "src": "human"
   },
   "獨木舟": {
    "ko": "카누타기",
@@ -2412,6 +2657,11 @@
    "ko": "가전제품",
    "ro": "Gajeonjepum",
    "src": "mymemory"
+  },
+  "電視機": {
+   "ko": "텔레비전",
+   "ro": "Telrebijeon",
+   "src": "human"
   },
   "收音機": {
    "ko": "라디오",
@@ -3388,6 +3638,11 @@
    "ro": "Bakjwi",
    "src": "mymemory"
   },
+  "豬": {
+   "ko": "돼지",
+   "ro": "Dwaeji",
+   "src": "human"
+  },
   "乳牛": {
    "ko": "젖소",
    "ro": "Jeotso",
@@ -3545,6 +3800,11 @@
    "ro": "Baekjo",
    "src": "mymemory"
   },
+  "鴛鴦": {
+   "ko": "원앙",
+   "ro": "Wonang",
+   "src": "human"
+  },
   "鴿子": {
    "ko": "비둘기",
    "ro": "Bidulgi",
@@ -3579,6 +3839,11 @@
    "ko": "킹피셔",
    "ro": "Kingpisyeo",
    "src": "mymemory"
+  },
+  "白鷺鷥": {
+   "ko": "백로",
+   "ro": "Baekro",
+   "src": "human"
   },
   "夜鷺": {
    "ko": "나이트헤론",
@@ -3664,12 +3929,27 @@
    "ko": "타조",
    "ro": "Tajo",
    "src": "mymemory"
+  },
+  "鴯鶓": {
+   "ko": "에뮤",
+   "ro": "Emyu",
+   "src": "human"
   }
  },
  "爬蟲類": {
   "爬蟲類": {
    "ko": "파충류",
    "ro": "Pachungryu",
+   "src": "wiki"
+  },
+  "蜥蜴": {
+   "ko": "도마뱀아목",
+   "ro": "Domabaemamok",
+   "src": "wiki"
+  },
+  "壁虎": {
+   "ko": "도마뱀붙이과",
+   "ro": "Domabaembutigwa",
    "src": "wiki"
   },
   "變色龍": {
@@ -3704,6 +3984,11 @@
    "ro": "Geumbungeo",
    "src": "mymemory"
   },
+  "小丑魚": {
+   "ko": "흰동가리",
+   "ro": "Huindonggari",
+   "src": "human"
+  },
   "燈籠魚": {
    "ko": "랜턴피쉬",
    "ro": "Raenteonpiswi",
@@ -3717,6 +4002,11 @@
   "鯊魚": {
    "ko": "상어",
    "ro": "Sangeo",
+   "src": "wiki"
+  },
+  "魟魚": {
+   "ko": "색가오리과",
+   "ro": "Saekgaorigwa",
    "src": "wiki"
   },
   "河魨": {
@@ -3764,6 +4054,16 @@
    "ro": "Chamdom",
    "src": "wiki"
   },
+  "飛魚": {
+   "ko": "날치과",
+   "ro": "Nalchigwa",
+   "src": "wiki"
+  },
+  "鬼頭刀": {
+   "ko": "만새기",
+   "ro": "Mansaegi",
+   "src": "human"
+  },
   "石狗公": {
    "ko": "쏨뱅이",
    "ro": "Ssombaengi",
@@ -3801,9 +4101,34 @@
    "ro": "Kkulbeol",
    "src": "wiki"
   },
+  "蜻蜓": {
+   "ko": "잠자리하목",
+   "ro": "Jamjarihamok",
+   "src": "wiki"
+  },
+  "螢火蟲": {
+   "ko": "반딧불이과",
+   "ro": "Banditburigwa",
+   "src": "wiki"
+  },
+  "瓢蟲": {
+   "ko": "무당벌레과",
+   "ro": "Mudangbeolregwa",
+   "src": "wiki"
+  },
+  "螳螂": {
+   "ko": "사마귀목",
+   "ro": "Samagwimok",
+   "src": "wiki"
+  },
   "獨角仙": {
    "ko": "장수풍뎅이",
    "ro": "Jangsupungdengi",
+   "src": "wiki"
+  },
+  "鍬形蟲": {
+   "ko": "사슴벌레과",
+   "ro": "Saseumbeolregwa",
    "src": "wiki"
   },
   "金龜子": {
@@ -3836,6 +4161,11 @@
    "ro": "Yewei",
    "src": "mymemory"
   },
+  "竹節蟲": {
+   "ko": "대벌레목",
+   "ro": "Daebeolremok",
+   "src": "wiki"
+  },
   "蠶寶寶": {
    "ko": "누에아기",
    "ro": "Nueagi",
@@ -3854,6 +4184,16 @@
   "天牛": {
    "ko": "하늘소",
    "ro": "Haneulso",
+   "src": "wiki"
+  },
+  "椿象": {
+   "ko": "노린재아목",
+   "ro": "Norinjaeamok",
+   "src": "wiki"
+  },
+  "蟻獅": {
+   "ko": "명주잠자리과",
+   "ro": "Myeongjujamjarigwa",
    "src": "wiki"
   },
   "蟬": {
