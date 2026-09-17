@@ -1477,9 +1477,9 @@
    "src": "human"
   },
   "愛玉": {
-   "ko": "러브제이드",
-   "ro": "reobeujeideu",
-   "src": "mymemory"
+   "ko": "아이위",
+   "ro": "aiwi",
+   "src": "human"
   },
   "可可果": {
    "ko": "카카오",
@@ -3570,6 +3570,11 @@
    "ko": "사쿠라",
    "ro": "sakura",
    "src": "mymemory"
+  },
+  "竹子": {
+   "ko": "대나무",
+   "ro": "daenamu",
+   "src": "human"
   },
   "玫瑰": {
    "ko": "해당화",
