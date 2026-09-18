@@ -4501,5 +4501,415 @@
    "ro": "museonhochulgi",
    "src": "wiki"
   }
+ },
+ "蔬菜": {
+  "蔬菜": {
+   "ko": "채소",
+   "ro": "chaeso"
+  },
+  "白蘿蔔": {
+   "ko": "무",
+   "ro": "mu"
+  },
+  "甜菜": {
+   "ko": "비트",
+   "ro": "biteu"
+  },
+  "高麗菜": {
+   "ko": "양배추",
+   "ro": "yangbaechu"
+  },
+  "生菜": {
+   "ko": "상추",
+   "ro": "sangchu"
+  },
+  "芹菜": {
+   "ko": "셀러리",
+   "ro": "selreori"
+  },
+  "香菜": {
+   "ko": "고수",
+   "ro": "gosu"
+  },
+  "韭菜": {
+   "ko": "부추",
+   "ro": "buchu"
+  },
+  "黃瓜": {
+   "ko": "오이",
+   "ro": "oi"
+  },
+  "冬瓜": {
+   "ko": "동아",
+   "ro": "donga"
+  },
+  "南瓜": {
+   "ko": "호박",
+   "ro": "hobak"
+  },
+  "馬鈴薯": {
+   "ko": "감자",
+   "ro": "gamja"
+  },
+  "芋頭": {
+   "ko": "토란",
+   "ro": "toran"
+  },
+  "玉米": {
+   "ko": "옥수수",
+   "ro": "oksusu"
+  },
+  "茄子": {
+   "ko": "가지",
+   "ro": "gaji"
+  },
+  "苦瓜": {
+   "ko": "여주",
+   "ro": "yeoju"
+  },
+  "辣椒": {
+   "ko": "고추",
+   "ro": "gochu"
+  },
+  "紅蘿蔔": {
+   "ko": "당근",
+   "ro": "danggeun"
+  }
+ },
+ "調味料": {
+  "調味料": {
+   "ko": "조미료",
+   "ro": "jomiryo"
+  },
+  "鹽": {
+   "ko": "소금",
+   "ro": "sogeum"
+  },
+  "糖": {
+   "ko": "설탕",
+   "ro": "seoltang"
+  },
+  "味精": {
+   "ko": "글루탐산나트륨",
+   "ro": "geulrutamsannateuryum"
+  },
+  "辣椒粉": {
+   "ko": "고춧가루",
+   "ro": "gochutgaru"
+  },
+  "醬油": {
+   "ko": "간장",
+   "ro": "ganjang"
+  },
+  "醋": {
+   "ko": "식초",
+   "ro": "sikcho"
+  },
+  "番茄醬": {
+   "ko": "케첩",
+   "ro": "kecheop"
+  },
+  "芥末醬": {
+   "ko": "머스터드",
+   "ro": "meoseuteodeu"
+  },
+  "美乃滋": {
+   "ko": "마요네즈",
+   "ro": "mayonejeu"
+  },
+  "塔塔醬": {
+   "ko": "타르타르소스",
+   "ro": "tareutareusoseu"
+  },
+  "咖哩": {
+   "ko": "커리",
+   "ro": "keori"
+  },
+  "味噌": {
+   "ko": "미소",
+   "ro": "miso"
+  },
+  "塔巴斯科辣醬": {
+   "ko": "타바스코소스",
+   "ro": "tabaseukososeu"
+  },
+  "果醬": {
+   "ko": "잼",
+   "ro": "jaem"
+  },
+  "花生醬": {
+   "ko": "땅콩버터",
+   "ro": "ttangkongbeoteo"
+  },
+  "蜂蜜": {
+   "ko": "벌꿀",
+   "ro": "beolkkul"
+  },
+  "楓糖漿": {
+   "ko": "단풍당밀",
+   "ro": "danpungdangmil"
+  },
+  "酪梨醬": {
+   "ko": "과카몰레",
+   "ro": "gwakamolre"
+  },
+  "山葵": {
+   "ko": "고추냉이",
+   "ro": "gochunaengi"
+  },
+  "胡椒粉": {
+   "ko": "후추",
+   "ro": "huchu"
+  }
+ },
+ "速食": {
+  "速食": {
+   "ko": "패스트푸드",
+   "ro": "paeseuteupudeu"
+  },
+  "漢堡": {
+   "ko": "함부르크",
+   "ro": "hambureukeu"
+  },
+  "三明治": {
+   "ko": "샌드위치",
+   "ro": "saendeuwichi"
+  },
+  "熱狗": {
+   "ko": "핫도그",
+   "ro": "hatdogeu"
+  },
+  "披薩": {
+   "ko": "피자",
+   "ro": "pija"
+  },
+  "薯條": {
+   "ko": "감자튀김",
+   "ro": "gamjatwigim"
+  },
+  "洋芋片": {
+   "ko": "감자칩",
+   "ro": "gamjachip"
+  },
+  "炸雞": {
+   "ko": "닭튀김",
+   "ro": "daktwigim"
+  },
+  "雞塊": {
+   "ko": "치킨너겟",
+   "ro": "chikinneoget"
+  }
+ },
+ "日本料理": {
+  "日本料理": {
+   "ko": "일본요리",
+   "ro": "ilbonyori"
+  },
+  "壽司": {
+   "ko": "스시",
+   "ro": "seusi"
+  },
+  "生魚片": {
+   "ko": "회",
+   "ro": "hoe"
+  },
+  "章魚燒": {
+   "ko": "타코야끼",
+   "ro": "takoyakki"
+  },
+  "壽喜燒": {
+   "ko": "스키야키",
+   "ro": "seukiyaki"
+  },
+  "大阪燒": {
+   "ko": "오코노미야키",
+   "ro": "okonomiyaki"
+  },
+  "鐵板燒": {
+   "ko": "뎃판야키",
+   "ro": "detpanyaki"
+  },
+  "茶碗蒸": {
+   "ko": "자완무시",
+   "ro": "jawanmusi"
+  },
+  "關東煮": {
+   "ko": "오뎅",
+   "ro": "odeng"
+  },
+  "拉麵": {
+   "ko": "납면",
+   "ro": "napmyeon"
+  },
+  "烏龍麵": {
+   "ko": "우동",
+   "ro": "udong"
+  },
+  "蕎麥麵": {
+   "ko": "소바",
+   "ro": "soba"
+  },
+  "味噌湯": {
+   "ko": "미소시루",
+   "ro": "misosiru"
+  },
+  "甜不辣": {
+   "ko": "사쓰마아게",
+   "ro": "sasseumaage"
+  },
+  "蓋飯": {
+   "ko": "가이판",
+   "ro": "gaipan"
+  },
+  "玉子燒": {
+   "ko": "다마고야키",
+   "ro": "damagoyaki"
+  },
+  "便當": {
+   "ko": "도시락",
+   "ro": "dosirak"
+  }
+ },
+ "樂器": {
+  "樂器": {
+   "ko": "악기",
+   "ro": "akgi"
+  },
+  "鋼琴": {
+   "ko": "피아노",
+   "ro": "piano"
+  },
+  "小提琴": {
+   "ko": "바이올린",
+   "ro": "baiolrin"
+  },
+  "中提琴": {
+   "ko": "비올라",
+   "ro": "biolra"
+  },
+  "羽管鍵琴": {
+   "ko": "하프시코드",
+   "ro": "hapeusikodeu"
+  },
+  "吉他": {
+   "ko": "기타",
+   "ro": "gita"
+  },
+  "小號": {
+   "ko": "트럼펫",
+   "ro": "teureompet"
+  },
+  "長號": {
+   "ko": "트롬본",
+   "ro": "teurombon"
+  },
+  "手風琴": {
+   "ko": "아코디언",
+   "ro": "akodieon"
+  },
+  "管風琴": {
+   "ko": "파이프오르간",
+   "ro": "paipeuoreugan"
+  },
+  "大提琴": {
+   "ko": "첼로",
+   "ro": "chelro"
+  },
+  "貝斯": {
+   "ko": "베이스",
+   "ro": "beiseu"
+  },
+  "直笛": {
+   "ko": "리코더",
+   "ro": "rikodeo"
+  },
+  "單簧管": {
+   "ko": "클라리넷",
+   "ro": "keulrarinet"
+  },
+  "雙簧管": {
+   "ko": "오보에",
+   "ro": "oboe"
+  },
+  "法國號": {
+   "ko": "호른",
+   "ro": "horeun"
+  },
+  "口琴": {
+   "ko": "하모니카",
+   "ro": "hamonika"
+  },
+  "鼓": {
+   "ko": "북",
+   "ro": "buk"
+  },
+  "木琴": {
+   "ko": "실로폰",
+   "ro": "silropon"
+  },
+  "爵士鼓": {
+   "ko": "드럼세트",
+   "ro": "deureomseteu"
+  },
+  "低音提琴": {
+   "ko": "콘트라베이스",
+   "ro": "konteurabeiseu"
+  },
+  "豎琴": {
+   "ko": "하프",
+   "ro": "hapeu"
+  },
+  "烏克麗麗": {
+   "ko": "우쿨렐레",
+   "ro": "ukulrelre"
+  },
+  "班卓琴": {
+   "ko": "밴조",
+   "ro": "baenjo"
+  },
+  "曼陀林": {
+   "ko": "만돌린",
+   "ro": "mandolrin"
+  },
+  "橫笛": {
+   "ko": "플루트",
+   "ro": "peulruteu"
+  },
+  "大號": {
+   "ko": "튜바",
+   "ro": "tyuba"
+  },
+  "薩克斯風": {
+   "ko": "색소폰",
+   "ro": "saeksopon"
+  },
+  "卡祖笛": {
+   "ko": "카주",
+   "ro": "kaju"
+  },
+  "口風琴": {
+   "ko": "멜로디언",
+   "ro": "melrodieon"
+  },
+  "迪吉里杜管": {
+   "ko": "디저리두",
+   "ro": "dijeoridu"
+  },
+  "鈴鼓": {
+   "ko": "탬버린",
+   "ro": "taembeorin"
+  },
+  "三角鐵": {
+   "ko": "트라이앵글",
+   "ro": "teuraiaenggeul"
+  },
+  "沙鈴": {
+   "ko": "마라카스",
+   "ro": "marakaseu"
+  },
+  "鈸": {
+   "ko": "심벌즈",
+   "ro": "simbeoljeu"
+  }
  }
 }
