@@ -196,6 +196,8 @@ function spk(btn){
 }
 
 const SHEET='1gKWbsPNNVOt7VBYbpu6h3ehVirWj6_luEhac5S47GAg',TOPIC='星期週';
+// 不顯示的列（依主題，由 build.py 注入）
+const HIDE=[];
 const IMGBASE='../img/',AUDIOBASE='../audio/';
 const box=document.getElementById('box');
 let AUDIO_MAP={},IMG_MAP={};
@@ -298,6 +300,7 @@ Promise.all([
      if(!r.some(c=>clean(c)))return;
      const zh=use.length?clean(r[use[0].cols[0]]):'';
      if(!zh)return;
+     if(HIDE.indexOf(zh)>=0)return;
      h+='<tr><td class="first imgcol"><span class="thumb" data-topic="'+TOPIC+'" data-word="'+zh.replace(/"/g,'&quot;')+'" data-i="'+ri+'"></span></td>';
      use.forEach(g=>{
        const isKana=s=>/[぀-ヿ]/.test(s);
