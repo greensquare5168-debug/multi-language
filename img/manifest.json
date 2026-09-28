@@ -50,5 +50,21 @@
 "可可果": "img/words/水果/047.png",
 "咖啡果": "img/words/水果/048.png",
 "水果": "img/words/水果/topic.png"
+},
+"顏色": {
+"顏色": "img/words/顏色/000.png",
+"紅色": "img/words/顏色/001.png",
+"藍色": "img/words/顏色/002.png",
+"黃色": "img/words/顏色/003.png",
+"綠色": "img/words/顏色/004.png",
+"橘色": "img/words/顏色/005.png",
+"紫色": "img/words/顏色/006.png",
+"粉紅色": "img/words/顏色/007.png",
+"黑色": "img/words/顏色/008.png",
+"白色": "img/words/顏色/009.png",
+"咖啡色": "img/words/顏色/010.png",
+"金色": "img/words/顏色/011.png",
+"銀色": "img/words/顏色/012.png",
+"灰色": "img/words/顏色/013.png"
 }
 }
