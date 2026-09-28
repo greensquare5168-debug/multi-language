@@ -196,6 +196,8 @@ function spk(btn){
 }
 
 const SHEET='1KKR9DRuPzOYh5I2KZ9MkB3P4aGaw_U_bFLI3iJ84f9Y',TOPIC='方位';
+// 站方補充列（不進孝瓏的試算表；孝瓏之後在試算表加上同名詞時會自動去重）
+const EXTRA=[];
 // 不顯示的列（依主題，由 build.py 注入）
 const HIDE=[];
 const IMGBASE='../img/',AUDIOBASE='../audio/';
@@ -248,6 +250,12 @@ Promise.all([
    const j=JSON.parse(t.substring(t.indexOf('{'),t.lastIndexOf('}')+1));
    const tb=j.table;
    const raw=tb.rows.map(r=>r.c.map(c=>c?(c.f!=null?String(c.f):(c.v==null?'':String(c.v))):''));
+   // 併入站方補充列（若試算表已有同名的繁體中文詞 → 跳過，避免重複）
+   if(EXTRA&&EXTRA.length){
+     const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
+     const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[String(r[zhI]).trim()]=1;});
+     EXTRA.forEach(r=>{const k=String(r[zhI]).trim();if(!seen[k]){raw.push(r.map(v=>v==null?'':String(v)));seen[k]=1;}});
+   }
    const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
    // 依 row0 非空切出語言群組
    const groups=[];let cur=null;

@@ -196,6 +196,8 @@ function spk(btn){
 }
 
 const SHEET='1F_edWW9VDSqHkiJdQr9GWskwUl3uffEK9rROKjEn-og',TOPIC='顏色';
+// 站方補充列（不進孝瓏的試算表；孝瓏之後在試算表加上同名詞時會自動去重）
+const EXTRA=[["", "靛色", "ㄉㄧㄢˋ ㄙㄜˋ", "靛色", "diàn sè", "", "", "", "", "indigo", "/ˈɪn.dɪ.go/", "indigo", "/ˈɪn.dɪ.ɡəʊ/", "インディゴ", "", "indigo"], ["", "米色", "ㄇㄧˇ ㄙㄜˋ", "米色", "mǐ sè", "米色", "bí-sik", "", "", "beige", "/beʒ/", "beige", "/beɪʒ/", "ベージュ", "", "bēju"], ["", "天藍色", "ㄊㄧㄢ ㄌㄢˊ ㄙㄜˋ", "天蓝色", "tiān lán sè", "", "", "", "", "sky blue", "/ˈskaɪ blu/", "sky blue", "/ˈskaɪ bluː/", "そらいろ", "空色", "sorairo"], ["", "湖水綠", "ㄏㄨˊ ㄕㄨㄟˇ ㄌㄩˋ", "湖水绿", "hú shuǐ lǜ", "", "", "", "", "turquoise", "/ˈtɝ.kwɔɪz/", "turquoise", "/ˈtɜː.kwɑːz/", "ターコイズ", "", "tākoizu"], ["", "卡其色", "ㄎㄚˇ ㄑㄧˊ ㄙㄜˋ", "卡其色", "kǎ qí sè", "", "", "", "", "khaki", "/ˈkæ.ki/", "khaki", "/ˈkɑː.ki/", "カーキ", "", "kāki"], ["", "酒紅色", "ㄐㄧㄡˇ ㄏㄨㄥˊ ㄙㄜˋ", "酒红色", "jiǔ hóng sè", "", "", "", "", "burgundy", "/ˈbɝ.ɡən.di/", "burgundy", "/ˈbɜː.ɡən.di/", "ワインレッド", "", "wainreddo"]];
 // 不顯示的列（依主題，由 build.py 注入）
 const HIDE=[];
 const IMGBASE='../img/',AUDIOBASE='../audio/';
@@ -248,6 +250,12 @@ Promise.all([
    const j=JSON.parse(t.substring(t.indexOf('{'),t.lastIndexOf('}')+1));
    const tb=j.table;
    const raw=tb.rows.map(r=>r.c.map(c=>c?(c.f!=null?String(c.f):(c.v==null?'':String(c.v))):''));
+   // 併入站方補充列（若試算表已有同名的繁體中文詞 → 跳過，避免重複）
+   if(EXTRA&&EXTRA.length){
+     const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
+     const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[String(r[zhI]).trim()]=1;});
+     EXTRA.forEach(r=>{const k=String(r[zhI]).trim();if(!seen[k]){raw.push(r.map(v=>v==null?'':String(v)));seen[k]=1;}});
+   }
    const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
    // 依 row0 非空切出語言群組
    const groups=[];let cur=null;
