@@ -257,6 +257,8 @@ Promise.all([
      EXTRA.forEach(r=>{const k=String(r[zhI]).trim();if(!seen[k]){raw.push(r.map(v=>v==null?'':String(v)));seen[k]=1;}});
    }
    const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
+   // 子表頭「寫法」→「文字」（孝瓏 2026-09-29 指示：每種語言都寫「文字」）
+   for(let i=0;i<sub.length;i++)sub[i]=String(sub[i]).replace(/寫法/g,'文字');
    // 依 row0 非空切出語言群組
    const groups=[];let cur=null;
    hdr.forEach((v,i)=>{if(clean(v)){cur={name:clean(v),start:i,cols:[]};groups.push(cur);} if(cur)cur.cols.push(i);});
@@ -274,7 +276,7 @@ Promise.all([
      if(!Object.keys(KO).length) return;
      if(LANG.some(g=>g.name==='韓文')) return;      // 試算表已有韓文欄就不動
      const c0=hdr.length,c1=hdr.length+1;
-     hdr[c0]='韓文'; hdr[c1]=''; sub[c0]='寫法'; sub[c1]='羅馬拼音';
+     hdr[c0]='韓文'; hdr[c1]=''; sub[c0]='文字'; sub[c1]='羅馬拼音';
      const zhCol=use.length?use[0].cols[0]:1;
      data.forEach(r=>{const w=clean(r[zhCol]);const e=KO[w];if(e){r[c0]=e.ko||'';r[c1]=e.ro||'';}});
      use.push({name:'韓文',start:c0,cols:[c0,c1]});
