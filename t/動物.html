@@ -254,7 +254,17 @@ Promise.all([
    if(EXTRA&&EXTRA.length){
      const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
      const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[String(r[zhI]).trim()]=1;});
-     EXTRA.forEach(r=>{const k=String(r[zhI]).trim();if(!seen[k]){raw.push(r.map(v=>v==null?'':String(v)));seen[k]=1;}});
+     EXTRA.forEach(e=>{
+       const r=Array.isArray(e)?e:e.row; if(!r)return;
+       const after=Array.isArray(e)?null:e.after;
+       const k=String(r[zhI]).trim(); if(seen[k])return; seen[k]=1;
+       const rr=r.map(v=>v==null?'':String(v));
+       if(after!=null){
+         const idx=raw.findIndex((x,i)=>i>=2 && String(x[zhI]).trim()===after);
+         if(idx>=0){raw.splice(idx+1,0,rr);return;}
+       }
+       raw.push(rr);
+     });
    }
    const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
    // 子表頭「寫法」→「文字」（孝瓏 2026-09-29 指示：每種語言都寫「文字」）
