@@ -127,5 +127,8 @@
   "心形": "img/words/形狀/034.png",
   "十字形": "img/words/形狀/035.png",
   "箭頭": "img/words/形狀/036.png"
+ },
+ "數字": {
+  "數字": "img/words/數字/000.png"
  }
 }
