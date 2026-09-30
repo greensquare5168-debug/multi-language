@@ -255,15 +255,20 @@ Promise.all([
      const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
      const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[String(r[zhI]).trim()]=1;});
      EXTRA.forEach(e=>{
-       const r=Array.isArray(e)?e:e.row; if(!r)return;
-       const after=Array.isArray(e)?null:e.after;
-       const k=String(r[zhI]).trim(); if(seen[k])return; seen[k]=1;
-       const rr=r.map(v=>v==null?'':String(v));
-       if(after!=null){
-         const idx=raw.findIndex((x,i)=>i>=2 && String(x[zhI]).trim()===after);
-         if(idx>=0){raw.splice(idx+1,0,rr);return;}
-       }
-       raw.push(rr);
+       let rows,after=null;
+       if(Array.isArray(e)){rows=[e];}
+       else if(e.rows){rows=e.rows;after=e.after;}
+       else {rows=[e.row];after=e.after;}
+       rows.forEach(r=>{
+         if(!r)return;
+         const k=String(r[zhI]).trim(); if(seen[k])return; seen[k]=1;
+         const rr=r.map(v=>v==null?'':String(v));
+         if(after!=null){
+           const idx=raw.findIndex((x,i)=>i>=2 && String(x[zhI]).trim()===after);
+           if(idx>=0){raw.splice(idx+1,0,rr);after=k;return;}
+         }
+         raw.push(rr);
+       });
      });
    }
    const hdr=raw[0]||[],sub=raw[1]||[],data=raw.slice(2);
