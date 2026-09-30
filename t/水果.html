@@ -253,7 +253,9 @@ Promise.all([
    // 併入站方補充列（若試算表已有同名的繁體中文詞 → 跳過，避免重複）
    if(EXTRA&&EXTRA.length){
      const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
-     const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[String(r[zhI]).trim()]=1;});
+     const zhOf=r=>{const v=r?r[zhI]:null;return v==null?'':String(v).replace(//g,'').split('
+')[0].trim();};
+     const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[zhOf(r)]=1;});
      EXTRA.forEach(e=>{
        let rows,after=null;
        if(Array.isArray(e)){rows=[e];}
@@ -261,10 +263,10 @@ Promise.all([
        else {rows=[e.row];after=e.after;}
        rows.forEach(r=>{
          if(!r)return;
-         const k=String(r[zhI]).trim(); if(seen[k])return; seen[k]=1;
+         const k=zhOf(r); if(!k||seen[k])return; seen[k]=1;
          const rr=r.map(v=>v==null?'':String(v));
          if(after!=null){
-           const idx=raw.findIndex((x,i)=>i>=2 && String(x[zhI]).trim()===after);
+           const idx=raw.findIndex((x,i)=>i>=2 && zhOf(x)===after);
            if(idx>=0){raw.splice(idx+1,0,rr);after=k;return;}
          }
          raw.push(rr);
