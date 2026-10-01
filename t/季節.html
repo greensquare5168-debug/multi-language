@@ -70,6 +70,8 @@ thead th:first-child{z-index:8;background:#2e7d32;color:#fff;text-align:center}
 .spk.no{-webkit-filter:grayscale(1);opacity:.45}
 .status{text-align:center;padding:30px;color:#8aa79a}
 .err{color:#c62828}
+.status.warn{color:#8a5a00;background:#fff8e1;border:1px solid #ffe082;border-radius:10px;padding:10px 14px;font-size:13px;text-align:left;margin-bottom:10px;line-height:1.55}
+.status.warn a{color:#1f6b3a;font-weight:700;text-decoration:underline;cursor:pointer}
 .note{font-size:12px;color:#8aa79a;margin:10px 4px}
 /* 右上角語言切換（中華語言／常見語言） */
 #catbar{position:fixed;top:10px;right:10px;z-index:60;display:flex;gap:6px;align-items:center;
@@ -234,13 +236,22 @@ Promise.all([
 });
 function clean(v){return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();}
 function cleanFull(v){return v==null?'':String(v).replace(/\r/g,'');}
-// 先讀線上試算表（孝瓏還可即時編輯）；讀不到（未分享／已刪除）→ 自動改用站內備份快照
-function __snap(){return fetch('../data/sheets/'+encodeURIComponent(TOPIC)+'.json?t='+Date.now()).then(r=>{if(!r.ok)throw new Error('（此表未公開分享，且無備份快照）');return r.text();});}
+// 先讀線上試算表（孝瓏還可即時編輯）；讀不到（未分享／已刪除／連線被擋）→ 自動改用站內備份快照
+var __OFFLINE=false;
+// 帶逾時的 fetch：避免試算表連不上時卡在「載入中」不會結束（2026-10-01 孝瓏回報全站卡載入中）
+function __fetchT(url,ms){
+  try{
+    if(typeof AbortController==='undefined')return fetch(url);
+    var c=new AbortController(),t=setTimeout(function(){c.abort();},ms);
+    return fetch(url,{signal:c.signal}).then(function(r){clearTimeout(t);return r;},function(e){clearTimeout(t);throw e;});
+  }catch(e){return fetch(url);}
+}
+function __snap(){return __fetchT('../data/sheets/'+encodeURIComponent(TOPIC)+'.json?t='+Date.now(),15000).then(r=>{if(!r.ok)throw new Error('（此表未公開分享，且無備份快照）');return r.text();});}
 function __sheet(){
-  return fetch('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json')
+  return __fetchT('https://docs.google.com/spreadsheets/d/'+SHEET+'/gviz/tq?tqx=out:json',7000)
     .then(r=>r.text().then(t=>({ok:r.ok,t:t})))
     .then(o=>{if(o.ok&&(o.t.indexOf('setResponse')>=0||o.t.trim().charAt(0)==='{'))return o.t;return __snap();})
-    .catch(()=>__snap());
+    .catch(()=>{__OFFLINE=true;return __snap();});
 }
 Promise.all([
   __sheet(),
@@ -253,8 +264,7 @@ Promise.all([
    // 併入站方補充列（若試算表已有同名的繁體中文詞 → 跳過，避免重複）
    if(EXTRA&&EXTRA.length){
      const zhI=(raw[0]||[]).findIndex(v=>String(v).trim()==='繁體中文');
-     const zhOf=r=>{const v=r?r[zhI]:null;return v==null?'':String(v).replace(//g,'').split('
-')[0].trim();};
+     const zhOf=r=>{const v=r?r[zhI]:null;return v==null?'':String(v).replace(/\r/g,'').split('\n')[0].trim();};
      const seen={};(raw.slice(2)||[]).forEach(r=>{if(r)seen[zhOf(r)]=1;});
      EXTRA.forEach(e=>{
        let rows,after=null;
@@ -355,7 +365,8 @@ Promise.all([
      h+='</tr>';
    });
    h+='</tbody>';
-   box.innerHTML='<div class="tablewrap"><table>'+h+'</table></div>';
+   var warn=__OFFLINE?'<div class="status warn">⏳ 目前連不上 Google 試算表，這個頁面顯示的是<b>站內備份版</b>（你在試算表的即時修改暫時看不到）。<a onclick="location.reload()">重新載入</a>　·　若一直顯示這行，請換網路（例如手機熱點）或確認能開啟 Google。</div>':'';
+   box.innerHTML=warn+'<div class="tablewrap"><table>'+h+'</table></div>';
    // （已改用固定 104px，不再依賴量測；保留 resize 監聽僅供除錯）
    window.addEventListener('resize',()=>{});
    // 右上角：語言切換（繁體中文固定不動；其他分兩類切換）
