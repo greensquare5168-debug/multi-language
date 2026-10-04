@@ -652,9 +652,9 @@
    "src": "mymemory"
   },
   "晚上": {
-   "ko": "저녁",
-   "ro": "jeonyeok",
-   "src": "mymemory"
+   "ko": "밤",
+   "ro": "bam",
+   "src": "llm"
   }
  },
  "時間": {
@@ -993,9 +993,9 @@
    "src": "wiki"
   },
   "浮淺": {
-   "ko": "얕음",
-   "ro": "yateum",
-   "src": "mymemory"
+   "ko": "얅음",
+   "ro": "yalgeum",
+   "src": "llm"
   },
   "潛水": {
    "ko": "잠수",
@@ -1170,9 +1170,9 @@
    "src": "wiki"
   },
   "撲克牌": {
-   "ko": "포커카드",
-   "ro": "pokeokadeu",
-   "src": "mymemory"
+   "ko": "포커",
+   "ro": "pokeo",
+   "src": "llm"
   },
   "魔術方塊": {
    "ko": "루빅스큐브",
@@ -1210,9 +1210,9 @@
    "src": "wiki"
   },
   "填字遊戲": {
-   "ko": "십자말풀이퍼즐",
-   "ro": "sipjamalpuripeojeul",
-   "src": "mymemory"
+   "ko": "십자말풀이",
+   "ro": "sipjamalpuri",
+   "src": "llm"
   },
   "彈珠檯": {
    "ko": "핀볼테이블",
@@ -2207,9 +2207,9 @@
    "src": "human"
   },
   "獨木舟": {
-   "ko": "카누타기",
-   "ro": "kanutagi",
-   "src": "mymemory"
+   "ko": "카누",
+   "ro": "kanu",
+   "src": "llm"
   },
   "水上摩托車": {
    "ko": "제트스키",
@@ -2227,9 +2227,9 @@
    "src": "wiki"
   },
   "輪船": {
-   "ko": "스팀보트",
-   "ro": "seutimboteu",
-   "src": "mymemory"
+   "ko": "선박",
+   "ro": "seonbak",
+   "src": "llm"
   },
   "水翼船": {
    "ko": "하이드로포일",
@@ -2267,9 +2267,9 @@
    "src": "wiki"
   },
   "雪橇": {
-   "ko": "썰매타기",
-   "ro": "sseolmaetagi",
-   "src": "mymemory"
+   "ko": "썰매",
+   "ro": "sseolmae",
+   "src": "llm"
   },
   "雪地摩托車": {
    "ko": "스노모빌",
@@ -2277,14 +2277,14 @@
    "src": "mymemory"
   },
   "鏟雪車": {
-   "ko": "눈삽",
-   "ro": "nunsap",
-   "src": "mymemory"
+   "ko": "눈제거차",
+   "ro": "nunjegeocha",
+   "src": "llm"
   },
   "轎子": {
-   "ko": "세단",
-   "ro": "sedan",
-   "src": "mymemory"
+   "ko": "전차",
+   "ro": "jeoncha",
+   "src": "llm"
   },
   "人力車": {
    "ko": "인력거",
@@ -2292,9 +2292,9 @@
    "src": "mymemory"
   },
   "馬車": {
-   "ko": "운송",
-   "ro": "unsong",
-   "src": "mymemory"
+   "ko": "마차",
+   "ro": "macha",
+   "src": "llm"
   },
   "古董車": {
    "ko": "앤티크자동차",
@@ -2302,19 +2302,19 @@
    "src": "mymemory"
   },
   "雙層巴士": {
-   "ko": "2층버스",
-   "ro": "2cheungbeoseu",
-   "src": "mymemory"
+   "ko": "층버스",
+   "ro": "cheungbeoseu",
+   "src": "llm"
   },
   "叮叮車": {
-   "ko": "팅커벨",
-   "ro": "tingkeobel",
-   "src": "mymemory"
+   "ko": "딩딩차",
+   "ro": "dingdingcha",
+   "src": "llm"
   },
   "鴨子車": {
-   "ko": "오리장바구니",
-   "ro": "orijangbaguni",
-   "src": "mymemory"
+   "ko": "오리차",
+   "ro": "oricha",
+   "src": "llm"
   },
   "嘟嘟車": {
    "ko": "툭툭",
@@ -2354,9 +2354,9 @@
    "src": "mymemory"
   },
   "斑馬線": {
-   "ko": "얼룩말선",
-   "ro": "eolrukmalseon",
-   "src": "mymemory"
+   "ko": "자전거선",
+   "ro": "jajeongeoseon",
+   "src": "llm"
   },
   "交通錐": {
    "ko": "트래픽콘",
@@ -2379,9 +2379,9 @@
    "src": "wiki"
   },
   "電線杆": {
-   "ko": "유틸리티극",
-   "ro": "yutilritigeuk",
-   "src": "mymemory"
+   "ko": "전봇대",
+   "ro": "jeonbotdae",
+   "src": "llm"
   },
   "下水道口": {
    "ko": "하수구입구",
@@ -2632,9 +2632,9 @@
    "src": "mymemory"
   },
   "梳妝台": {
-   "ko": "서랍장",
-   "ro": "seorapjang",
-   "src": "mymemory"
+   "ko": "화장대",
+   "ro": "hwajangdae",
+   "src": "llm"
   },
   "櫃子": {
    "ko": "캐비닛",
@@ -2654,9 +2654,9 @@
  },
  "電器": {
   "電器": {
-   "ko": "가전제품",
-   "ro": "gajeonjepum",
-   "src": "mymemory"
+   "ko": "가전",
+   "ro": "gajeon",
+   "src": "llm"
   },
   "電視機": {
    "ko": "텔레비전",
@@ -3291,9 +3291,9 @@
    "src": "wiki"
   },
   "燒杯": {
-   "ko": "비이커",
-   "ro": "biikeo",
-   "src": "mymemory"
+   "ko": "비커",
+   "ro": "bikeo",
+   "src": "llm"
   },
   "燒瓶": {
    "ko": "플라스크",
@@ -3624,9 +3624,9 @@
    "src": "mymemory"
   },
   "刺蝟": {
-   "ko": "가오리",
-   "ro": "gaori",
-   "src": "mymemory"
+   "ko": "가시고양이",
+   "ro": "gasigoyangi",
+   "src": "llm"
   },
   "豪豬": {
    "ko": "고슴도치",
@@ -3881,9 +3881,9 @@
    "src": "mymemory"
   },
   "巨嘴鳥": {
-   "ko": "입의새",
-   "ro": "ibuisae",
-   "src": "mymemory"
+   "ko": "대머리새",
+   "ro": "daemeorisae",
+   "src": "llm"
   },
   "貓頭鷹": {
    "ko": "올빼미",
@@ -3906,9 +3906,9 @@
    "src": "mymemory"
   },
   "知更鳥": {
-   "ko": "흉내지빠귀",
-   "ro": "hyungnaejippagwi",
-   "src": "mymemory"
+   "ko": "지빠귀",
+   "ro": "jippagwi",
+   "src": "llm"
   },
   "老鷹": {
    "ko": "독수리",
@@ -3921,9 +3921,9 @@
    "src": "mymemory"
   },
   "走鵑": {
-   "ko": "시작하기",
-   "ro": "sijakhagi",
-   "src": "mymemory"
+   "ko": "시작",
+   "ro": "sijak",
+   "src": "llm"
   },
   "火雞": {
    "ko": "터키",
@@ -4075,9 +4075,9 @@
    "src": "wiki"
   },
   "獅子魚": {
-   "ko": "사자성어",
-   "ro": "sajaseongeo",
-   "src": "mymemory"
+   "ko": "사자고기",
+   "ro": "sajagogi",
+   "src": "llm"
   }
  },
  "昆蟲": {
@@ -4137,9 +4137,9 @@
    "src": "wiki"
   },
   "金龜子": {
-   "ko": "황금거북",
-   "ro": "hwanggeumgeobuk",
-   "src": "mymemory"
+   "ko": "황금거북이",
+   "ro": "hwanggeumgeobugi",
+   "src": "llm"
   },
   "孑孓": {
    "ko": "장구벌레",
@@ -4162,9 +4162,9 @@
    "src": "wiki"
   },
   "葉脩": {
-   "ko": "예웨이",
-   "ro": "yewei",
-   "src": "mymemory"
+   "ko": "예수",
+   "ro": "yesu",
+   "src": "llm"
   },
   "竹節蟲": {
    "ko": "대벌레목",
@@ -4182,9 +4182,9 @@
    "src": "mymemory"
   },
   "糞金龜": {
-   "ko": "배설물황금거북이",
-   "ro": "baeseolmulhwanggeumgeobugi",
-   "src": "mymemory"
+   "ko": "황금거북이",
+   "ro": "hwanggeumgeobugi",
+   "src": "llm"
   },
   "天牛": {
    "ko": "하늘소",
@@ -4328,9 +4328,9 @@
    "src": "llm"
   },
   "甲龍": {
-   "ko": "카파드래곤",
-   "ro": "kapadeuraegon",
-   "src": "mymemory"
+   "ko": "카프라이오사우루스",
+   "ro": "kapeuraiosauruseu",
+   "src": "llm"
   },
   "竊蛋龍": {
    "ko": "오비랍토로사우루스",
@@ -4505,411 +4505,511 @@
  "蔬菜": {
   "蔬菜": {
    "ko": "채소",
-   "ro": "chaeso"
+   "ro": "chaeso",
+   "src": "wiki"
   },
   "白蘿蔔": {
    "ko": "무",
-   "ro": "mu"
+   "ro": "mu",
+   "src": "wiki"
   },
   "甜菜": {
    "ko": "비트",
-   "ro": "biteu"
+   "ro": "biteu",
+   "src": "wiki"
   },
   "高麗菜": {
    "ko": "양배추",
-   "ro": "yangbaechu"
+   "ro": "yangbaechu",
+   "src": "wiki"
   },
   "生菜": {
    "ko": "상추",
-   "ro": "sangchu"
+   "ro": "sangchu",
+   "src": "wiki"
   },
   "芹菜": {
    "ko": "셀러리",
-   "ro": "selreori"
+   "ro": "selreori",
+   "src": "wiki"
   },
   "香菜": {
    "ko": "고수",
-   "ro": "gosu"
+   "ro": "gosu",
+   "src": "wiki"
   },
   "韭菜": {
    "ko": "부추",
-   "ro": "buchu"
+   "ro": "buchu",
+   "src": "wiki"
   },
   "黃瓜": {
    "ko": "오이",
-   "ro": "oi"
+   "ro": "oi",
+   "src": "wiki"
   },
   "冬瓜": {
    "ko": "동아",
-   "ro": "donga"
+   "ro": "donga",
+   "src": "wiki"
   },
   "南瓜": {
    "ko": "호박",
-   "ro": "hobak"
+   "ro": "hobak",
+   "src": "wiki"
   },
   "馬鈴薯": {
    "ko": "감자",
-   "ro": "gamja"
+   "ro": "gamja",
+   "src": "wiki"
   },
   "芋頭": {
    "ko": "토란",
-   "ro": "toran"
+   "ro": "toran",
+   "src": "wiki"
   },
   "玉米": {
    "ko": "옥수수",
-   "ro": "oksusu"
+   "ro": "oksusu",
+   "src": "wiki"
   },
   "茄子": {
    "ko": "가지",
-   "ro": "gaji"
+   "ro": "gaji",
+   "src": "wiki"
   },
   "苦瓜": {
    "ko": "여주",
-   "ro": "yeoju"
+   "ro": "yeoju",
+   "src": "wiki"
   },
   "辣椒": {
    "ko": "고추",
-   "ro": "gochu"
+   "ro": "gochu",
+   "src": "wiki"
   },
   "紅蘿蔔": {
    "ko": "당근",
-   "ro": "danggeun"
+   "ro": "danggeun",
+   "src": "wiki"
   }
  },
  "調味料": {
   "調味料": {
    "ko": "조미료",
-   "ro": "jomiryo"
+   "ro": "jomiryo",
+   "src": "wiki"
   },
   "鹽": {
    "ko": "소금",
-   "ro": "sogeum"
+   "ro": "sogeum",
+   "src": "wiki"
   },
   "糖": {
    "ko": "설탕",
-   "ro": "seoltang"
+   "ro": "seoltang",
+   "src": "wiki"
   },
   "味精": {
    "ko": "글루탐산나트륨",
-   "ro": "geulrutamsannateuryum"
+   "ro": "geulrutamsannateuryum",
+   "src": "wiki"
   },
   "辣椒粉": {
    "ko": "고춧가루",
-   "ro": "gochutgaru"
+   "ro": "gochutgaru",
+   "src": "wiki"
   },
   "醬油": {
    "ko": "간장",
-   "ro": "ganjang"
+   "ro": "ganjang",
+   "src": "wiki"
   },
   "醋": {
    "ko": "식초",
-   "ro": "sikcho"
+   "ro": "sikcho",
+   "src": "wiki"
   },
   "番茄醬": {
    "ko": "케첩",
-   "ro": "kecheop"
+   "ro": "kecheop",
+   "src": "wiki"
   },
   "芥末醬": {
    "ko": "머스터드",
-   "ro": "meoseuteodeu"
+   "ro": "meoseuteodeu",
+   "src": "wiki"
   },
   "美乃滋": {
    "ko": "마요네즈",
-   "ro": "mayonejeu"
+   "ro": "mayonejeu",
+   "src": "wiki"
   },
   "塔塔醬": {
    "ko": "타르타르소스",
-   "ro": "tareutareusoseu"
+   "ro": "tareutareusoseu",
+   "src": "wiki"
   },
   "咖哩": {
    "ko": "커리",
-   "ro": "keori"
+   "ro": "keori",
+   "src": "wiki"
   },
   "味噌": {
    "ko": "미소",
-   "ro": "miso"
+   "ro": "miso",
+   "src": "wiki"
   },
   "塔巴斯科辣醬": {
    "ko": "타바스코소스",
-   "ro": "tabaseukososeu"
+   "ro": "tabaseukososeu",
+   "src": "wiki"
   },
   "果醬": {
    "ko": "잼",
-   "ro": "jaem"
+   "ro": "jaem",
+   "src": "wiki"
   },
   "花生醬": {
    "ko": "땅콩버터",
-   "ro": "ttangkongbeoteo"
+   "ro": "ttangkongbeoteo",
+   "src": "wiki"
   },
   "蜂蜜": {
    "ko": "벌꿀",
-   "ro": "beolkkul"
+   "ro": "beolkkul",
+   "src": "wiki"
   },
   "楓糖漿": {
    "ko": "단풍당밀",
-   "ro": "danpungdangmil"
+   "ro": "danpungdangmil",
+   "src": "wiki"
   },
   "酪梨醬": {
    "ko": "과카몰레",
-   "ro": "gwakamolre"
+   "ro": "gwakamolre",
+   "src": "wiki"
   },
   "山葵": {
    "ko": "고추냉이",
-   "ro": "gochunaengi"
+   "ro": "gochunaengi",
+   "src": "wiki"
   },
   "胡椒粉": {
    "ko": "후추",
-   "ro": "huchu"
+   "ro": "huchu",
+   "src": "wiki"
   }
  },
  "速食": {
   "速食": {
    "ko": "패스트푸드",
-   "ro": "paeseuteupudeu"
+   "ro": "paeseuteupudeu",
+   "src": "wiki"
   },
   "漢堡": {
    "ko": "함부르크",
-   "ro": "hambureukeu"
+   "ro": "hambureukeu",
+   "src": "wiki"
   },
   "三明治": {
    "ko": "샌드위치",
-   "ro": "saendeuwichi"
+   "ro": "saendeuwichi",
+   "src": "wiki"
   },
   "熱狗": {
    "ko": "핫도그",
-   "ro": "hatdogeu"
+   "ro": "hatdogeu",
+   "src": "wiki"
   },
   "披薩": {
    "ko": "피자",
-   "ro": "pija"
+   "ro": "pija",
+   "src": "wiki"
   },
   "薯條": {
    "ko": "감자튀김",
-   "ro": "gamjatwigim"
+   "ro": "gamjatwigim",
+   "src": "wiki"
   },
   "洋芋片": {
    "ko": "감자칩",
-   "ro": "gamjachip"
+   "ro": "gamjachip",
+   "src": "wiki"
   },
   "炸雞": {
    "ko": "닭튀김",
-   "ro": "daktwigim"
+   "ro": "daktwigim",
+   "src": "wiki"
   },
   "雞塊": {
    "ko": "치킨너겟",
-   "ro": "chikinneoget"
+   "ro": "chikinneoget",
+   "src": "wiki"
   }
  },
  "日本料理": {
   "日本料理": {
    "ko": "일본요리",
-   "ro": "ilbonyori"
+   "ro": "ilbonyori",
+   "src": "wiki"
   },
   "壽司": {
    "ko": "스시",
-   "ro": "seusi"
+   "ro": "seusi",
+   "src": "wiki"
   },
   "生魚片": {
    "ko": "회",
-   "ro": "hoe"
+   "ro": "hoe",
+   "src": "wiki"
   },
   "章魚燒": {
    "ko": "타코야끼",
-   "ro": "takoyakki"
+   "ro": "takoyakki",
+   "src": "wiki"
   },
   "壽喜燒": {
    "ko": "스키야키",
-   "ro": "seukiyaki"
+   "ro": "seukiyaki",
+   "src": "wiki"
   },
   "大阪燒": {
    "ko": "오코노미야키",
-   "ro": "okonomiyaki"
+   "ro": "okonomiyaki",
+   "src": "wiki"
   },
   "鐵板燒": {
    "ko": "뎃판야키",
-   "ro": "detpanyaki"
+   "ro": "detpanyaki",
+   "src": "wiki"
   },
   "茶碗蒸": {
    "ko": "자완무시",
-   "ro": "jawanmusi"
+   "ro": "jawanmusi",
+   "src": "wiki"
   },
   "關東煮": {
    "ko": "오뎅",
-   "ro": "odeng"
+   "ro": "odeng",
+   "src": "wiki"
   },
   "拉麵": {
    "ko": "납면",
-   "ro": "napmyeon"
+   "ro": "napmyeon",
+   "src": "wiki"
   },
   "烏龍麵": {
    "ko": "우동",
-   "ro": "udong"
+   "ro": "udong",
+   "src": "wiki"
   },
   "蕎麥麵": {
    "ko": "소바",
-   "ro": "soba"
+   "ro": "soba",
+   "src": "wiki"
   },
   "味噌湯": {
    "ko": "미소시루",
-   "ro": "misosiru"
+   "ro": "misosiru",
+   "src": "wiki"
   },
   "甜不辣": {
    "ko": "사쓰마아게",
-   "ro": "sasseumaage"
+   "ro": "sasseumaage",
+   "src": "wiki"
   },
   "蓋飯": {
    "ko": "가이판",
-   "ro": "gaipan"
+   "ro": "gaipan",
+   "src": "wiki"
   },
   "玉子燒": {
    "ko": "다마고야키",
-   "ro": "damagoyaki"
+   "ro": "damagoyaki",
+   "src": "wiki"
   },
   "便當": {
    "ko": "도시락",
-   "ro": "dosirak"
+   "ro": "dosirak",
+   "src": "wiki"
   }
  },
  "樂器": {
   "樂器": {
    "ko": "악기",
-   "ro": "akgi"
+   "ro": "akgi",
+   "src": "wiki"
   },
   "鋼琴": {
    "ko": "피아노",
-   "ro": "piano"
+   "ro": "piano",
+   "src": "wiki"
   },
   "小提琴": {
    "ko": "바이올린",
-   "ro": "baiolrin"
+   "ro": "baiolrin",
+   "src": "wiki"
   },
   "中提琴": {
    "ko": "비올라",
-   "ro": "biolra"
+   "ro": "biolra",
+   "src": "wiki"
   },
   "羽管鍵琴": {
    "ko": "하프시코드",
-   "ro": "hapeusikodeu"
+   "ro": "hapeusikodeu",
+   "src": "wiki"
   },
   "吉他": {
    "ko": "기타",
-   "ro": "gita"
+   "ro": "gita",
+   "src": "wiki"
   },
   "小號": {
    "ko": "트럼펫",
-   "ro": "teureompet"
+   "ro": "teureompet",
+   "src": "wiki"
   },
   "長號": {
    "ko": "트롬본",
-   "ro": "teurombon"
+   "ro": "teurombon",
+   "src": "wiki"
   },
   "手風琴": {
    "ko": "아코디언",
-   "ro": "akodieon"
+   "ro": "akodieon",
+   "src": "wiki"
   },
   "管風琴": {
    "ko": "파이프오르간",
-   "ro": "paipeuoreugan"
+   "ro": "paipeuoreugan",
+   "src": "wiki"
   },
   "大提琴": {
    "ko": "첼로",
-   "ro": "chelro"
+   "ro": "chelro",
+   "src": "wiki"
   },
   "貝斯": {
    "ko": "베이스",
-   "ro": "beiseu"
+   "ro": "beiseu",
+   "src": "wiki"
   },
   "直笛": {
    "ko": "리코더",
-   "ro": "rikodeo"
+   "ro": "rikodeo",
+   "src": "wiki"
   },
   "單簧管": {
    "ko": "클라리넷",
-   "ro": "keulrarinet"
+   "ro": "keulrarinet",
+   "src": "wiki"
   },
   "雙簧管": {
    "ko": "오보에",
-   "ro": "oboe"
+   "ro": "oboe",
+   "src": "wiki"
   },
   "法國號": {
    "ko": "호른",
-   "ro": "horeun"
+   "ro": "horeun",
+   "src": "wiki"
   },
   "口琴": {
    "ko": "하모니카",
-   "ro": "hamonika"
+   "ro": "hamonika",
+   "src": "wiki"
   },
   "鼓": {
    "ko": "북",
-   "ro": "buk"
+   "ro": "buk",
+   "src": "wiki"
   },
   "木琴": {
    "ko": "실로폰",
-   "ro": "silropon"
+   "ro": "silropon",
+   "src": "wiki"
   },
   "爵士鼓": {
    "ko": "드럼세트",
-   "ro": "deureomseteu"
+   "ro": "deureomseteu",
+   "src": "wiki"
   },
   "低音提琴": {
    "ko": "콘트라베이스",
-   "ro": "konteurabeiseu"
+   "ro": "konteurabeiseu",
+   "src": "wiki"
   },
   "豎琴": {
    "ko": "하프",
-   "ro": "hapeu"
+   "ro": "hapeu",
+   "src": "wiki"
   },
   "烏克麗麗": {
    "ko": "우쿨렐레",
-   "ro": "ukulrelre"
+   "ro": "ukulrelre",
+   "src": "wiki"
   },
   "班卓琴": {
    "ko": "밴조",
-   "ro": "baenjo"
+   "ro": "baenjo",
+   "src": "wiki"
   },
   "曼陀林": {
    "ko": "만돌린",
-   "ro": "mandolrin"
+   "ro": "mandolrin",
+   "src": "wiki"
   },
   "橫笛": {
    "ko": "플루트",
-   "ro": "peulruteu"
+   "ro": "peulruteu",
+   "src": "wiki"
   },
   "大號": {
    "ko": "튜바",
-   "ro": "tyuba"
+   "ro": "tyuba",
+   "src": "wiki"
   },
   "薩克斯風": {
    "ko": "색소폰",
-   "ro": "saeksopon"
+   "ro": "saeksopon",
+   "src": "wiki"
   },
   "卡祖笛": {
    "ko": "카주",
-   "ro": "kaju"
+   "ro": "kaju",
+   "src": "wiki"
   },
   "口風琴": {
    "ko": "멜로디언",
-   "ro": "melrodieon"
+   "ro": "melrodieon",
+   "src": "wiki"
   },
   "迪吉里杜管": {
    "ko": "디저리두",
-   "ro": "dijeoridu"
+   "ro": "dijeoridu",
+   "src": "wiki"
   },
   "鈴鼓": {
    "ko": "탬버린",
-   "ro": "taembeorin"
+   "ro": "taembeorin",
+   "src": "wiki"
   },
   "三角鐵": {
    "ko": "트라이앵글",
-   "ro": "teuraiaenggeul"
+   "ro": "teuraiaenggeul",
+   "src": "wiki"
   },
   "沙鈴": {
    "ko": "마라카스",
-   "ro": "marakaseu"
+   "ro": "marakaseu",
+   "src": "wiki"
   },
   "鈸": {
    "ko": "심벌즈",
-   "ro": "simbeoljeu"
+   "ro": "simbeoljeu",
+   "src": "wiki"
   }
  }
 }
