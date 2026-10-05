@@ -2714,9 +2714,9 @@
    "src": "mymemory"
   },
   "果汁機": {
-   "ko": "믹서기",
-   "ro": "mikseogi",
-   "src": "mymemory"
+   "ko": "주스기",
+   "ro": "juseugi",
+   "src": "llm"
   },
   "手持攪拌機": {
    "ko": "핸드블렌더",
@@ -2744,9 +2744,9 @@
    "src": "mymemory"
   },
   "調理機": {
-   "ko": "믹서기",
-   "ro": "mikseogi",
-   "src": "mymemory"
+   "ko": "조리기",
+   "ro": "jorigi",
+   "src": "llm"
   },
   "電飯鍋": {
    "ko": "밥솥",
@@ -2804,9 +2804,9 @@
    "src": "mymemory"
   },
   "電腦": {
-   "ko": "컴퓨터",
-   "ro": "keompyuteo",
-   "src": "mymemory"
+   "ko": "컴푸터",
+   "ro": "keomputeo",
+   "src": "llm"
   },
   "碎紙機": {
    "ko": "분쇄기",
@@ -2814,16 +2814,16 @@
    "src": "mymemory"
   },
   "掃地機器人": {
-   "ko": "청소로봇",
-   "ro": "cheongsorobot",
-   "src": "mymemory"
+   "ko": "로봇청소기",
+   "ro": "robotcheongsogi",
+   "src": "llm"
   }
  },
  "電腦硬體": {
   "電腦硬體": {
-   "ko": "컴퓨터하드웨어",
-   "ro": "keompyuteohadeuweeo",
-   "src": "mymemory"
+   "ko": "하드웨어",
+   "ro": "hadeuweeo",
+   "src": "llm"
   },
   "螢幕": {
    "ko": "디스플레이장치",
@@ -2831,9 +2831,9 @@
    "src": "wiki"
   },
   "主機": {
-   "ko": "호스트",
-   "ro": "hoseuteu",
-   "src": "mymemory"
+   "ko": "컴퓨터",
+   "ro": "keompyuteo",
+   "src": "llm"
   },
   "鍵盤": {
    "ko": "컴퓨터자판",
@@ -2871,9 +2871,9 @@
    "src": "wiki"
   },
   "數位板": {
-   "ko": "태블릿",
-   "ro": "taebeulrit",
-   "src": "mymemory"
+   "ko": "디지털패드",
+   "ro": "dijiteolpaedeu",
+   "src": "llm"
   },
   "印表機": {
    "ko": "프린터",
@@ -4363,9 +4363,9 @@
    "src": "mymemory"
   },
   "腔骨龍": {
-   "ko": "코엘리아코사우루스",
-   "ro": "koelriakosauruseu",
-   "src": "mymemory"
+   "ko": "코리아코사우루스",
+   "ro": "koriakosauruseu",
+   "src": "llm"
   },
   "異特龍": {
    "ko": "알로사우루스",
