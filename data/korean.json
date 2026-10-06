@@ -1870,9 +1870,9 @@
    "src": "wiki"
   },
   "胡椒餅": {
-   "ko": "후추파이",
-   "ro": "huchupai",
-   "src": "mymemory"
+   "ko": "후추빵",
+   "ro": "huchuppang",
+   "src": "llm"
   },
   "刈包": {
    "ko": "꾸아빠우",
@@ -2297,9 +2297,9 @@
    "src": "llm"
   },
   "古董車": {
-   "ko": "앤티크자동차",
-   "ro": "aentikeujadongcha",
-   "src": "mymemory"
+   "ko": "앤티크",
+   "ro": "aentikeu",
+   "src": "llm"
   },
   "雙層巴士": {
    "ko": "층버스",
@@ -2384,9 +2384,9 @@
    "src": "llm"
   },
   "下水道口": {
-   "ko": "하수구입구",
-   "ro": "hasuguipgu",
-   "src": "mymemory"
+   "ko": "하수구",
+   "ro": "hasugu",
+   "src": "llm"
   },
   "自動販賣機": {
    "ko": "자동판매기",
@@ -2436,9 +2436,9 @@
  },
  "遊樂場設施": {
   "遊樂場設施": {
-   "ko": "놀이터시설",
-   "ro": "noriteosiseol",
-   "src": "mymemory"
+   "ko": "놀이터",
+   "ro": "noriteo",
+   "src": "llm"
   },
   "滑梯": {
    "ko": "미끄럼틀",
@@ -2451,9 +2451,9 @@
    "src": "wiki"
   },
   "翹翹板": {
-   "ko": "롤러플레이트",
-   "ro": "rolreopeulreiteu",
-   "src": "mymemory"
+   "ko": "스윙",
+   "ro": "seuwing",
+   "src": "llm"
   },
   "攀爬架": {
    "ko": "정글짐",
@@ -3055,9 +3055,9 @@
    "src": "wiki"
   },
   "立可白": {
-   "ko": "리코펜",
-   "ro": "rikopen",
-   "src": "mymemory"
+   "ko": "리코백",
+   "ro": "rikobaek",
+   "src": "llm"
   },
   "修正帶": {
    "ko": "보정테이프",
