@@ -1972,9 +1972,9 @@
    "src": "wiki"
   },
   "郵務車": {
-   "ko": "우편차량",
-   "ro": "upyeoncharyang",
-   "src": "mymemory"
+   "ko": "우체차량",
+   "ro": "uchecharyang",
+   "src": "llm"
   },
   "垃圾車": {
    "ko": "쓰레기차",
@@ -4261,9 +4261,9 @@
    "src": "mymemory"
   },
   "胰臟": {
-   "ko": "췌장",
-   "ro": "chwejang",
-   "src": "mymemory"
+   "ko": "쑤장",
+   "ro": "ssujang",
+   "src": "llm"
   },
   "肝臟": {
    "ko": "간",
@@ -4353,9 +4353,9 @@
    "src": "mymemory"
   },
   "恐爪龍": {
-   "ko": "드레드클로드래곤",
-   "ro": "deuredeukeulrodeuraegon",
-   "src": "mymemory"
+   "ko": "드레드클로스",
+   "ro": "deuredeukeulroseu",
+   "src": "llm"
   },
   "細顎龍": {
    "ko": "키노사우루스",
