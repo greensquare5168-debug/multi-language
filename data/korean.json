@@ -1840,9 +1840,9 @@
    "src": "wiki"
   },
   "鹽酥雞": {
-   "ko": "소금바삭한치킨",
-   "ro": "sogeumbasakhanchikin",
-   "src": "mymemory"
+   "ko": "소금치킨",
+   "ro": "sogeumchikin",
+   "src": "llm"
   },
   "豬血糕": {
    "ko": "띠후에꾸에",
@@ -2515,9 +2515,9 @@
  },
  "居家空間": {
   "居家空間": {
-   "ko": "숙소공간",
-   "ro": "suksogonggan",
-   "src": "mymemory"
+   "ko": "거주공간",
+   "ro": "geojugonggan",
+   "src": "llm"
   },
   "客廳": {
    "ko": "응접실",
