@@ -2784,9 +2784,9 @@
    "src": "mymemory"
   },
   "電動刮鬍刀": {
-   "ko": "전기면도기",
-   "ro": "jeongimyeondogi",
-   "src": "mymemory"
+   "ko": "전동면도기",
+   "ro": "jeondongmyeondogi",
+   "src": "llm"
   },
   "吸塵器": {
    "ko": "진공청소기",
