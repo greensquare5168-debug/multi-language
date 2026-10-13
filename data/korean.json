@@ -1215,9 +1215,9 @@
    "src": "llm"
   },
   "彈珠檯": {
-   "ko": "핀볼테이블",
-   "ro": "pinbolteibeul",
-   "src": "mymemory"
+   "ko": "핀볼머신",
+   "ro": "pinbolmeosin",
+   "src": "llm"
   },
   "小鋼珠": {
    "ko": "파친코",
@@ -1691,9 +1691,9 @@
    "src": "wiki"
   },
   "鬆餅": {
-   "ko": "머핀",
-   "ro": "meopin",
-   "src": "mymemory"
+   "ko": "팬케이크",
+   "ro": "paenkeikeu",
+   "src": "llm"
   },
   "華夫餅": {
    "ko": "와플",
