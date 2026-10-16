@@ -948,9 +948,9 @@
    "src": "wiki"
   },
   "躲避球": {
-   "ko": "피구",
-   "ro": "pigu",
-   "src": "mymemory"
+   "ko": "피구볼",
+   "ro": "pigubol",
+   "src": "llm"
   },
   "桌球": {
    "ko": "당구",
@@ -1947,9 +1947,9 @@
    "src": "mymemory"
   },
   "箱型車": {
-   "ko": "박스카",
-   "ro": "bakseuka",
-   "src": "mymemory"
+   "ko": "박스트럭",
+   "ro": "bakseuteureok",
+   "src": "llm"
   },
   "露營車": {
    "ko": "레크리에이션용탈것",
@@ -3060,9 +3060,9 @@
    "src": "llm"
   },
   "修正帶": {
-   "ko": "보정테이프",
-   "ro": "bojeongteipeu",
-   "src": "mymemory"
+   "ko": "수정테이프",
+   "ro": "sujeongteipeu",
+   "src": "llm"
   },
   "書": {
    "ko": "책",
