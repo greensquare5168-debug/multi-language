@@ -2468,9 +2468,9 @@
  },
  "遊樂園設施": {
   "遊樂園設施": {
-   "ko": "놀이공원시설",
-   "ro": "norigongwonsiseol",
-   "src": "mymemory"
+   "ko": "놀이시설",
+   "ro": "norisiseol",
+   "src": "llm"
   },
   "雲霄飛車": {
    "ko": "롤러코스터",
@@ -3030,9 +3030,9 @@
    "src": "wiki"
   },
   "水彩筆": {
-   "ko": "수채화펜",
-   "ro": "suchaehwapen",
-   "src": "mymemory"
+   "ko": "수채화",
+   "ro": "suchaehwa",
+   "src": "llm"
   },
   "剪刀": {
    "ko": "가위",
