@@ -3269,9 +3269,9 @@
    "src": "llm"
   },
   "電線": {
-   "ko": "와이어",
-   "ro": "waieo",
-   "src": "mymemory"
+   "ko": "전선",
+   "ro": "jeonseon",
+   "src": "llm"
   },
   "電阻": {
    "ko": "저항",
@@ -3363,9 +3363,9 @@
    "src": "wiki"
   },
   "長褲": {
-   "ko": "바지",
-   "ro": "baji",
-   "src": "mymemory"
+   "ko": "장바지",
+   "ro": "jangbaji",
+   "src": "llm"
   },
   "短褲": {
    "ko": "반바지",
@@ -4358,9 +4358,9 @@
    "src": "llm"
   },
   "細顎龍": {
-   "ko": "키노사우루스",
-   "ro": "kinosauruseu",
-   "src": "mymemory"
+   "ko": "케노사우루스",
+   "ro": "kenosauruseu",
+   "src": "llm"
   },
   "腔骨龍": {
    "ko": "코리아코사우루스",
