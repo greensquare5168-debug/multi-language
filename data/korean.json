@@ -3080,9 +3080,9 @@
    "src": "wiki"
   },
   "墊板": {
-   "ko": "매트",
-   "ro": "maeteu",
-   "src": "mymemory"
+   "ko": "패드",
+   "ro": "paedeu",
+   "src": "llm"
   },
   "紙": {
    "ko": "종이",
@@ -4209,9 +4209,9 @@
  },
  "五官": {
   "五官": {
-   "ko": "오감",
-   "ro": "ogam",
-   "src": "mymemory"
+   "ko": "오장",
+   "ro": "ojang",
+   "src": "llm"
   },
   "眼睛": {
    "ko": "눈",
@@ -4373,9 +4373,9 @@
    "src": "mymemory"
   },
   "暴龍": {
-   "ko": "티라노사우루스",
-   "ro": "tiranosauruseu",
-   "src": "mymemory"
+   "ko": "레코드",
+   "ro": "rekodeu",
+   "src": "llm"
   }
  },
  "星球": {
@@ -4390,9 +4390,9 @@
    "src": "wiki"
   },
   "月亮": {
-   "ko": "달",
-   "ro": "dal",
-   "src": "mymemory"
+   "ko": "플레이어",
+   "ro": "peulreieo",
+   "src": "llm"
   },
   "水星": {
    "ko": "수성",
@@ -4457,9 +4457,9 @@
    "src": "llm"
   },
   "唱片機": {
-   "ko": "레코드플레이어",
-   "ro": "rekodeupeulreieo",
-   "src": "mymemory"
+   "ko": "레코드",
+   "ro": "rekodeu",
+   "src": "llm"
   },
   "留聲機": {
    "ko": "축음기",
