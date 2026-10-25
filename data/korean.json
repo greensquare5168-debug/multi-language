@@ -1815,9 +1815,9 @@
  },
  "夜市小吃": {
   "夜市小吃": {
-   "ko": "야시장간식",
-   "ro": "yasijanggansik",
-   "src": "mymemory"
+   "ko": "야시장",
+   "ro": "yasijang",
+   "src": "llm"
   },
   "蚵仔煎": {
    "ko": "어아찌안",
@@ -1855,9 +1855,9 @@
    "src": "wiki"
   },
   "韭菜盒子": {
-   "ko": "부추상자",
-   "ro": "buchusangja",
-   "src": "mymemory"
+   "ko": "부추",
+   "ro": "buchu",
+   "src": "llm"
   },
   "蔥油餅": {
    "ko": "충유빙",
