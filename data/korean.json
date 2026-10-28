@@ -1768,9 +1768,9 @@
    "src": "mymemory"
   },
   "肉": {
-   "ko": "육류",
-   "ro": "yukryu",
-   "src": "mymemory"
+   "ko": "고기",
+   "ro": "gogi",
+   "src": "llm"
   },
   "雞肉": {
    "ko": "닭고기",
