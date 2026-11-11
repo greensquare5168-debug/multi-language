@@ -406,4 +406,5 @@ Promise.all([
    fillMedia();
    setTimeout(()=>{document.querySelectorAll('.spk').forEach(b=>{const m=VOICE_MAP[b.getAttribute('data-name')];if(m&&!hasVoice(m.lang)&&!m.fallback)b.classList.add('no');});},400);
  }).catch(e=>{box.innerHTML='<div class="status err">讀取失敗：'+e.message+'（此表可能未公開分享）</div>';});
-</script></body></html>
+</script><script src="https://greensquare5168-debug.github.io/multi-language/nav.js"></script>
+</body></html>
